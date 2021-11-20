@@ -1,0 +1,100 @@
+//---------------------------------------------------------------------------
+#include <vcl.h>
+#pragma hdrstop
+
+#include <boost/filesystem.hpp>
+#include <boost/algorithm/string.hpp>
+
+#include "utils.h"
+#include "commdefs.h"
+#include "TFormDebug.h"
+
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+using namespace boost::filesystem;
+
+
+namespace utils
+{
+
+AnsiString __fastcall GetDataPath()
+{
+/*
+	assert(Application);
+	AnsiString strExePath = Sysutils::ExtractFilePath(Application->ExeName);
+    AnsiString strDataPath = strExePath + DATAPATH;
+*/
+
+    boost::filesystem::path TheExePath( AnsiString(Application->ExeName).c_str() );
+    boost::filesystem::path TheExeDir = TheExePath.parent_path();
+
+    std::string strExeDir = TheExeDir.directory_string();
+    std::string strDataPath = strExeDir + DATAPATH;
+
+											// we have to remove some "relative"
+                                            // refs inside the data path string
+	boost::replace_all(strDataPath, "\\.\\", "\\");
+	boost::replace_all(strDataPath, "/./", "\\");
+
+/*
+#ifdef _DEBUG
+	FormDebug->Print(strExeDir);
+    FormDebug->Print(strDataPath);
+#endif
+*/
+
+	return AnsiString(strDataPath.c_str());
+}
+
+/*!****************************************************************************
+* @brief
+******************************************************************************/
+bool __fastcall ParseDate(AnsiString strDate,
+	unsigned short& nYear, unsigned short& nMonth, unsigned short& nDay)
+{
+/*
+	nDay = strDate.SubString(0, strDate.Pos("/") - 1).ToInt();
+
+    strDate = strDate.SubString(strDate.Pos("/")+1, strDate.Length());
+    nMonth = strDate.SubString(0, strDate.Pos("/") - 1).ToInt();
+
+    strDate = strDate.SubString(strDate.Pos("/")+1, strDate.Length());
+    nYear = strDate.ToInt();
+*/
+	bool bResult = true;
+
+	AnsiString strDay = strDate.SubString(0, strDate.Pos("/") - 1);
+
+    strDate = strDate.SubString(strDate.Pos("/")+1, strDate.Length());
+    AnsiString strMonth = strDate.SubString(0, strDate.Pos("/") - 1);
+
+    AnsiString strYear = strDate.SubString(strDate.Pos("/")+1, strDate.Length());
+
+	//if( ::isnumber(
+    try
+    {
+		nDay = strDay.ToInt();
+        nMonth = strMonth.ToInt();
+        nYear = strYear.ToInt();
+    }
+    catch(...)
+    {
+    	bResult = false;
+    }
+
+    return bResult;
+}
+
+/*
+bool __fastcall IsValidDate(AnsiString strDate)
+{
+	unsigned short nYear, nMonth, nDay;
+
+    ParseDate(strDate, nYear, nMonth, nDay);
+
+    return bool( nYear && nMonth && nDay );
+}
+*/
+
+};

@@ -1,0 +1,189 @@
+\hypertarget{class_t_data_banker}{}\doxysection{TData\+Banker Class Reference}
+\label{class_t_data_banker}\index{TDataBanker@{TDataBanker}}
+
+
+{\ttfamily \#include $<$databanker.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_data_banker_a87b52b413375b5a681b049a423e22a2b}{TData\+Banker}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_data_banker_aa37f39eb0ecfc79a837a33354f396c20}{$\sim$\+TData\+Banker}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \+\_\+\+\_\+fastcall \mbox{\hyperlink{class_t_data_banker_addafea9e2e464582bf9861a3631b9d71}{Cities\+Create\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \+\_\+\+\_\+fastcall \mbox{\hyperlink{class_t_data_banker_a125503fcb257e411088914fcd2bd396b}{Assets\+Create\+Archive}} ()
+\item 
+void \+\_\+\+\_\+fastcall \mbox{\hyperlink{class_t_data_banker_acdf1ea708bbb33eaabcb7efa6fc7d48c}{Customers\+Create\+Archive}} ()
+\item 
+\mbox{\hyperlink{class_t_assets_archive}{TAssets\+Archive}} $\ast$const \+\_\+\+\_\+fastcall \mbox{\hyperlink{class_t_data_banker_a8e544b8dd8ab44bcef74110ef30aed53}{Get\+Assets}} ()
+\item 
+\mbox{\hyperlink{class_t_customers_archive}{TCustomers\+Archive}} $\ast$const \+\_\+\+\_\+fastcall \mbox{\hyperlink{class_t_data_banker_a2c93fb94d2201fe07434aa3315bace51}{Get\+Customers}} ()
+\item 
+\mbox{\hyperlink{class_t_cities_archive}{TCities\+Archive}} $\ast$const \+\_\+\+\_\+fastcall \mbox{\hyperlink{class_t_data_banker_a084e03096e114d360815c605711b828a}{Get\+Cities}} ()
+\item 
+void \+\_\+\+\_\+fastcall \mbox{\hyperlink{class_t_data_banker_a179c2f6aef032962d574104040c3520c}{Get\+Cities}} (\mbox{\hyperlink{cities_8h_a4075b5f77f5b5ea671ccbfe28e3390d7}{TVec\+Cities}} \&Cities)
+\item 
+bool \+\_\+\+\_\+fastcall \mbox{\hyperlink{class_t_data_banker_a397a95c089aa8188796f75376aaecdb1}{Cities\+Load\+From\+File}} (Ansi\+String str\+File\+Name)
+\item 
+bool \+\_\+\+\_\+fastcall \mbox{\hyperlink{class_t_data_banker_ab9b1f07b26d36abaabf8ac6192cd96b5}{Assets\+Load\+From\+File}} (Ansi\+String str\+File\+Name)
+\item 
+bool \+\_\+\+\_\+fastcall \mbox{\hyperlink{class_t_data_banker_a2ab762bff2179b814ae93fb2df9f4ae4}{Customers\+Load\+From\+File}} (Ansi\+String str\+File\+Name)
+\item 
+bool \+\_\+\+\_\+fastcall \mbox{\hyperlink{class_t_data_banker_a6892ad387bd97fec613bfb6f8075b71c}{Assets\+Save\+To\+File}} (Ansi\+String str\+File\+Name)
+\item 
+bool \+\_\+\+\_\+fastcall \mbox{\hyperlink{class_t_data_banker_af4e232fdc13a01c14c1b8689f3db0316}{Customers\+Save\+To\+File}} (Ansi\+String str\+File\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_cities_archive}{TCities\+Archive}} $\ast$ \mbox{\hyperlink{class_t_data_banker_a70596be5220a408f2fd79fface1929f6}{m\+\_\+p\+Cities}}
+\item 
+\mbox{\hyperlink{class_t_assets_archive}{TAssets\+Archive}} $\ast$ \mbox{\hyperlink{class_t_data_banker_ac43a524bce3a4a88cdefdf799b3afa25}{m\+\_\+p\+Assets}}
+\item 
+\mbox{\hyperlink{class_t_customers_archive}{TCustomers\+Archive}} $\ast$ \mbox{\hyperlink{class_t_data_banker_aa3630a2e3882a7a751a4d5e9fe74aab9}{m\+\_\+p\+Customers}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_data_banker_a87b52b413375b5a681b049a423e22a2b}\label{class_t_data_banker_a87b52b413375b5a681b049a423e22a2b}} 
+\index{TDataBanker@{TDataBanker}!TDataBanker@{TDataBanker}}
+\index{TDataBanker@{TDataBanker}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{TDataBanker()}{TDataBanker()}}
+{\footnotesize\ttfamily TData\+Banker\+::\+TData\+Banker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_data_banker_aa37f39eb0ecfc79a837a33354f396c20}\label{class_t_data_banker_aa37f39eb0ecfc79a837a33354f396c20}} 
+\index{TDataBanker@{TDataBanker}!````~TDataBanker@{$\sim$TDataBanker}}
+\index{````~TDataBanker@{$\sim$TDataBanker}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{$\sim$TDataBanker()}{~TDataBanker()}}
+{\footnotesize\ttfamily TData\+Banker\+::$\sim$\+TData\+Banker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\DoxyHorRuler{0}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_data_banker_a125503fcb257e411088914fcd2bd396b}\label{class_t_data_banker_a125503fcb257e411088914fcd2bd396b}} 
+\index{TDataBanker@{TDataBanker}!AssetsCreateArchive@{AssetsCreateArchive}}
+\index{AssetsCreateArchive@{AssetsCreateArchive}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{AssetsCreateArchive()}{AssetsCreateArchive()}}
+{\footnotesize\ttfamily void \+\_\+\+\_\+fastcall TData\+Banker\+::\+Assets\+Create\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_data_banker_ab9b1f07b26d36abaabf8ac6192cd96b5}\label{class_t_data_banker_ab9b1f07b26d36abaabf8ac6192cd96b5}} 
+\index{TDataBanker@{TDataBanker}!AssetsLoadFromFile@{AssetsLoadFromFile}}
+\index{AssetsLoadFromFile@{AssetsLoadFromFile}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{AssetsLoadFromFile()}{AssetsLoadFromFile()}}
+{\footnotesize\ttfamily bool \+\_\+\+\_\+fastcall TData\+Banker\+::\+Assets\+Load\+From\+File (\begin{DoxyParamCaption}\item[{Ansi\+String}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_data_banker_a6892ad387bd97fec613bfb6f8075b71c}\label{class_t_data_banker_a6892ad387bd97fec613bfb6f8075b71c}} 
+\index{TDataBanker@{TDataBanker}!AssetsSaveToFile@{AssetsSaveToFile}}
+\index{AssetsSaveToFile@{AssetsSaveToFile}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{AssetsSaveToFile()}{AssetsSaveToFile()}}
+{\footnotesize\ttfamily bool \+\_\+\+\_\+fastcall TData\+Banker\+::\+Assets\+Save\+To\+File (\begin{DoxyParamCaption}\item[{Ansi\+String}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_data_banker_addafea9e2e464582bf9861a3631b9d71}\label{class_t_data_banker_addafea9e2e464582bf9861a3631b9d71}} 
+\index{TDataBanker@{TDataBanker}!CitiesCreateArchive@{CitiesCreateArchive}}
+\index{CitiesCreateArchive@{CitiesCreateArchive}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{CitiesCreateArchive()}{CitiesCreateArchive()}}
+{\footnotesize\ttfamily void \+\_\+\+\_\+fastcall TData\+Banker\+::\+Cities\+Create\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_data_banker_a397a95c089aa8188796f75376aaecdb1}\label{class_t_data_banker_a397a95c089aa8188796f75376aaecdb1}} 
+\index{TDataBanker@{TDataBanker}!CitiesLoadFromFile@{CitiesLoadFromFile}}
+\index{CitiesLoadFromFile@{CitiesLoadFromFile}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{CitiesLoadFromFile()}{CitiesLoadFromFile()}}
+{\footnotesize\ttfamily bool \+\_\+\+\_\+fastcall TData\+Banker\+::\+Cities\+Load\+From\+File (\begin{DoxyParamCaption}\item[{Ansi\+String}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_data_banker_acdf1ea708bbb33eaabcb7efa6fc7d48c}\label{class_t_data_banker_acdf1ea708bbb33eaabcb7efa6fc7d48c}} 
+\index{TDataBanker@{TDataBanker}!CustomersCreateArchive@{CustomersCreateArchive}}
+\index{CustomersCreateArchive@{CustomersCreateArchive}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{CustomersCreateArchive()}{CustomersCreateArchive()}}
+{\footnotesize\ttfamily void \+\_\+\+\_\+fastcall TData\+Banker\+::\+Customers\+Create\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_data_banker_a2ab762bff2179b814ae93fb2df9f4ae4}\label{class_t_data_banker_a2ab762bff2179b814ae93fb2df9f4ae4}} 
+\index{TDataBanker@{TDataBanker}!CustomersLoadFromFile@{CustomersLoadFromFile}}
+\index{CustomersLoadFromFile@{CustomersLoadFromFile}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{CustomersLoadFromFile()}{CustomersLoadFromFile()}}
+{\footnotesize\ttfamily bool \+\_\+\+\_\+fastcall TData\+Banker\+::\+Customers\+Load\+From\+File (\begin{DoxyParamCaption}\item[{Ansi\+String}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_data_banker_af4e232fdc13a01c14c1b8689f3db0316}\label{class_t_data_banker_af4e232fdc13a01c14c1b8689f3db0316}} 
+\index{TDataBanker@{TDataBanker}!CustomersSaveToFile@{CustomersSaveToFile}}
+\index{CustomersSaveToFile@{CustomersSaveToFile}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{CustomersSaveToFile()}{CustomersSaveToFile()}}
+{\footnotesize\ttfamily bool \+\_\+\+\_\+fastcall TData\+Banker\+::\+Customers\+Save\+To\+File (\begin{DoxyParamCaption}\item[{Ansi\+String}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_data_banker_a8e544b8dd8ab44bcef74110ef30aed53}\label{class_t_data_banker_a8e544b8dd8ab44bcef74110ef30aed53}} 
+\index{TDataBanker@{TDataBanker}!GetAssets@{GetAssets}}
+\index{GetAssets@{GetAssets}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{GetAssets()}{GetAssets()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_assets_archive}{TAssets\+Archive}} $\ast$const \+\_\+\+\_\+fastcall TData\+Banker\+::\+Get\+Assets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_data_banker_a084e03096e114d360815c605711b828a}\label{class_t_data_banker_a084e03096e114d360815c605711b828a}} 
+\index{TDataBanker@{TDataBanker}!GetCities@{GetCities}}
+\index{GetCities@{GetCities}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{GetCities()}{GetCities()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_cities_archive}{TCities\+Archive}} $\ast$const \+\_\+\+\_\+fastcall TData\+Banker\+::\+Get\+Cities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_data_banker_a179c2f6aef032962d574104040c3520c}\label{class_t_data_banker_a179c2f6aef032962d574104040c3520c}} 
+\index{TDataBanker@{TDataBanker}!GetCities@{GetCities}}
+\index{GetCities@{GetCities}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{GetCities()}{GetCities()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void \+\_\+\+\_\+fastcall TData\+Banker\+::\+Get\+Cities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cities_8h_a4075b5f77f5b5ea671ccbfe28e3390d7}{TVec\+Cities}} \&}]{Cities }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_data_banker_a2c93fb94d2201fe07434aa3315bace51}\label{class_t_data_banker_a2c93fb94d2201fe07434aa3315bace51}} 
+\index{TDataBanker@{TDataBanker}!GetCustomers@{GetCustomers}}
+\index{GetCustomers@{GetCustomers}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{GetCustomers()}{GetCustomers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_customers_archive}{TCustomers\+Archive}} $\ast$const \+\_\+\+\_\+fastcall TData\+Banker\+::\+Get\+Customers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_data_banker_ac43a524bce3a4a88cdefdf799b3afa25}\label{class_t_data_banker_ac43a524bce3a4a88cdefdf799b3afa25}} 
+\index{TDataBanker@{TDataBanker}!m\_pAssets@{m\_pAssets}}
+\index{m\_pAssets@{m\_pAssets}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{m\_pAssets}{m\_pAssets}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_assets_archive}{TAssets\+Archive}}$\ast$ TData\+Banker\+::m\+\_\+p\+Assets\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_t_data_banker_a70596be5220a408f2fd79fface1929f6}\label{class_t_data_banker_a70596be5220a408f2fd79fface1929f6}} 
+\index{TDataBanker@{TDataBanker}!m\_pCities@{m\_pCities}}
+\index{m\_pCities@{m\_pCities}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{m\_pCities}{m\_pCities}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_cities_archive}{TCities\+Archive}}$\ast$ TData\+Banker\+::m\+\_\+p\+Cities\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_t_data_banker_aa3630a2e3882a7a751a4d5e9fe74aab9}\label{class_t_data_banker_aa3630a2e3882a7a751a4d5e9fe74aab9}} 
+\index{TDataBanker@{TDataBanker}!m\_pCustomers@{m\_pCustomers}}
+\index{m\_pCustomers@{m\_pCustomers}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{m\_pCustomers}{m\_pCustomers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_customers_archive}{TCustomers\+Archive}}$\ast$ TData\+Banker\+::m\+\_\+p\+Customers\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+bcb.\+vcl/immobiliare/\mbox{\hyperlink{databanker_8h}{databanker.\+h}}\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+bcb.\+vcl/immobiliare/\mbox{\hyperlink{databanker_8cpp}{databanker.\+cpp}}\end{DoxyCompactItemize}

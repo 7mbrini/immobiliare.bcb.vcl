@@ -1,0 +1,40 @@
+//---------------------------------------------------------------------------
+#ifndef databankerH
+#define databankerH
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "cities.h"
+#include "assets.h"
+#include "customers.h"
+
+
+class TDataBanker
+{
+public:
+	TDataBanker();
+	~TDataBanker();
+
+	void __fastcall CitiesCreateArchive();
+    void __fastcall AssetsCreateArchive();
+    void __fastcall CustomerCreatesArchive();
+
+	TAssetsArchive* const __fastcall GetAssets();
+	TCustomersArchive* const __fastcall GetCustomers();
+
+	TCitiesArchive* const __fastcall GetCities();
+	void __fastcall GetCities(TVecCities& Cities);
+
+	bool __fastcall CitiesLoadFromFile(AnsiString strFileName);
+	bool __fastcall AssetsLoadFromFile(AnsiString strFileName);
+    bool __fastcall CustomersLoadFromfile(AnsiString strFileName);
+
+protected:
+    TCitiesArchive* m_pCities;
+    TAssetsArchive* m_pAssets;
+	TCustomersArchive* m_pCustomers;
+};
+
+//---------------------------------------------------------------------------
+#endif

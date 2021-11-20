@@ -1,0 +1,25 @@
+//---------------------------------------------------------------------------
+#ifndef errorsH
+#define errorsH
+
+#define ERR_DBNOASSETS		100
+#define ERR_DBNOCUSTOMERS	110
+
+
+void ShowError(int nErrCode)
+{
+	AnsiString strMsg;
+
+    switch(nErrCode)
+    {
+		case ERR_DBNOASSETS:
+        	strMsg = "Errore";
+        break;
+
+    }
+}
+
+
+
+//---------------------------------------------------------------------------
+#endif

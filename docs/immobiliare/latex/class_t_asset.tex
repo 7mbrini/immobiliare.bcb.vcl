@@ -1,0 +1,213 @@
+\hypertarget{class_t_asset}{}\doxysection{TAsset Class Reference}
+\label{class_t_asset}\index{TAsset@{TAsset}}
+
+
+{\ttfamily \#include $<$assets.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_asset_a9c05b7bec925de7089694336a6feac3b}{TAsset}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_asset_afae0bde22f8a49109b0436a90f680106}{Read}} (FILE $\ast$fp)
+\begin{DoxyCompactList}\small\item\em Read the record from file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_asset_ad69b21538b663f61411bc3426ea4f46d}{Write}} (FILE $\ast$fp)
+\begin{DoxyCompactList}\small\item\em Write the record to file. \end{DoxyCompactList}\item 
+Ansi\+String \mbox{\hyperlink{class_t_asset_a660db3fc38bf94ea5a256d3fab757158}{As\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{class_t_asset_a09621a096a685fa26efe85eb9fdb8e51}{m\+\_\+str\+Address}} \mbox{[}\mbox{\hyperlink{assets_8h_aad8f0ad9210c74f7111316312464b17b}{ASSET\+\_\+\+NAMESMAXLEN}}\mbox{]}
+\item 
+char \mbox{\hyperlink{class_t_asset_a89ff66d41e3d9b0f2af53d45db6feb64}{m\+\_\+str\+City}} \mbox{[}\mbox{\hyperlink{assets_8h_aad8f0ad9210c74f7111316312464b17b}{ASSET\+\_\+\+NAMESMAXLEN}}\mbox{]}
+\item 
+char \mbox{\hyperlink{class_t_asset_a1fbea273460ac1d9803fc539a0265c8c}{m\+\_\+str\+Description}} \mbox{[}\mbox{\hyperlink{assets_8h_af42e692a633a66cd906947767d21f70f}{ASSET\+\_\+\+DESCRMAXLEN}}\mbox{]}
+\item 
+\mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056}{en\+Asset\+Epgl}} \mbox{\hyperlink{class_t_asset_ab2ead77bb6e443b33ec04f752199ea52}{m\+\_\+n\+Epgl}}
+\item 
+\mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5df}{en\+Asset\+Typology}} \mbox{\hyperlink{class_t_asset_a7e24d222f328bb052b44a63cbe1f0457}{m\+\_\+n\+Typology}}
+\item 
+\mbox{\hyperlink{assets_8h_a2f6366c4d3d0e44a757c76ba26eed7ae}{en\+Asset\+Status}} \mbox{\hyperlink{class_t_asset_acbb17a2c880c50e6aba61bfc400bbe00}{m\+\_\+n\+Status}}
+\item 
+double \mbox{\hyperlink{class_t_asset_aa2d08ec2eeabf9bd03b84bb28e16dbeb}{m\+\_\+\+Build\+Date}}
+\item 
+double \mbox{\hyperlink{class_t_asset_a637bf1b51e7ddb11994f7d4d71b87ae6}{m\+\_\+\+Sold\+Date}}
+\item 
+unsigned \mbox{\hyperlink{class_t_asset_a758b896af67dcdf84bf3372d5da5700c}{m\+\_\+n\+Value}}
+\item 
+unsigned \mbox{\hyperlink{class_t_asset_a356456f6a02479fabb1cb220072b3c20}{m\+\_\+n\+Price}}
+\item 
+unsigned \mbox{\hyperlink{class_t_asset_aee3c31ec27f9a2d5e50f18aca322ac0f}{m\+\_\+n\+Cap}}
+\item 
+unsigned \mbox{\hyperlink{class_t_asset_a6d627086ef6abe5365c2f872b99c5b0b}{m\+\_\+n\+Area}}
+\item 
+unsigned short \mbox{\hyperlink{class_t_asset_ac1ee26cadc2ae49db3250d846d505ce0}{m\+\_\+n\+Rooms}}
+\item 
+unsigned short \mbox{\hyperlink{class_t_asset_a37594496558b91cdea1ad20f91be893c}{m\+\_\+n\+Bathrooms}}
+\item 
+bool \mbox{\hyperlink{class_t_asset_a4dd3008fd535a95872a09a4ef76386f9}{m\+\_\+b\+Image}}
+\item 
+unsigned char \mbox{\hyperlink{class_t_asset_a8655b01e98c088a4c9d1d48d34c8cb8e}{m\+\_\+p\+Image}} \mbox{[}\mbox{\hyperlink{assets_8h_a71b16708365f9a3feb00c2a020e6bbe0}{ASSET\+\_\+\+IMAGEMAXSIZE}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_asset_a9c05b7bec925de7089694336a6feac3b}\label{class_t_asset_a9c05b7bec925de7089694336a6feac3b}} 
+\index{TAsset@{TAsset}!TAsset@{TAsset}}
+\index{TAsset@{TAsset}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{TAsset()}{TAsset()}}
+{\footnotesize\ttfamily TAsset\+::\+TAsset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\DoxyHorRuler{0}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_asset_a660db3fc38bf94ea5a256d3fab757158}\label{class_t_asset_a660db3fc38bf94ea5a256d3fab757158}} 
+\index{TAsset@{TAsset}!AsString@{AsString}}
+\index{AsString@{AsString}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{AsString()}{AsString()}}
+{\footnotesize\ttfamily Ansi\+String TAsset\+::\+As\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_asset_afae0bde22f8a49109b0436a90f680106}\label{class_t_asset_afae0bde22f8a49109b0436a90f680106}} 
+\index{TAsset@{TAsset}!Read@{Read}}
+\index{Read@{Read}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily bool TAsset\+::\+Read (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp }\end{DoxyParamCaption})}
+
+
+
+Read the record from file. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em fp} & Pointer to FILE struct \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_asset_ad69b21538b663f61411bc3426ea4f46d}\label{class_t_asset_ad69b21538b663f61411bc3426ea4f46d}} 
+\index{TAsset@{TAsset}!Write@{Write}}
+\index{Write@{Write}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily bool TAsset\+::\+Write (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp }\end{DoxyParamCaption})}
+
+
+
+Write the record to file. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em fp} & Pointer to FILE struct \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_asset_a4dd3008fd535a95872a09a4ef76386f9}\label{class_t_asset_a4dd3008fd535a95872a09a4ef76386f9}} 
+\index{TAsset@{TAsset}!m\_bImage@{m\_bImage}}
+\index{m\_bImage@{m\_bImage}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{m\_bImage}{m\_bImage}}
+{\footnotesize\ttfamily bool TAsset\+::m\+\_\+b\+Image}
+
+\mbox{\Hypertarget{class_t_asset_aa2d08ec2eeabf9bd03b84bb28e16dbeb}\label{class_t_asset_aa2d08ec2eeabf9bd03b84bb28e16dbeb}} 
+\index{TAsset@{TAsset}!m\_BuildDate@{m\_BuildDate}}
+\index{m\_BuildDate@{m\_BuildDate}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{m\_BuildDate}{m\_BuildDate}}
+{\footnotesize\ttfamily double TAsset\+::m\+\_\+\+Build\+Date}
+
+\mbox{\Hypertarget{class_t_asset_a6d627086ef6abe5365c2f872b99c5b0b}\label{class_t_asset_a6d627086ef6abe5365c2f872b99c5b0b}} 
+\index{TAsset@{TAsset}!m\_nArea@{m\_nArea}}
+\index{m\_nArea@{m\_nArea}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{m\_nArea}{m\_nArea}}
+{\footnotesize\ttfamily unsigned TAsset\+::m\+\_\+n\+Area}
+
+\mbox{\Hypertarget{class_t_asset_a37594496558b91cdea1ad20f91be893c}\label{class_t_asset_a37594496558b91cdea1ad20f91be893c}} 
+\index{TAsset@{TAsset}!m\_nBathrooms@{m\_nBathrooms}}
+\index{m\_nBathrooms@{m\_nBathrooms}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{m\_nBathrooms}{m\_nBathrooms}}
+{\footnotesize\ttfamily unsigned short TAsset\+::m\+\_\+n\+Bathrooms}
+
+\mbox{\Hypertarget{class_t_asset_aee3c31ec27f9a2d5e50f18aca322ac0f}\label{class_t_asset_aee3c31ec27f9a2d5e50f18aca322ac0f}} 
+\index{TAsset@{TAsset}!m\_nCap@{m\_nCap}}
+\index{m\_nCap@{m\_nCap}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{m\_nCap}{m\_nCap}}
+{\footnotesize\ttfamily unsigned TAsset\+::m\+\_\+n\+Cap}
+
+\mbox{\Hypertarget{class_t_asset_ab2ead77bb6e443b33ec04f752199ea52}\label{class_t_asset_ab2ead77bb6e443b33ec04f752199ea52}} 
+\index{TAsset@{TAsset}!m\_nEpgl@{m\_nEpgl}}
+\index{m\_nEpgl@{m\_nEpgl}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{m\_nEpgl}{m\_nEpgl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056}{en\+Asset\+Epgl}} TAsset\+::m\+\_\+n\+Epgl}
+
+\mbox{\Hypertarget{class_t_asset_a356456f6a02479fabb1cb220072b3c20}\label{class_t_asset_a356456f6a02479fabb1cb220072b3c20}} 
+\index{TAsset@{TAsset}!m\_nPrice@{m\_nPrice}}
+\index{m\_nPrice@{m\_nPrice}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{m\_nPrice}{m\_nPrice}}
+{\footnotesize\ttfamily unsigned TAsset\+::m\+\_\+n\+Price}
+
+\mbox{\Hypertarget{class_t_asset_ac1ee26cadc2ae49db3250d846d505ce0}\label{class_t_asset_ac1ee26cadc2ae49db3250d846d505ce0}} 
+\index{TAsset@{TAsset}!m\_nRooms@{m\_nRooms}}
+\index{m\_nRooms@{m\_nRooms}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{m\_nRooms}{m\_nRooms}}
+{\footnotesize\ttfamily unsigned short TAsset\+::m\+\_\+n\+Rooms}
+
+\mbox{\Hypertarget{class_t_asset_acbb17a2c880c50e6aba61bfc400bbe00}\label{class_t_asset_acbb17a2c880c50e6aba61bfc400bbe00}} 
+\index{TAsset@{TAsset}!m\_nStatus@{m\_nStatus}}
+\index{m\_nStatus@{m\_nStatus}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{m\_nStatus}{m\_nStatus}}
+{\footnotesize\ttfamily \mbox{\hyperlink{assets_8h_a2f6366c4d3d0e44a757c76ba26eed7ae}{en\+Asset\+Status}} TAsset\+::m\+\_\+n\+Status}
+
+\mbox{\Hypertarget{class_t_asset_a7e24d222f328bb052b44a63cbe1f0457}\label{class_t_asset_a7e24d222f328bb052b44a63cbe1f0457}} 
+\index{TAsset@{TAsset}!m\_nTypology@{m\_nTypology}}
+\index{m\_nTypology@{m\_nTypology}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{m\_nTypology}{m\_nTypology}}
+{\footnotesize\ttfamily \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5df}{en\+Asset\+Typology}} TAsset\+::m\+\_\+n\+Typology}
+
+\mbox{\Hypertarget{class_t_asset_a758b896af67dcdf84bf3372d5da5700c}\label{class_t_asset_a758b896af67dcdf84bf3372d5da5700c}} 
+\index{TAsset@{TAsset}!m\_nValue@{m\_nValue}}
+\index{m\_nValue@{m\_nValue}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{m\_nValue}{m\_nValue}}
+{\footnotesize\ttfamily unsigned TAsset\+::m\+\_\+n\+Value}
+
+\mbox{\Hypertarget{class_t_asset_a8655b01e98c088a4c9d1d48d34c8cb8e}\label{class_t_asset_a8655b01e98c088a4c9d1d48d34c8cb8e}} 
+\index{TAsset@{TAsset}!m\_pImage@{m\_pImage}}
+\index{m\_pImage@{m\_pImage}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{m\_pImage}{m\_pImage}}
+{\footnotesize\ttfamily unsigned char TAsset\+::m\+\_\+p\+Image\mbox{[}\mbox{\hyperlink{assets_8h_a71b16708365f9a3feb00c2a020e6bbe0}{ASSET\+\_\+\+IMAGEMAXSIZE}}\mbox{]}}
+
+\mbox{\Hypertarget{class_t_asset_a637bf1b51e7ddb11994f7d4d71b87ae6}\label{class_t_asset_a637bf1b51e7ddb11994f7d4d71b87ae6}} 
+\index{TAsset@{TAsset}!m\_SoldDate@{m\_SoldDate}}
+\index{m\_SoldDate@{m\_SoldDate}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{m\_SoldDate}{m\_SoldDate}}
+{\footnotesize\ttfamily double TAsset\+::m\+\_\+\+Sold\+Date}
+
+\mbox{\Hypertarget{class_t_asset_a09621a096a685fa26efe85eb9fdb8e51}\label{class_t_asset_a09621a096a685fa26efe85eb9fdb8e51}} 
+\index{TAsset@{TAsset}!m\_strAddress@{m\_strAddress}}
+\index{m\_strAddress@{m\_strAddress}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{m\_strAddress}{m\_strAddress}}
+{\footnotesize\ttfamily char TAsset\+::m\+\_\+str\+Address\mbox{[}\mbox{\hyperlink{assets_8h_aad8f0ad9210c74f7111316312464b17b}{ASSET\+\_\+\+NAMESMAXLEN}}\mbox{]}}
+
+\mbox{\Hypertarget{class_t_asset_a89ff66d41e3d9b0f2af53d45db6feb64}\label{class_t_asset_a89ff66d41e3d9b0f2af53d45db6feb64}} 
+\index{TAsset@{TAsset}!m\_strCity@{m\_strCity}}
+\index{m\_strCity@{m\_strCity}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{m\_strCity}{m\_strCity}}
+{\footnotesize\ttfamily char TAsset\+::m\+\_\+str\+City\mbox{[}\mbox{\hyperlink{assets_8h_aad8f0ad9210c74f7111316312464b17b}{ASSET\+\_\+\+NAMESMAXLEN}}\mbox{]}}
+
+\mbox{\Hypertarget{class_t_asset_a1fbea273460ac1d9803fc539a0265c8c}\label{class_t_asset_a1fbea273460ac1d9803fc539a0265c8c}} 
+\index{TAsset@{TAsset}!m\_strDescription@{m\_strDescription}}
+\index{m\_strDescription@{m\_strDescription}!TAsset@{TAsset}}
+\doxysubsubsection{\texorpdfstring{m\_strDescription}{m\_strDescription}}
+{\footnotesize\ttfamily char TAsset\+::m\+\_\+str\+Description\mbox{[}\mbox{\hyperlink{assets_8h_af42e692a633a66cd906947767d21f70f}{ASSET\+\_\+\+DESCRMAXLEN}}\mbox{]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+bcb.\+vcl/immobiliare/\mbox{\hyperlink{assets_8h}{assets.\+h}}\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+bcb.\+vcl/immobiliare/\mbox{\hyperlink{assets_8cpp}{assets.\+cpp}}\end{DoxyCompactItemize}

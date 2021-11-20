@@ -1,0 +1,248 @@
+\hypertarget{_t_form_find_customers_8cpp}{}\doxysection{Z\+:/\+F/dev/jobs/immobiliare.bcb.\+vcl/immobiliare/\+TForm\+Find\+Customers.cpp File Reference}
+\label{_t_form_find_customers_8cpp}\index{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/TFormFindCustomers.cpp@{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/TFormFindCustomers.cpp}}
+
+
+Find Customers form.  
+
+
+{\ttfamily \#include $<$vcl.\+h$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include \char`\"{}TForm\+Main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}TForm\+Debug.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}TForm\+Customers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}TForm\+Find\+Customers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}assets.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}errormsgs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}commdefs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sorting.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_t_ownership_choice}{TOwnership\+Choice}}
+\item 
+struct \mbox{\hyperlink{struct_t_sorting_choice}{TSorting\+Choice}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_t_form_find_customers_8cpp_a890bf4cc740b04d13117670f75dd4bf6}{MINWIDTH}}~720
+\item 
+\#define \mbox{\hyperlink{_t_form_find_customers_8cpp_ab0a627a1493c578c4d00413c158145c1}{MINHEIGHT}}~440
+\item 
+\#define \mbox{\hyperlink{_t_form_find_customers_8cpp_abf5c185f2b0f22a8eecb7a9ec5eedcd1}{DEFWIDTH}}~900
+\item 
+\#define \mbox{\hyperlink{_t_form_find_customers_8cpp_a33b4ad969ea44d26fd0efb114d43b9a2}{DEFCOLS}}~9
+\item 
+\#define \mbox{\hyperlink{_t_form_find_customers_8cpp_aae2f487b46353b4f6c338df347718661}{DEFROWS}}~2
+\item 
+\#define \mbox{\hyperlink{_t_form_find_customers_8cpp_a137e81fbd5d6e429a08b6a469d23f336}{DEFCOLW}}~48
+\item 
+\#define \mbox{\hyperlink{_t_form_find_customers_8cpp_a3338566b42fd7c0e6a6c73a797c8aeb0}{DEFCOLH}}~16
+\item 
+\#define \mbox{\hyperlink{_t_form_find_customers_8cpp_adb6ecf6fca80fff3514ebb22f9f5a9f1}{\+\_\+\+USECUSTOMSORT}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1e}{en\+Sorting\+Mode}} \{ \newline
+\mbox{\hyperlink{_t_form_find_assets_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eac5de299a77cd84e88f86daa60bc41418}{sm\+None}} = 0
+, \mbox{\hyperlink{_t_form_find_assets_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea7568280aeea0fbc2e4ee324c0c3bf807}{sm\+City\+Asc}}
+, \mbox{\hyperlink{_t_form_find_assets_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea6d43c1a5b3b1a4c614820d7eb3400a57}{sm\+City\+Desc}}
+, \mbox{\hyperlink{_t_form_find_assets_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea374e32cdcbd144a95dbf0388e3cbb4ce}{sm\+Value\+Asc}}
+, \newline
+\mbox{\hyperlink{_t_form_find_assets_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea163084e7981c9ea18cee8c3441d15422}{sm\+Value\+Desc}}
+, \mbox{\hyperlink{_t_form_find_assets_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea8c9915062bdd6912e1a826d8513b1e89}{sm\+Area\+Asc}}
+, \mbox{\hyperlink{_t_form_find_assets_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eaad8b098b35015f841185a29483955560}{sm\+Area\+Desc}}
+, \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eac5de299a77cd84e88f86daa60bc41418}{sm\+None}} = 0
+, \newline
+\mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eabfc2c21da7a614b6eb6cea73b978e64d}{sm\+First\+Name\+Asc}}
+, \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eabfeb141d379632cf57495eaf38867b14}{sm\+First\+Name\+Desc}}
+, \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ead9ce88b20dda42a1f8513a310e014ace}{sm\+Last\+Name\+Asc}}
+, \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea75bc13993c34acae9d20d9d46c920310}{sm\+Last\+Name\+Desc}}
+, \newline
+\mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea7568280aeea0fbc2e4ee324c0c3bf807}{sm\+City\+Asc}}
+, \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea6d43c1a5b3b1a4c614820d7eb3400a57}{sm\+City\+Desc}}
+, \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea58688eb5f45e3e05cef7730c21662805}{sm\+Budget\+Asc}}
+, \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea92378ec32b4acd31ef5361700170167e}{sm\+Budget\+Desc}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_t_ownership_choice}{TOwnership\+Choice}} \mbox{\hyperlink{_t_form_find_customers_8cpp_a0a0e1abcf6b032e3f047c3ddab8a6fe5}{g\+\_\+\+Ownership\+Choices}} \mbox{[}$\,$\mbox{]}
+\item 
+struct \mbox{\hyperlink{struct_t_sorting_choice}{TSorting\+Choice}} \mbox{\hyperlink{_t_form_find_customers_8cpp_aac33a617b6c9df96d97ba00e01055d68}{g\+\_\+\+Sorting\+Choices}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Find Customers form. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_t_form_find_customers_8cpp_adb6ecf6fca80fff3514ebb22f9f5a9f1}\label{_t_form_find_customers_8cpp_adb6ecf6fca80fff3514ebb22f9f5a9f1}} 
+\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!\_USECUSTOMSORT@{\_USECUSTOMSORT}}
+\index{\_USECUSTOMSORT@{\_USECUSTOMSORT}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}
+\doxysubsubsection{\texorpdfstring{\_USECUSTOMSORT}{\_USECUSTOMSORT}}
+{\footnotesize\ttfamily \#define \+\_\+\+USECUSTOMSORT}
+
+\mbox{\Hypertarget{_t_form_find_customers_8cpp_a3338566b42fd7c0e6a6c73a797c8aeb0}\label{_t_form_find_customers_8cpp_a3338566b42fd7c0e6a6c73a797c8aeb0}} 
+\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!DEFCOLH@{DEFCOLH}}
+\index{DEFCOLH@{DEFCOLH}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}
+\doxysubsubsection{\texorpdfstring{DEFCOLH}{DEFCOLH}}
+{\footnotesize\ttfamily \#define DEFCOLH~16}
+
+\mbox{\Hypertarget{_t_form_find_customers_8cpp_a33b4ad969ea44d26fd0efb114d43b9a2}\label{_t_form_find_customers_8cpp_a33b4ad969ea44d26fd0efb114d43b9a2}} 
+\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!DEFCOLS@{DEFCOLS}}
+\index{DEFCOLS@{DEFCOLS}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}
+\doxysubsubsection{\texorpdfstring{DEFCOLS}{DEFCOLS}}
+{\footnotesize\ttfamily \#define DEFCOLS~9}
+
+\mbox{\Hypertarget{_t_form_find_customers_8cpp_a137e81fbd5d6e429a08b6a469d23f336}\label{_t_form_find_customers_8cpp_a137e81fbd5d6e429a08b6a469d23f336}} 
+\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!DEFCOLW@{DEFCOLW}}
+\index{DEFCOLW@{DEFCOLW}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}
+\doxysubsubsection{\texorpdfstring{DEFCOLW}{DEFCOLW}}
+{\footnotesize\ttfamily \#define DEFCOLW~48}
+
+\mbox{\Hypertarget{_t_form_find_customers_8cpp_aae2f487b46353b4f6c338df347718661}\label{_t_form_find_customers_8cpp_aae2f487b46353b4f6c338df347718661}} 
+\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!DEFROWS@{DEFROWS}}
+\index{DEFROWS@{DEFROWS}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}
+\doxysubsubsection{\texorpdfstring{DEFROWS}{DEFROWS}}
+{\footnotesize\ttfamily \#define DEFROWS~2}
+
+\mbox{\Hypertarget{_t_form_find_customers_8cpp_abf5c185f2b0f22a8eecb7a9ec5eedcd1}\label{_t_form_find_customers_8cpp_abf5c185f2b0f22a8eecb7a9ec5eedcd1}} 
+\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!DEFWIDTH@{DEFWIDTH}}
+\index{DEFWIDTH@{DEFWIDTH}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}
+\doxysubsubsection{\texorpdfstring{DEFWIDTH}{DEFWIDTH}}
+{\footnotesize\ttfamily \#define DEFWIDTH~900}
+
+\mbox{\Hypertarget{_t_form_find_customers_8cpp_ab0a627a1493c578c4d00413c158145c1}\label{_t_form_find_customers_8cpp_ab0a627a1493c578c4d00413c158145c1}} 
+\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!MINHEIGHT@{MINHEIGHT}}
+\index{MINHEIGHT@{MINHEIGHT}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}
+\doxysubsubsection{\texorpdfstring{MINHEIGHT}{MINHEIGHT}}
+{\footnotesize\ttfamily \#define MINHEIGHT~440}
+
+\mbox{\Hypertarget{_t_form_find_customers_8cpp_a890bf4cc740b04d13117670f75dd4bf6}\label{_t_form_find_customers_8cpp_a890bf4cc740b04d13117670f75dd4bf6}} 
+\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!MINWIDTH@{MINWIDTH}}
+\index{MINWIDTH@{MINWIDTH}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}
+\doxysubsubsection{\texorpdfstring{MINWIDTH}{MINWIDTH}}
+{\footnotesize\ttfamily \#define MINWIDTH~720}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1e}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1e}} 
+\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!enSortingMode@{enSortingMode}}
+\index{enSortingMode@{enSortingMode}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}
+\doxysubsubsection{\texorpdfstring{enSortingMode}{enSortingMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_t_form_find_assets_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1e}{en\+Sorting\+Mode}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{smNone@{smNone}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!smNone@{smNone}}}\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eac5de299a77cd84e88f86daa60bc41418}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eac5de299a77cd84e88f86daa60bc41418}} 
+sm\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{smCityAsc@{smCityAsc}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!smCityAsc@{smCityAsc}}}\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea7568280aeea0fbc2e4ee324c0c3bf807}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea7568280aeea0fbc2e4ee324c0c3bf807}} 
+sm\+City\+Asc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{smCityDesc@{smCityDesc}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!smCityDesc@{smCityDesc}}}\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea6d43c1a5b3b1a4c614820d7eb3400a57}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea6d43c1a5b3b1a4c614820d7eb3400a57}} 
+sm\+City\+Desc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{smValueAsc@{smValueAsc}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!smValueAsc@{smValueAsc}}}\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea374e32cdcbd144a95dbf0388e3cbb4ce}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea374e32cdcbd144a95dbf0388e3cbb4ce}} 
+sm\+Value\+Asc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{smValueDesc@{smValueDesc}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!smValueDesc@{smValueDesc}}}\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea163084e7981c9ea18cee8c3441d15422}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea163084e7981c9ea18cee8c3441d15422}} 
+sm\+Value\+Desc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{smAreaAsc@{smAreaAsc}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!smAreaAsc@{smAreaAsc}}}\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea8c9915062bdd6912e1a826d8513b1e89}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea8c9915062bdd6912e1a826d8513b1e89}} 
+sm\+Area\+Asc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{smAreaDesc@{smAreaDesc}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!smAreaDesc@{smAreaDesc}}}\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eaad8b098b35015f841185a29483955560}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eaad8b098b35015f841185a29483955560}} 
+sm\+Area\+Desc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{smNone@{smNone}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!smNone@{smNone}}}\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eac5de299a77cd84e88f86daa60bc41418}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eac5de299a77cd84e88f86daa60bc41418}} 
+sm\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{smFirstNameAsc@{smFirstNameAsc}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!smFirstNameAsc@{smFirstNameAsc}}}\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eabfc2c21da7a614b6eb6cea73b978e64d}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eabfc2c21da7a614b6eb6cea73b978e64d}} 
+sm\+First\+Name\+Asc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{smFirstNameDesc@{smFirstNameDesc}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!smFirstNameDesc@{smFirstNameDesc}}}\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eabfeb141d379632cf57495eaf38867b14}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eabfeb141d379632cf57495eaf38867b14}} 
+sm\+First\+Name\+Desc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{smLastNameAsc@{smLastNameAsc}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!smLastNameAsc@{smLastNameAsc}}}\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ead9ce88b20dda42a1f8513a310e014ace}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ead9ce88b20dda42a1f8513a310e014ace}} 
+sm\+Last\+Name\+Asc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{smLastNameDesc@{smLastNameDesc}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!smLastNameDesc@{smLastNameDesc}}}\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea75bc13993c34acae9d20d9d46c920310}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea75bc13993c34acae9d20d9d46c920310}} 
+sm\+Last\+Name\+Desc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{smCityAsc@{smCityAsc}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!smCityAsc@{smCityAsc}}}\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea7568280aeea0fbc2e4ee324c0c3bf807}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea7568280aeea0fbc2e4ee324c0c3bf807}} 
+sm\+City\+Asc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{smCityDesc@{smCityDesc}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!smCityDesc@{smCityDesc}}}\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea6d43c1a5b3b1a4c614820d7eb3400a57}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea6d43c1a5b3b1a4c614820d7eb3400a57}} 
+sm\+City\+Desc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{smBudgetAsc@{smBudgetAsc}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!smBudgetAsc@{smBudgetAsc}}}\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea58688eb5f45e3e05cef7730c21662805}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea58688eb5f45e3e05cef7730c21662805}} 
+sm\+Budget\+Asc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{smBudgetDesc@{smBudgetDesc}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!smBudgetDesc@{smBudgetDesc}}}\mbox{\Hypertarget{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea92378ec32b4acd31ef5361700170167e}\label{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea92378ec32b4acd31ef5361700170167e}} 
+sm\+Budget\+Desc&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_t_form_find_customers_8cpp_a0a0e1abcf6b032e3f047c3ddab8a6fe5}\label{_t_form_find_customers_8cpp_a0a0e1abcf6b032e3f047c3ddab8a6fe5}} 
+\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!g\_OwnershipChoices@{g\_OwnershipChoices}}
+\index{g\_OwnershipChoices@{g\_OwnershipChoices}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_OwnershipChoices}{g\_OwnershipChoices}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_t_ownership_choice}{TOwnership\+Choice}} g\+\_\+\+Ownership\+Choices\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}"{}}, \mbox{\hyperlink{customers_8h_ab1fe9b95e1a0cde5bc234cb24d0d3e1eaf6e5aff475adb6224b5f59781c327521}{cotNone}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} for rent"{}}, \mbox{\hyperlink{customers_8h_ab1fe9b95e1a0cde5bc234cb24d0d3e1ea1f38d7bb7f9bebdcc74f480d4156cab4}{cotForRent}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} for purchase"{}}, \mbox{\hyperlink{customers_8h_ab1fe9b95e1a0cde5bc234cb24d0d3e1eaa76949801fbe50890dafb2e633f03ffb}{cotForPurchase}}\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_t_form_find_customers_8cpp_aac33a617b6c9df96d97ba00e01055d68}\label{_t_form_find_customers_8cpp_aac33a617b6c9df96d97ba00e01055d68}} 
+\index{TFormFindCustomers.cpp@{TFormFindCustomers.cpp}!g\_SortingChoices@{g\_SortingChoices}}
+\index{g\_SortingChoices@{g\_SortingChoices}!TFormFindCustomers.cpp@{TFormFindCustomers.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_SortingChoices}{g\_SortingChoices}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_t_sorting_choice}{TSorting\+Choice}} g\+\_\+\+Sorting\+Choices\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}"{}}, \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eac5de299a77cd84e88f86daa60bc41418}{smNone}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} first name, ascending"{}}, \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eabfc2c21da7a614b6eb6cea73b978e64d}{smFirstNameAsc}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} first name, descending"{}}, \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1eabfeb141d379632cf57495eaf38867b14}{smFirstNameDesc}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} last name, ascending"{}}, \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ead9ce88b20dda42a1f8513a310e014ace}{smLastNameAsc}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} last name, descending"{}}, \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea75bc13993c34acae9d20d9d46c920310}{smLastNameDesc}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} city, ascending"{}}, \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea7568280aeea0fbc2e4ee324c0c3bf807}{smCityAsc}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} city, decending"{}}, \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea6d43c1a5b3b1a4c614820d7eb3400a57}{smCityDesc}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} budget, ascending"{}}, \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea58688eb5f45e3e05cef7730c21662805}{smBudgetAsc}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} budget, descending"{}}, \mbox{\hyperlink{_t_form_find_customers_8cpp_ac0abc8e1635f3e6a5dae983334ef7a1ea92378ec32b4acd31ef5361700170167e}{smBudgetDesc}}\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

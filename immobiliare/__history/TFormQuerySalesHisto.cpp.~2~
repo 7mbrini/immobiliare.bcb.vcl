@@ -1,0 +1,22 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "TFormQuerySalesHisto.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFormQuerySalesHisto *FormQuerySalesHisto;
+//---------------------------------------------------------------------------
+__fastcall TFormQuerySalesHisto::TFormQuerySalesHisto(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TFormQuerySalesHisto::ButtonCloseClick(TObject *Sender)
+{
+	this->ModalResult = mrOk;
+    Close();
+}
+//---------------------------------------------------------------------------

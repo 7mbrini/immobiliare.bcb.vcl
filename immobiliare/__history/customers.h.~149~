@@ -1,0 +1,98 @@
+//---------------------------------------------------------------------------
+#ifndef customersH
+#define customersH
+
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include <string>
+#include <vector>
+#include <list>
+
+#define CUSTOMER_MINBUDGET		10
+#define CUSTOMER_NAMESMINLEN	1
+#define CUSTOMER_NAMESMAXLEN	50
+#define CUSTOMER_MAGICLEN		64
+
+
+enum enCustomerOwnershipType { cotNone=0, cotForRent, cotForPurchase };
+
+class TCustomer;
+typedef std::vector<TCustomer> TVecCustomers;
+typedef std::vector<TCustomer*> TVecPtrCustomers;
+
+class TCustomer
+{
+public:
+	TCustomer();
+
+public:
+	bool Read(FILE* fp);
+    bool Write(FILE* fp);
+
+	AnsiString AsString();
+
+public:
+    unsigned m_nBudget, m_nCap;
+    enum enCustomerOwnershipType m_nOwnership;
+    char m_strFirstName[CUSTOMER_NAMESMAXLEN];
+    char m_strLastName[CUSTOMER_NAMESMAXLEN];
+	char m_strAddress[CUSTOMER_NAMESMAXLEN];
+	char m_strCity[CUSTOMER_NAMESMAXLEN];
+    char m_strEmail[CUSTOMER_NAMESMAXLEN];
+    char m_strPhone[CUSTOMER_NAMESMAXLEN];
+};
+
+class TCustomersArchive
+{
+public:
+	TCustomersArchive();
+	~TCustomersArchive();
+
+	void Clear();
+
+    //void Add(TCustomer Customer);
+    void Add(TCustomer *pCustomer);
+    void Delete(int nIndex);
+    void Update(int nIndex, TCustomer const& Customer);
+
+    bool LoadFromFile(AnsiString strFileName);
+    bool SaveToFile(AnsiString strFileName);
+
+	int GetCount();
+
+    //bool GetRecord(int nId, TCustomer& Customer);
+    TCustomer* GetRecord(int nId);
+
+    bool GetRecordId(TCustomer* pCustomer, unsigned& nId);
+
+	TVecPtrCustomers GetCustomers();
+
+	static void __fastcall FilterByFirstName(TVecPtrCustomers& Customers,
+    	AnsiString strFirstName, bool bFullMatch=true);
+	static void __fastcall FilterByLastName(TVecPtrCustomers& Customers,
+    	AnsiString strLastName, bool bFullMatch=true);
+
+	static void __fastcall SortByFirstName(TVecPtrCustomers& PtrCustomers, bool bAsc);
+    static void __fastcall SortByLastName(TVecPtrCustomers& PtrCustomers, bool bAsc);
+	static void __fastcall SortByCity(TVecPtrCustomers& PtrCustomers, bool bAsc);
+	static void __fastcall SortByBudget(TVecPtrCustomers& PtrCustomers, bool bAsc);
+
+protected:
+	struct TFileHeader
+    {
+    	char pMagic[CUSTOMER_MAGICLEN];
+        int nRecords;
+    };
+
+protected:
+	//TVecCustomers m_Customers;
+    TVecPtrCustomers m_PtrCustomers;
+
+};
+
+//---------------------------------------------------------------------------
+#endif
+
+

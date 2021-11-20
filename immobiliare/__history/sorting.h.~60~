@@ -1,0 +1,63 @@
+//---------------------------------------------------------------------------
+
+#ifndef sortingH
+#define sortingH
+
+#include <vector>
+#include <algorithm>
+
+
+
+namespace sort
+{
+
+class T;
+
+/*!****************************************************************************
+* @brief	Reorders a vector of T
+* @param	VecInts A reference to a vector of T
+* @note		Uses the Bubble Sort algorithm
+******************************************************************************/
+template <class T>
+void Sort(T *pT, int nSize)
+{
+	assert(pT);
+
+	for(int i=0; i<nSize; i++)
+	{
+		for(int j = i+1; j<nSize; j++)
+		{
+            if( pT[j] < pT[i] )
+			{
+                std::swap(pT[i], pT[j]);
+			}
+		}
+	}
+}
+
+
+typedef std::vector<int> TVecIntegers;
+
+/*!****************************************************************************
+* @brief	Reorders a vector of integer values
+* @param	VecInts A reference to a vector of integers
+* @note		Uses the Bubble Sort algorithm
+******************************************************************************/
+void Sort(TVecIntegers& VecInts)
+{
+	for(int i=0; i<VecInts.size(); i++)
+	{
+		for(int j = i+1; j<VecInts.size(); j++)
+		{
+			if( VecInts[i] > VecInts[j] )
+			{
+				std::swap(VecInts[i], VecInts[j]);
+			}
+		}
+	}
+}
+
+};
+
+//---------------------------------------------------------------------------
+#endif

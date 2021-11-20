@@ -1,0 +1,23 @@
+//---------------------------------------------------------------------------
+#ifndef errormsgsH
+#define errormsgsH
+
+#define ERR_GENERIC				1100
+#define ERR_DBNOASSETS			1110
+#define ERR_DBEMPTYASSETS		1120
+#define ERR_DBNOCUSTOMERS		1130
+#define ERR_DBRECORDNOTFOUND	1140
+#define ERR_DBNOCITIESFILE		1150
+#define ERR_DBNODATA			1160
+#define ERR_DBSAVEASSETS		1170
+#define ERR_DBSAVECUSTOMERS		1180
+
+#define ERR_OPENASSETS			2100
+#define ERR_OPENCUSTOMERS		2110
+
+
+void ShowErrorMsg(int nErrCode, bool bWarnMsg = false);
+
+//---------------------------------------------------------------------------
+#endif
+

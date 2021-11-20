@@ -1,0 +1,102 @@
+\hypertarget{_t_form_queries_8cpp}{}\doxysection{Z\+:/\+F/dev/jobs/immobiliare.bcb.\+vcl/immobiliare/\+TForm\+Queries.cpp File Reference}
+\label{_t_form_queries_8cpp}\index{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/TFormQueries.cpp@{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/TFormQueries.cpp}}
+
+
+Queries form.  
+
+
+{\ttfamily \#include $<$vcl.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}TForm\+Debug.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}TForm\+Queries.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}TForm\+Query\+Sales.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}TForm\+Query\+Sales\+Hist.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}TForm\+Query\+Supply\+And\+Demand.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}commdefs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}errormsgs.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_t_query_choice}{TQuery\+Choice}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_t_form_queries_8cpp_ab0a627a1493c578c4d00413c158145c1}{MINHEIGHT}}~240
+\item 
+\#define \mbox{\hyperlink{_t_form_queries_8cpp_a890bf4cc740b04d13117670f75dd4bf6}{MINWIDTH}}~400
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_t_form_queries_8cpp_a0736c4eba17af99d8f3225fc23935a9e}{en\+Query\+Choice}} \{ \mbox{\hyperlink{_t_form_queries_8cpp_a0736c4eba17af99d8f3225fc23935a9eaecdf3af25d9abbdc2dc9bd6422c6540f}{qc\+Supply\+And\+Demand}}
+, \mbox{\hyperlink{_t_form_queries_8cpp_a0736c4eba17af99d8f3225fc23935a9ea38471ee33799e921aa5c25616e615130}{qc\+Mean\+Sales\+Price}}
+, \mbox{\hyperlink{_t_form_queries_8cpp_a0736c4eba17af99d8f3225fc23935a9ea364e9b509f8eb730c2c2abbd70652ef3}{qc\+Sales\+Histogram}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_t_query_choice}{TQuery\+Choice}} \mbox{\hyperlink{_t_form_queries_8cpp_a9d8dc76375ef8e89937c9de965858f94}{g\+\_\+\+Query\+Choices}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Queries form. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_t_form_queries_8cpp_ab0a627a1493c578c4d00413c158145c1}\label{_t_form_queries_8cpp_ab0a627a1493c578c4d00413c158145c1}} 
+\index{TFormQueries.cpp@{TFormQueries.cpp}!MINHEIGHT@{MINHEIGHT}}
+\index{MINHEIGHT@{MINHEIGHT}!TFormQueries.cpp@{TFormQueries.cpp}}
+\doxysubsubsection{\texorpdfstring{MINHEIGHT}{MINHEIGHT}}
+{\footnotesize\ttfamily \#define MINHEIGHT~240}
+
+\mbox{\Hypertarget{_t_form_queries_8cpp_a890bf4cc740b04d13117670f75dd4bf6}\label{_t_form_queries_8cpp_a890bf4cc740b04d13117670f75dd4bf6}} 
+\index{TFormQueries.cpp@{TFormQueries.cpp}!MINWIDTH@{MINWIDTH}}
+\index{MINWIDTH@{MINWIDTH}!TFormQueries.cpp@{TFormQueries.cpp}}
+\doxysubsubsection{\texorpdfstring{MINWIDTH}{MINWIDTH}}
+{\footnotesize\ttfamily \#define MINWIDTH~400}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_t_form_queries_8cpp_a0736c4eba17af99d8f3225fc23935a9e}\label{_t_form_queries_8cpp_a0736c4eba17af99d8f3225fc23935a9e}} 
+\index{TFormQueries.cpp@{TFormQueries.cpp}!enQueryChoice@{enQueryChoice}}
+\index{enQueryChoice@{enQueryChoice}!TFormQueries.cpp@{TFormQueries.cpp}}
+\doxysubsubsection{\texorpdfstring{enQueryChoice}{enQueryChoice}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_t_form_queries_8cpp_a0736c4eba17af99d8f3225fc23935a9e}{en\+Query\+Choice}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{qcSupplyAndDemand@{qcSupplyAndDemand}!TFormQueries.cpp@{TFormQueries.cpp}}\index{TFormQueries.cpp@{TFormQueries.cpp}!qcSupplyAndDemand@{qcSupplyAndDemand}}}\mbox{\Hypertarget{_t_form_queries_8cpp_a0736c4eba17af99d8f3225fc23935a9eaecdf3af25d9abbdc2dc9bd6422c6540f}\label{_t_form_queries_8cpp_a0736c4eba17af99d8f3225fc23935a9eaecdf3af25d9abbdc2dc9bd6422c6540f}} 
+qc\+Supply\+And\+Demand&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{qcMeanSalesPrice@{qcMeanSalesPrice}!TFormQueries.cpp@{TFormQueries.cpp}}\index{TFormQueries.cpp@{TFormQueries.cpp}!qcMeanSalesPrice@{qcMeanSalesPrice}}}\mbox{\Hypertarget{_t_form_queries_8cpp_a0736c4eba17af99d8f3225fc23935a9ea38471ee33799e921aa5c25616e615130}\label{_t_form_queries_8cpp_a0736c4eba17af99d8f3225fc23935a9ea38471ee33799e921aa5c25616e615130}} 
+qc\+Mean\+Sales\+Price&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{qcSalesHistogram@{qcSalesHistogram}!TFormQueries.cpp@{TFormQueries.cpp}}\index{TFormQueries.cpp@{TFormQueries.cpp}!qcSalesHistogram@{qcSalesHistogram}}}\mbox{\Hypertarget{_t_form_queries_8cpp_a0736c4eba17af99d8f3225fc23935a9ea364e9b509f8eb730c2c2abbd70652ef3}\label{_t_form_queries_8cpp_a0736c4eba17af99d8f3225fc23935a9ea364e9b509f8eb730c2c2abbd70652ef3}} 
+qc\+Sales\+Histogram&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_t_form_queries_8cpp_a9d8dc76375ef8e89937c9de965858f94}\label{_t_form_queries_8cpp_a9d8dc76375ef8e89937c9de965858f94}} 
+\index{TFormQueries.cpp@{TFormQueries.cpp}!g\_QueryChoices@{g\_QueryChoices}}
+\index{g\_QueryChoices@{g\_QueryChoices}!TFormQueries.cpp@{TFormQueries.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_QueryChoices}{g\_QueryChoices}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_t_query_choice}{TQuery\+Choice}} g\+\_\+\+Query\+Choices\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \{ \textcolor{stringliteral}{"{}  Analisi della domanda e dell'offerta di immobili"{}}, \mbox{\hyperlink{_t_form_queries_8cpp_a0736c4eba17af99d8f3225fc23935a9eaecdf3af25d9abbdc2dc9bd6422c6540f}{qcSupplyAndDemand}} \},}
+\DoxyCodeLine{    \{ \textcolor{stringliteral}{"{}  Analisi del valore medio delle compravendite"{}}, \mbox{\hyperlink{_t_form_queries_8cpp_a0736c4eba17af99d8f3225fc23935a9ea38471ee33799e921aa5c25616e615130}{qcMeanSalesPrice}} \},}
+\DoxyCodeLine{    \{ \textcolor{stringliteral}{"{}  Istogramma del numero di compravendite annuali"{}}, \mbox{\hyperlink{_t_form_queries_8cpp_a0736c4eba17af99d8f3225fc23935a9ea364e9b509f8eb730c2c2abbd70652ef3}{qcSalesHistogram}} \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

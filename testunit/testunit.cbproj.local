@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/12 09:23:25.000.763,=C:\Users\settembrini\Documents\RAD Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>2021/11/12 09:23:52.000.978,F:\dev\jobs\immobiliare.bcb.vcl\testunit\TFormMain.dfm=C:\Users\settembrini\Documents\RAD Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2021/11/12 09:23:52.000.978,F:\dev\jobs\immobiliare.bcb.vcl\testunit\TFormMain.h=C:\Users\settembrini\Documents\RAD Studio\Projects\Unit2.h</Transaction>
+    <Transaction>2021/11/12 09:23:52.000.978,F:\dev\jobs\immobiliare.bcb.vcl\testunit\TFormMain.cpp=C:\Users\settembrini\Documents\RAD Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>2021/11/12 09:23:58.000.013,F:\dev\jobs\immobiliare.bcb.vcl\testunit\TestUnit.cbproj=C:\Users\settembrini\Documents\RAD Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2021/11/12 09:24:21.000.616,F:\dev\jobs\immobiliare.bcb.vcl\testunit\TestUnit.cbproj=F:\dev\jobs\immobiliare.bcb.vcl\testunit\TestUnit.cbproj</Transaction>
+    <Transaction>2021/11/12 09:24:36.000.012,F:\dev\jobs\immobiliare.bcb.vcl\testunit\abc.cbproj=F:\dev\jobs\immobiliare.bcb.vcl\testunit\TestUnit.cbproj</Transaction>
+    <Transaction>2021/11/12 09:24:40.000.371,F:\dev\jobs\immobiliare.bcb.vcl\testunit\testunit.cbproj=F:\dev\jobs\immobiliare.bcb.vcl\testunit\abc.cbproj</Transaction>
+    <Transaction>2021/11/12 11:11:58.000.302,=F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\databanker.cpp</Transaction>
+    <Transaction>2021/11/12 11:11:58.000.308,=F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\statistics.cpp</Transaction>
+    <Transaction>2021/11/12 11:11:58.000.297,=F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\cities.cpp</Transaction>
+    <Transaction>2021/11/12 11:11:58.000.295,=F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\assets.cpp</Transaction>
+    <Transaction>2021/11/12 11:11:58.000.300,=F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\customers.cpp</Transaction>
+    <Transaction>2021/11/12 11:11:58.000.305,=F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\maths.cpp</Transaction>
+    <Transaction>2021/11/12 11:11:58.000.309,=F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\utils.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

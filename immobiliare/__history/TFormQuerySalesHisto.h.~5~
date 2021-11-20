@@ -1,0 +1,33 @@
+//---------------------------------------------------------------------------
+#ifndef TFormQuerySalesHistoH
+#define TFormQuerySalesHistoH
+
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ExtCtrls.hpp>
+
+#include "databanker.h"
+
+//---------------------------------------------------------------------------
+class TFormQuerySalesHisto : public TForm
+{
+__published:	// IDE-managed Components
+	TPanel *PanelBottom;
+	TPanel *Panel1;
+	TButton *ButtonClose;
+	void __fastcall ButtonCloseClick(TObject *Sender);
+
+private:	// User declarations
+
+public:		// User declarations
+	__fastcall TFormQuerySalesHisto(TComponent* Owner);
+
+};
+
+//---------------------------------------------------------------------------
+extern PACKAGE TFormQuerySalesHisto *FormQuerySalesHisto;
+//---------------------------------------------------------------------------
+#endif

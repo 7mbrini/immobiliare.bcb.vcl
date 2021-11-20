@@ -1,0 +1,49 @@
+\hypertarget{databanker_8h_source}{}\doxysection{databanker.\+h}
+\label{databanker_8h_source}\index{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/databanker.h@{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/databanker.h}}
+\mbox{\hyperlink{databanker_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#ifndef databankerH}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define databankerH}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vcl.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#pragma hdrstop}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cities_8h}{cities.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{assets_8h}{assets.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{customers_8h}{customers.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_data_banker}{TDataBanker}}}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_t_data_banker_a87b52b413375b5a681b049a423e22a2b}{TDataBanker}}();}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_t_data_banker_aa37f39eb0ecfc79a837a33354f396c20}{\string~TDataBanker}}();}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_data_banker_addafea9e2e464582bf9861a3631b9d71}{CitiesCreateArchive}}();}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_data_banker_a125503fcb257e411088914fcd2bd396b}{AssetsCreateArchive}}();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_data_banker_acdf1ea708bbb33eaabcb7efa6fc7d48c}{CustomersCreateArchive}}();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \mbox{\hyperlink{class_t_assets_archive}{TAssetsArchive}}* \textcolor{keyword}{const} \_\_fastcall \mbox{\hyperlink{class_t_data_banker_a8e544b8dd8ab44bcef74110ef30aed53}{GetAssets}}();}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_t_customers_archive}{TCustomersArchive}}* \textcolor{keyword}{const} \_\_fastcall \mbox{\hyperlink{class_t_data_banker_a2c93fb94d2201fe07434aa3315bace51}{GetCustomers}}();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \mbox{\hyperlink{class_t_cities_archive}{TCitiesArchive}}* \textcolor{keyword}{const} \_\_fastcall \mbox{\hyperlink{class_t_data_banker_a084e03096e114d360815c605711b828a}{GetCities}}();}
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_data_banker_a084e03096e114d360815c605711b828a}{GetCities}}(\mbox{\hyperlink{cities_8h_a4075b5f77f5b5ea671ccbfe28e3390d7}{TVecCities}}\& Cities);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{bool} \_\_fastcall \mbox{\hyperlink{class_t_data_banker_a397a95c089aa8188796f75376aaecdb1}{CitiesLoadFromFile}}(AnsiString strFileName);}
+\DoxyCodeLine{30     \textcolor{keywordtype}{bool} \_\_fastcall \mbox{\hyperlink{class_t_data_banker_ab9b1f07b26d36abaabf8ac6192cd96b5}{AssetsLoadFromFile}}(AnsiString strFileName);}
+\DoxyCodeLine{31     \textcolor{keywordtype}{bool} \_\_fastcall \mbox{\hyperlink{class_t_data_banker_a2ab762bff2179b814ae93fb2df9f4ae4}{CustomersLoadFromFile}}(AnsiString strFileName);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{bool} \_\_fastcall \mbox{\hyperlink{class_t_data_banker_a6892ad387bd97fec613bfb6f8075b71c}{AssetsSaveToFile}}(AnsiString strFileName);}
+\DoxyCodeLine{34     \textcolor{keywordtype}{bool} \_\_fastcall \mbox{\hyperlink{class_t_data_banker_af4e232fdc13a01c14c1b8689f3db0316}{CustomersSaveToFile}}(AnsiString strFileName);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{37     \mbox{\hyperlink{class_t_cities_archive}{TCitiesArchive}}* \mbox{\hyperlink{class_t_data_banker_a70596be5220a408f2fd79fface1929f6}{m\_pCities}};}
+\DoxyCodeLine{38     \mbox{\hyperlink{class_t_assets_archive}{TAssetsArchive}}* \mbox{\hyperlink{class_t_data_banker_ac43a524bce3a4a88cdefdf799b3afa25}{m\_pAssets}};}
+\DoxyCodeLine{39     \mbox{\hyperlink{class_t_customers_archive}{TCustomersArchive}}* \mbox{\hyperlink{class_t_data_banker_aa3630a2e3882a7a751a4d5e9fe74aab9}{m\_pCustomers}};}
+\DoxyCodeLine{40 \};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

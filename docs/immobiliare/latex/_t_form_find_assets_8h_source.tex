@@ -1,0 +1,94 @@
+\hypertarget{_t_form_find_assets_8h_source}{}\doxysection{TForm\+Find\+Assets.\+h}
+\label{_t_form_find_assets_8h_source}\index{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/TFormFindAssets.h@{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/TFormFindAssets.h}}
+\mbox{\hyperlink{_t_form_find_assets_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#ifndef TFormFindAssetsH}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define TFormFindAssetsH}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <System.Classes.hpp>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <Vcl.Controls.hpp>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <Vcl.StdCtrls.hpp>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <Vcl.Forms.hpp>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <Vcl.Buttons.hpp>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <Vcl.Mask.hpp>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <Vcl.ExtCtrls.hpp>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <Vcl.Grids.hpp>}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{databanker_8h}{databanker.h}}"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_form_find_assets}{TFormFindAssets}} : \textcolor{keyword}{public} TForm}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21 \_\_published:    \textcolor{comment}{// IDE-\/managed Components}}
+\DoxyCodeLine{22     TSpeedButton *\mbox{\hyperlink{class_t_form_find_assets_ad1f18dbb329698b0ea8144d9a39f026b}{SpeedButtonFind}};}
+\DoxyCodeLine{23     TEdit *\mbox{\hyperlink{class_t_form_find_assets_a3f10238109bca12cf5aded6017ad28e6}{EditArea}};}
+\DoxyCodeLine{24     TLabel *\mbox{\hyperlink{class_t_form_find_assets_a47b377740de8d0fd5ffee10a307e4a5e}{LabelArea}};}
+\DoxyCodeLine{25     TEdit *\mbox{\hyperlink{class_t_form_find_assets_a72f680537adc63318e52133694bfb5e9}{EditBaths}};}
+\DoxyCodeLine{26     TLabel *\mbox{\hyperlink{class_t_form_find_assets_aea11f910b4571148d2e4b94cb2a84908}{LabelBaths}};}
+\DoxyCodeLine{27     TEdit *\mbox{\hyperlink{class_t_form_find_assets_a2eb8c554f9bed93e2caae0fd1b7b106c}{EditRooms}};}
+\DoxyCodeLine{28     TLabel *\mbox{\hyperlink{class_t_form_find_assets_a45dd4b73e533353e65887cc3836e7608}{LabelRooms}};}
+\DoxyCodeLine{29     TComboBox *\mbox{\hyperlink{class_t_form_find_assets_a90eda783c42cf8be4c2deaffea4bf6b4}{ComboBoxStatus}};}
+\DoxyCodeLine{30     TLabel *\mbox{\hyperlink{class_t_form_find_assets_adff6db88f2ed0cf45804006ed563edb1}{Label1}};}
+\DoxyCodeLine{31     TMaskEdit *\mbox{\hyperlink{class_t_form_find_assets_a3a0bdea4c646cdb93159b1e05cf9c9ea}{MaskEditBuildDate}};}
+\DoxyCodeLine{32     TLabel *\mbox{\hyperlink{class_t_form_find_assets_af945ada926f978745a2366082530eb2f}{LabelBuildDate}};}
+\DoxyCodeLine{33     TComboBox *\mbox{\hyperlink{class_t_form_find_assets_a9d95d802a8f4430c24c429182e64ba54}{ComboBoxEpgl}};}
+\DoxyCodeLine{34     TLabel *\mbox{\hyperlink{class_t_form_find_assets_ac15621d791bfc1141bda574860e9cf9a}{LabelEpgl}};}
+\DoxyCodeLine{35     TComboBox *\mbox{\hyperlink{class_t_form_find_assets_a719bbbe88b84c43aa58cb7a14b2032c5}{ComboBoxCity}};}
+\DoxyCodeLine{36     TLabel *\mbox{\hyperlink{class_t_form_find_assets_afb26bfa52d0c7b1be2a9a19ed48ea14b}{Label7}};}
+\DoxyCodeLine{37     TEdit *\mbox{\hyperlink{class_t_form_find_assets_a31b6834a966b445de3b7999651236077}{EditValue}};}
+\DoxyCodeLine{38     TLabel *\mbox{\hyperlink{class_t_form_find_assets_a344bfdd2f19063c264073aa8d6e16a33}{Label6}};}
+\DoxyCodeLine{39     TComboBox *\mbox{\hyperlink{class_t_form_find_assets_a2db849ec9d5b52d2a08ae6f624d93ff1}{ComboBoxTypology}};}
+\DoxyCodeLine{40     TLabel *\mbox{\hyperlink{class_t_form_find_assets_ae6f78e80d888ad31c96f544c747c7015}{Label2}};}
+\DoxyCodeLine{41     TSpeedButton *\mbox{\hyperlink{class_t_form_find_assets_a9574b87bb331024b171ee9236a2d8a80}{SpeedButtonClear}};}
+\DoxyCodeLine{42     TButton *\mbox{\hyperlink{class_t_form_find_assets_a04f84147a686306e1b3b5adabfef8443}{ButtonClose}};}
+\DoxyCodeLine{43     TPanel *\mbox{\hyperlink{class_t_form_find_assets_ae1dfc22996c3be03e6a5ca11a9750c12}{PanelBottom}};}
+\DoxyCodeLine{44     TComboBox *\mbox{\hyperlink{class_t_form_find_assets_a70e606240f929815982f398d23cf3dd3}{ComboBoxBuildDateIneq}};}
+\DoxyCodeLine{45     TPanel *\mbox{\hyperlink{class_t_form_find_assets_a645df861b5cee7c9e7e5707a31e8ec15}{PanelLeft}};}
+\DoxyCodeLine{46     TPanel *\mbox{\hyperlink{class_t_form_find_assets_a8cbbb89d7c156248c1028a3a8c3d3e32}{PanelRight}};}
+\DoxyCodeLine{47     TStringGrid *\mbox{\hyperlink{class_t_form_find_assets_aa5cbde6e11c8bc3b5d2e4d9ba536c874}{Grid}};}
+\DoxyCodeLine{48     TLabel *\mbox{\hyperlink{class_t_form_find_assets_a4f6d7af8a23eb8ad1fcc1715cd6aadcd}{LabelInfo}};}
+\DoxyCodeLine{49     TComboBox *\mbox{\hyperlink{class_t_form_find_assets_a5a964cfe736bc9620fa334ed26af5240}{ComboBoxSorting}};}
+\DoxyCodeLine{50     TLabel *\mbox{\hyperlink{class_t_form_find_assets_a80d43308877d71907e499141ca18acac}{Label3}};}
+\DoxyCodeLine{51     TPanel *\mbox{\hyperlink{class_t_form_find_assets_a897f3a88156589e6035f00548bb290d4}{PanelInfo}};}
+\DoxyCodeLine{52     TComboBox *\mbox{\hyperlink{class_t_form_find_assets_a02daa6c7b4f92495eb47a79995330507}{ComboBoxEpglIneq}};}
+\DoxyCodeLine{53     TComboBox *\mbox{\hyperlink{class_t_form_find_assets_a247c67451b43508ecbc8704fb5587824}{ComboBoxValueIneq}};}
+\DoxyCodeLine{54     TEdit *\mbox{\hyperlink{class_t_form_find_assets_a41d39c941d43a1e6f92d7332e59b09e1}{EditAddress}};}
+\DoxyCodeLine{55     TLabel *\mbox{\hyperlink{class_t_form_find_assets_a656616520150713e9270dfe8c93819a4}{Label5}};}
+\DoxyCodeLine{56     TCheckBox *\mbox{\hyperlink{class_t_form_find_assets_a703433d7186373db90936ef975241630}{CheckBoxCityNameFullMatch}};}
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_find_assets_ac9151f00be08f9e887dc21c6e5051571}{FormCreate}}(TObject *Sender);}
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_find_assets_a7470645fa06bf7a7bf5a8f1e1dc7216e}{ButtonCloseClick}}(TObject *Sender);}
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_find_assets_a94fd45cc44d35494629bc8032e9ba964}{SpeedButtonFindClick}}(TObject *Sender);}
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_find_assets_a9bf4c3f6e7fb86f400205349a391f945}{FormCanResize}}(TObject *Sender, \textcolor{keywordtype}{int} \&NewWidth, \textcolor{keywordtype}{int} \&NewHeight, \textcolor{keywordtype}{bool} \&Resize);}
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_find_assets_aeac0e7e665d68c966c21a7b65bab1c3d}{SpeedButtonClearClick}}(TObject *Sender);}
+\DoxyCodeLine{62     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_find_assets_a25c5eba36699265b1645286549aa5050}{GridDblClick}}(TObject *Sender);}
+\DoxyCodeLine{63     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_find_assets_a480d8ae67651306c92ee6970401f93a1}{FormShow}}(TObject *Sender);}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66 \textcolor{keyword}{private}:    \textcolor{comment}{// User declarations}}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \textcolor{keyword}{public}:     \textcolor{comment}{// User declarations}}
+\DoxyCodeLine{69     \_\_fastcall \mbox{\hyperlink{class_t_form_find_assets_acd5ab25e5792ec9f2249cdee25e8986e}{TFormFindAssets}}(TComponent* Owner, \mbox{\hyperlink{class_t_data_banker}{TDataBanker}}* \textcolor{keyword}{const} pDB);}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{72     \mbox{\hyperlink{class_t_data_banker}{TDataBanker}} *\mbox{\hyperlink{class_t_form_find_assets_a78447e3e9e08d5d965e6272a9629b4d9}{m\_pDB}};}
+\DoxyCodeLine{73     \mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}} \mbox{\hyperlink{class_t_form_find_assets_a8fcc12a559f6788144493c96db3cb874}{m\_QueryAssets}};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_find_assets_a471f999177388ac4bd3be4f68198f2ab}{Setup}}();}
+\DoxyCodeLine{76     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_find_assets_a4fc9e59ccf26401f45072aa5761f63bd}{DoQuery}}();}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_find_assets_afb54437fff17ac40c599689259bf0152}{Clear}}();}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_find_assets_ad0e3dfb8d8446926ccaa29d124ec1e8b}{ClearTheGrid}}();}
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_find_assets_aaea23fad7b62bfeb7d230f2b94f04327}{SetupTheGrid}}();}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_find_assets_a7f1e7d98c6130990d03bc746a0aceae4}{PrintResults}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets);}
+\DoxyCodeLine{84     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_find_assets_a0fc3baf9e469abcdeef567cba09a35b2}{EditRecord}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets, \textcolor{keywordtype}{int} nGridRow);}
+\DoxyCodeLine{85 \};}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{88 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

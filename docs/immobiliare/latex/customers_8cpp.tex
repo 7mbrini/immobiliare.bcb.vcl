@@ -1,0 +1,103 @@
+\hypertarget{customers_8cpp}{}\doxysection{Z\+:/\+F/dev/jobs/immobiliare.bcb.\+vcl/immobiliare/customers.cpp File Reference}
+\label{customers_8cpp}\index{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/customers.cpp@{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/customers.cpp}}
+
+
+Customers modelling.  
+
+
+{\ttfamily \#include $<$vcl.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}customers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sorting.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{customers_8cpp_a1e94d798d06431d85c29ae31b0d96f99}{Sort\+By\+First\+Name}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Ptr\+Customers, bool b\+Asc)
+\item 
+void \mbox{\hyperlink{customers_8cpp_ab5984ff3c973f6351b3ce8e442cae685}{Sort\+By\+Last\+Name}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Ptr\+Customers, bool b\+Asc)
+\item 
+void \mbox{\hyperlink{customers_8cpp_a2e8695fb01cd2838fe9679845ea3758f}{Sort\+By\+City}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Ptr\+Customers, bool b\+Asc)
+\item 
+void \mbox{\hyperlink{customers_8cpp_a6490b46fb601f4b67ca9576158ad3dd9}{Sort\+By\+Budget}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Ptr\+Customers, bool b\+Asc)
+\item 
+void \mbox{\hyperlink{customers_8cpp_ac74b0e0535b5b8c02256a0eda602a392}{Filter\+By\+First\+Name}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Customers, Ansi\+String str\+First\+Name, bool b\+Full\+Match)
+\item 
+void \mbox{\hyperlink{customers_8cpp_aefb5e9c5070f285b12eb314effe99c2d}{Filter\+By\+Last\+Name}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Customers, Ansi\+String str\+Last\+Name, bool b\+Full\+Match)
+\item 
+void \mbox{\hyperlink{customers_8cpp_a74fca55c2f1ad2d2e059575dfd23d98f}{Filter\+By\+City}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Customers, Ansi\+String str\+City, bool b\+Full\+Match)
+\item 
+void \mbox{\hyperlink{customers_8cpp_af0d12e65e7432dc3a1c3fd8503f935d1}{Filter\+By\+Ownership}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Customers, \mbox{\hyperlink{customers_8h_ab1fe9b95e1a0cde5bc234cb24d0d3e1e}{en\+Customer\+Ownership\+Type}} n\+Ownership)
+\item 
+void \mbox{\hyperlink{customers_8cpp_a46bd6848f13367bff13a768e831cc0b0}{Filter\+By\+Budget}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Customers, unsigned n\+Budget, Ansi\+String str\+Ineq)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Customers modelling. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{customers_8cpp_a46bd6848f13367bff13a768e831cc0b0}\label{customers_8cpp_a46bd6848f13367bff13a768e831cc0b0}} 
+\index{customers.cpp@{customers.cpp}!FilterByBudget@{FilterByBudget}}
+\index{FilterByBudget@{FilterByBudget}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByBudget()}{FilterByBudget()}}
+{\footnotesize\ttfamily void Filter\+By\+Budget (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Customers,  }\item[{unsigned}]{n\+Budget,  }\item[{Ansi\+String}]{str\+Ineq }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{customers_8cpp_a74fca55c2f1ad2d2e059575dfd23d98f}\label{customers_8cpp_a74fca55c2f1ad2d2e059575dfd23d98f}} 
+\index{customers.cpp@{customers.cpp}!FilterByCity@{FilterByCity}}
+\index{FilterByCity@{FilterByCity}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByCity()}{FilterByCity()}}
+{\footnotesize\ttfamily void Filter\+By\+City (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Customers,  }\item[{Ansi\+String}]{str\+City,  }\item[{bool}]{b\+Full\+Match }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{customers_8cpp_ac74b0e0535b5b8c02256a0eda602a392}\label{customers_8cpp_ac74b0e0535b5b8c02256a0eda602a392}} 
+\index{customers.cpp@{customers.cpp}!FilterByFirstName@{FilterByFirstName}}
+\index{FilterByFirstName@{FilterByFirstName}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByFirstName()}{FilterByFirstName()}}
+{\footnotesize\ttfamily void Filter\+By\+First\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Customers,  }\item[{Ansi\+String}]{str\+First\+Name,  }\item[{bool}]{b\+Full\+Match }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{customers_8cpp_aefb5e9c5070f285b12eb314effe99c2d}\label{customers_8cpp_aefb5e9c5070f285b12eb314effe99c2d}} 
+\index{customers.cpp@{customers.cpp}!FilterByLastName@{FilterByLastName}}
+\index{FilterByLastName@{FilterByLastName}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByLastName()}{FilterByLastName()}}
+{\footnotesize\ttfamily void Filter\+By\+Last\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Customers,  }\item[{Ansi\+String}]{str\+Last\+Name,  }\item[{bool}]{b\+Full\+Match }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{customers_8cpp_af0d12e65e7432dc3a1c3fd8503f935d1}\label{customers_8cpp_af0d12e65e7432dc3a1c3fd8503f935d1}} 
+\index{customers.cpp@{customers.cpp}!FilterByOwnership@{FilterByOwnership}}
+\index{FilterByOwnership@{FilterByOwnership}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByOwnership()}{FilterByOwnership()}}
+{\footnotesize\ttfamily void Filter\+By\+Ownership (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Customers,  }\item[{\mbox{\hyperlink{customers_8h_ab1fe9b95e1a0cde5bc234cb24d0d3e1e}{en\+Customer\+Ownership\+Type}}}]{n\+Ownership }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{customers_8cpp_a6490b46fb601f4b67ca9576158ad3dd9}\label{customers_8cpp_a6490b46fb601f4b67ca9576158ad3dd9}} 
+\index{customers.cpp@{customers.cpp}!SortByBudget@{SortByBudget}}
+\index{SortByBudget@{SortByBudget}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{SortByBudget()}{SortByBudget()}}
+{\footnotesize\ttfamily void Sort\+By\+Budget (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Ptr\+Customers,  }\item[{bool}]{b\+Asc }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{customers_8cpp_a2e8695fb01cd2838fe9679845ea3758f}\label{customers_8cpp_a2e8695fb01cd2838fe9679845ea3758f}} 
+\index{customers.cpp@{customers.cpp}!SortByCity@{SortByCity}}
+\index{SortByCity@{SortByCity}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{SortByCity()}{SortByCity()}}
+{\footnotesize\ttfamily void Sort\+By\+City (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Ptr\+Customers,  }\item[{bool}]{b\+Asc }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{customers_8cpp_a1e94d798d06431d85c29ae31b0d96f99}\label{customers_8cpp_a1e94d798d06431d85c29ae31b0d96f99}} 
+\index{customers.cpp@{customers.cpp}!SortByFirstName@{SortByFirstName}}
+\index{SortByFirstName@{SortByFirstName}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{SortByFirstName()}{SortByFirstName()}}
+{\footnotesize\ttfamily void Sort\+By\+First\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Ptr\+Customers,  }\item[{bool}]{b\+Asc }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{customers_8cpp_ab5984ff3c973f6351b3ce8e442cae685}\label{customers_8cpp_ab5984ff3c973f6351b3ce8e442cae685}} 
+\index{customers.cpp@{customers.cpp}!SortByLastName@{SortByLastName}}
+\index{SortByLastName@{SortByLastName}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{SortByLastName()}{SortByLastName()}}
+{\footnotesize\ttfamily void Sort\+By\+Last\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Ptr\+Customers,  }\item[{bool}]{b\+Asc }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ 

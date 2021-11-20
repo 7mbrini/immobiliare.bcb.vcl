@@ -1,0 +1,94 @@
+//---------------------------------------------------------------------------
+//	ICV - Intelligent Cloud Viewer (C) 2015/2016 Francesco Settembrini
+//	francesco.settembrini@poliba.it - http://www.francescosettembrini.it
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "TFormDebug.h"
+
+
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFormDebug *FormDebug;
+
+
+TStringList* g_pDebugList;
+
+//---------------------------------------------------------------------------
+//	SCOPO:	Costruttore
+//---------------------------------------------------------------------------
+__fastcall TFormDebug::TFormDebug(TComponent* Owner) : TForm(Owner)
+{
+	g_pDebugList = new TStringList;
+	assert(g_pDebugList);
+}
+
+//---------------------------------------------------------------------------
+//	SCOPO:
+//---------------------------------------------------------------------------
+void __fastcall TFormDebug::FormCreate(TObject *Sender)
+{
+	RichEdit->ReadOnly = true;
+}
+
+//---------------------------------------------------------------------------
+//  SCOPO:  Clear the debug form
+//---------------------------------------------------------------------------
+void __fastcall TFormDebug::Clear()
+{
+	RichEdit->Lines->Clear();
+}
+
+//---------------------------------------------------------------------------
+//  SCOPO:  Mostra un messaggio nella listbox
+//---------------------------------------------------------------------------
+void __fastcall TFormDebug::Print(AnsiString Msg)
+{
+	RichEdit->Lines->Add(Msg);
+}
+
+//---------------------------------------------------------------------------
+//  SCOPO:
+//---------------------------------------------------------------------------
+void __fastcall TFormDebug::Print(TStringList* pList, int nLimits)
+{
+	nCount = pList->Count;
+
+	if( (nLimits>0) && (nLimits < pList->Count) ) nCount = nLimits;
+
+    //for(int i=0; i<pList->Count; i++)
+    for(int i=0; i<nCount; i++)
+        RichEdit->Lines->Add(pList->Strings[i]);
+}
+
+//---------------------------------------------------------------------------
+//  SCOPO:
+//---------------------------------------------------------------------------
+void __fastcall TFormDebug::ActionsClearClick(TObject *Sender)
+{
+	Clear();
+
+}
+
+//---------------------------------------------------------------------------
+//  SCOPO:
+//---------------------------------------------------------------------------
+void __fastcall TFormDebug::FileSaveAsClick(TObject *Sender)
+{
+	if( SaveDialog->Execute() == mrOk )
+	{
+		RichEdit->Lines->SaveToFile( SaveDialog->FileName );
+	}
+}
+
+void __fastcall TFormDebug::Print(std::string strMsg)
+{
+	Print(AnsiString(strMsg.c_str()));
+}
+
+
+//---------------------------------------------------------------------------
+

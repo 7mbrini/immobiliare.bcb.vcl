@@ -1,0 +1,163 @@
+\hypertarget{classstats_1_1_t_histogram}{}\doxysection{stats\+::THistogram Class Reference}
+\label{classstats_1_1_t_histogram}\index{stats::THistogram@{stats::THistogram}}
+
+
+{\ttfamily \#include $<$statistics.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structstats_1_1_t_histogram_1_1_t_hist_pair}{THist\+Pair}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef vector$<$ \mbox{\hyperlink{structstats_1_1_t_histogram_1_1_t_hist_pair}{THist\+Pair}} $>$ \mbox{\hyperlink{classstats_1_1_t_histogram_abcf8e2c7b18d8b44f05289d92ed40013}{TVec\+Hist\+Pairs}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstats_1_1_t_histogram_a405602c307da8e12e64f537dfbbeda65}{THistogram}} (double \mbox{\hyperlink{namespacestats_a3c94ccf4c8534dd6494a958bb8ffb276}{Min}}, double \mbox{\hyperlink{namespacestats_ae209786dd64fec6af7e4a7fcc5a87504}{Max}}, int n\+Classes)
+\item 
+\mbox{\hyperlink{classstats_1_1_t_histogram_ad2f2fe9f74252cea96b78fda1e8f23ba}{THistogram}} (\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}} Vals, int n\+Classes)
+\item 
+double \mbox{\hyperlink{classstats_1_1_t_histogram_a5d0a03c81decec3b6cf9a1238481a94f}{Get\+Min}} ()
+\item 
+double \mbox{\hyperlink{classstats_1_1_t_histogram_a3f771023bbbb3f4423dd71c1e05fa503}{Get\+Max}} ()
+\item 
+int \mbox{\hyperlink{classstats_1_1_t_histogram_a52306652d4b3c9911e51833247a9a9d0}{Get\+Classes}} ()
+\item 
+void \mbox{\hyperlink{classstats_1_1_t_histogram_af3dc9fdec0df7553c80e533cc0c8f074}{Add}} (double Value)
+\item 
+\mbox{\hyperlink{classstats_1_1_t_histogram_abcf8e2c7b18d8b44f05289d92ed40013}{TVec\+Hist\+Pairs}} \mbox{\hyperlink{classstats_1_1_t_histogram_af7868541ff1e0c46ee80c52d96d5d58f}{Get\+Values}} ()
+\item 
+\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}} \mbox{\hyperlink{classstats_1_1_t_histogram_a2dc3aa09995d34ab61d2a6d769cdabbe}{Get\+Normalized\+Freqs}} ()
+\item 
+Ansi\+String \mbox{\hyperlink{classstats_1_1_t_histogram_af804dcae19a6dcaba84faf141db5165c}{Print}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classstats_1_1_t_histogram_a8057e31233779cca2dc7a7c30f7a7660}{Setup}} (double \mbox{\hyperlink{namespacestats_a3c94ccf4c8534dd6494a958bb8ffb276}{Min}}, double \mbox{\hyperlink{namespacestats_ae209786dd64fec6af7e4a7fcc5a87504}{Max}}, int n\+Classes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classstats_1_1_t_histogram_abc3057ff23fa42c2630b74dd0fc37ed7}{m\+\_\+\+Min}}
+\item 
+double \mbox{\hyperlink{classstats_1_1_t_histogram_aa60ea3a68727e744edb9e9b7356e02e6}{m\+\_\+\+Max}}
+\item 
+\mbox{\hyperlink{classstats_1_1_t_histogram_abcf8e2c7b18d8b44f05289d92ed40013}{TVec\+Hist\+Pairs}} \mbox{\hyperlink{classstats_1_1_t_histogram_a13e6071ad736b297ba096f9674bcad0c}{m\+\_\+\+Values}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classstats_1_1_t_histogram_abcf8e2c7b18d8b44f05289d92ed40013}\label{classstats_1_1_t_histogram_abcf8e2c7b18d8b44f05289d92ed40013}} 
+\index{stats::THistogram@{stats::THistogram}!TVecHistPairs@{TVecHistPairs}}
+\index{TVecHistPairs@{TVecHistPairs}!stats::THistogram@{stats::THistogram}}
+\doxysubsubsection{\texorpdfstring{TVecHistPairs}{TVecHistPairs}}
+{\footnotesize\ttfamily typedef vector$<$\mbox{\hyperlink{structstats_1_1_t_histogram_1_1_t_hist_pair}{THist\+Pair}}$>$ \mbox{\hyperlink{classstats_1_1_t_histogram_abcf8e2c7b18d8b44f05289d92ed40013}{stats\+::\+THistogram\+::\+TVec\+Hist\+Pairs}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstats_1_1_t_histogram_a405602c307da8e12e64f537dfbbeda65}\label{classstats_1_1_t_histogram_a405602c307da8e12e64f537dfbbeda65}} 
+\index{stats::THistogram@{stats::THistogram}!THistogram@{THistogram}}
+\index{THistogram@{THistogram}!stats::THistogram@{stats::THistogram}}
+\doxysubsubsection{\texorpdfstring{THistogram()}{THistogram()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily stats\+::\+THistogram\+::\+THistogram (\begin{DoxyParamCaption}\item[{double}]{Min,  }\item[{double}]{Max,  }\item[{int}]{n\+Classes }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{classstats_1_1_t_histogram_ad2f2fe9f74252cea96b78fda1e8f23ba}\label{classstats_1_1_t_histogram_ad2f2fe9f74252cea96b78fda1e8f23ba}} 
+\index{stats::THistogram@{stats::THistogram}!THistogram@{THistogram}}
+\index{THistogram@{THistogram}!stats::THistogram@{stats::THistogram}}
+\doxysubsubsection{\texorpdfstring{THistogram()}{THistogram()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily stats\+::\+THistogram\+::\+THistogram (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}}}]{Vals,  }\item[{int}]{n\+Classes }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classstats_1_1_t_histogram_af3dc9fdec0df7553c80e533cc0c8f074}\label{classstats_1_1_t_histogram_af3dc9fdec0df7553c80e533cc0c8f074}} 
+\index{stats::THistogram@{stats::THistogram}!Add@{Add}}
+\index{Add@{Add}!stats::THistogram@{stats::THistogram}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void stats\+::\+THistogram\+::\+Add (\begin{DoxyParamCaption}\item[{double}]{Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{classstats_1_1_t_histogram_a52306652d4b3c9911e51833247a9a9d0}\label{classstats_1_1_t_histogram_a52306652d4b3c9911e51833247a9a9d0}} 
+\index{stats::THistogram@{stats::THistogram}!GetClasses@{GetClasses}}
+\index{GetClasses@{GetClasses}!stats::THistogram@{stats::THistogram}}
+\doxysubsubsection{\texorpdfstring{GetClasses()}{GetClasses()}}
+{\footnotesize\ttfamily int stats\+::\+THistogram\+::\+Get\+Classes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{classstats_1_1_t_histogram_a3f771023bbbb3f4423dd71c1e05fa503}\label{classstats_1_1_t_histogram_a3f771023bbbb3f4423dd71c1e05fa503}} 
+\index{stats::THistogram@{stats::THistogram}!GetMax@{GetMax}}
+\index{GetMax@{GetMax}!stats::THistogram@{stats::THistogram}}
+\doxysubsubsection{\texorpdfstring{GetMax()}{GetMax()}}
+{\footnotesize\ttfamily double stats\+::\+THistogram\+::\+Get\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{classstats_1_1_t_histogram_a5d0a03c81decec3b6cf9a1238481a94f}\label{classstats_1_1_t_histogram_a5d0a03c81decec3b6cf9a1238481a94f}} 
+\index{stats::THistogram@{stats::THistogram}!GetMin@{GetMin}}
+\index{GetMin@{GetMin}!stats::THistogram@{stats::THistogram}}
+\doxysubsubsection{\texorpdfstring{GetMin()}{GetMin()}}
+{\footnotesize\ttfamily double stats\+::\+THistogram\+::\+Get\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{classstats_1_1_t_histogram_a2dc3aa09995d34ab61d2a6d769cdabbe}\label{classstats_1_1_t_histogram_a2dc3aa09995d34ab61d2a6d769cdabbe}} 
+\index{stats::THistogram@{stats::THistogram}!GetNormalizedFreqs@{GetNormalizedFreqs}}
+\index{GetNormalizedFreqs@{GetNormalizedFreqs}!stats::THistogram@{stats::THistogram}}
+\doxysubsubsection{\texorpdfstring{GetNormalizedFreqs()}{GetNormalizedFreqs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}} stats\+::\+THistogram\+::\+Get\+Normalized\+Freqs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{classstats_1_1_t_histogram_af7868541ff1e0c46ee80c52d96d5d58f}\label{classstats_1_1_t_histogram_af7868541ff1e0c46ee80c52d96d5d58f}} 
+\index{stats::THistogram@{stats::THistogram}!GetValues@{GetValues}}
+\index{GetValues@{GetValues}!stats::THistogram@{stats::THistogram}}
+\doxysubsubsection{\texorpdfstring{GetValues()}{GetValues()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classstats_1_1_t_histogram_abcf8e2c7b18d8b44f05289d92ed40013}{THistogram\+::\+TVec\+Hist\+Pairs}} stats\+::\+THistogram\+::\+Get\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{classstats_1_1_t_histogram_af804dcae19a6dcaba84faf141db5165c}\label{classstats_1_1_t_histogram_af804dcae19a6dcaba84faf141db5165c}} 
+\index{stats::THistogram@{stats::THistogram}!Print@{Print}}
+\index{Print@{Print}!stats::THistogram@{stats::THistogram}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily Ansi\+String stats\+::\+THistogram\+::\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{classstats_1_1_t_histogram_a8057e31233779cca2dc7a7c30f7a7660}\label{classstats_1_1_t_histogram_a8057e31233779cca2dc7a7c30f7a7660}} 
+\index{stats::THistogram@{stats::THistogram}!Setup@{Setup}}
+\index{Setup@{Setup}!stats::THistogram@{stats::THistogram}}
+\doxysubsubsection{\texorpdfstring{Setup()}{Setup()}}
+{\footnotesize\ttfamily void stats\+::\+THistogram\+::\+Setup (\begin{DoxyParamCaption}\item[{double}]{Min,  }\item[{double}]{Max,  }\item[{int}]{n\+Classes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\DoxyHorRuler{0}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classstats_1_1_t_histogram_aa60ea3a68727e744edb9e9b7356e02e6}\label{classstats_1_1_t_histogram_aa60ea3a68727e744edb9e9b7356e02e6}} 
+\index{stats::THistogram@{stats::THistogram}!m\_Max@{m\_Max}}
+\index{m\_Max@{m\_Max}!stats::THistogram@{stats::THistogram}}
+\doxysubsubsection{\texorpdfstring{m\_Max}{m\_Max}}
+{\footnotesize\ttfamily double stats\+::\+THistogram\+::m\+\_\+\+Max\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classstats_1_1_t_histogram_abc3057ff23fa42c2630b74dd0fc37ed7}\label{classstats_1_1_t_histogram_abc3057ff23fa42c2630b74dd0fc37ed7}} 
+\index{stats::THistogram@{stats::THistogram}!m\_Min@{m\_Min}}
+\index{m\_Min@{m\_Min}!stats::THistogram@{stats::THistogram}}
+\doxysubsubsection{\texorpdfstring{m\_Min}{m\_Min}}
+{\footnotesize\ttfamily double stats\+::\+THistogram\+::m\+\_\+\+Min\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classstats_1_1_t_histogram_a13e6071ad736b297ba096f9674bcad0c}\label{classstats_1_1_t_histogram_a13e6071ad736b297ba096f9674bcad0c}} 
+\index{stats::THistogram@{stats::THistogram}!m\_Values@{m\_Values}}
+\index{m\_Values@{m\_Values}!stats::THistogram@{stats::THistogram}}
+\doxysubsubsection{\texorpdfstring{m\_Values}{m\_Values}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classstats_1_1_t_histogram_abcf8e2c7b18d8b44f05289d92ed40013}{TVec\+Hist\+Pairs}} stats\+::\+THistogram\+::m\+\_\+\+Values\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+bcb.\+vcl/immobiliare/\mbox{\hyperlink{statistics_8h}{statistics.\+h}}\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+bcb.\+vcl/immobiliare/\mbox{\hyperlink{statistics_8cpp}{statistics.\+cpp}}\end{DoxyCompactItemize}

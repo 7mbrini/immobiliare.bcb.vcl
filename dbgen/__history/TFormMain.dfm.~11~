@@ -1,0 +1,59 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'FormMain'
+  ClientHeight = 299
+  ClientWidth = 445
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 280
+    Width = 445
+    Height = 19
+    Panels = <>
+  end
+  object ButtonGetAssets: TButton
+    Left = 98
+    Top = 54
+    Width = 269
+    Height = 77
+    Caption = 'Generate Assets Database'
+    DoubleBuffered = False
+    ParentDoubleBuffered = False
+    TabOrder = 1
+    TabStop = False
+    OnClick = ButtonGetAssetsClick
+  end
+  object ButtonGetCustomers: TButton
+    Left = 98
+    Top = 146
+    Width = 269
+    Height = 77
+    Caption = 'Generate Customers Database'
+    TabOrder = 2
+    TabStop = False
+    OnClick = ButtonGetCustomersClick
+  end
+  object MainMenu: TMainMenu
+    Left = 28
+    Top = 16
+    object File1: TMenuItem
+      Caption = '&File'
+      object Exit1: TMenuItem
+        Caption = '&Exit'
+        OnClick = Exit1Click
+      end
+    end
+  end
+end

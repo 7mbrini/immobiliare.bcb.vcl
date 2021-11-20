@@ -1,0 +1,55 @@
+\hypertarget{statistics_8cpp}{}\doxysection{Z\+:/\+F/dev/jobs/immobiliare.bcb.\+vcl/immobiliare/statistics.cpp File Reference}
+\label{statistics_8cpp}\index{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/statistics.cpp@{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/statistics.cpp}}
+
+
+Statistics routines.  
+
+
+{\ttfamily \#include $<$vcl.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include \char`\"{}statistics.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structstats_1_1_t_histo_bar}{stats\+::\+THisto\+Bar}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacestats}{stats}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{namespacestats_a3c94ccf4c8534dd6494a958bb8ffb276}{stats\+::\+Min}} (\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}} \&Values)
+\item 
+double \mbox{\hyperlink{namespacestats_ae209786dd64fec6af7e4a7fcc5a87504}{stats\+::\+Max}} (\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}} \&Values)
+\item 
+double \mbox{\hyperlink{namespacestats_a1173ad134e43ec281718d95c4da73370}{stats\+::\+Min}} (\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}} \&Values, int \&n\+Index)
+\item 
+double \mbox{\hyperlink{namespacestats_a8388b556b45e78b2a158a3249087c9bb}{stats\+::\+Max}} (\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}} \&Values, int \&n\+Index)
+\item 
+double \mbox{\hyperlink{namespacestats_a094221df0ed723bbb28f467b496526fa}{stats\+::\+RMS}} (\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}} \&Values)
+\item 
+double \mbox{\hyperlink{namespacestats_a5381c077e8b021f85838cbd040e47aec}{stats\+::\+Mean}} (\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}} \&Values)
+\item 
+double \mbox{\hyperlink{namespacestats_a4961c21b4ee0d150883074522c91eef3}{stats\+::\+Median}} (\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}} Values)
+\item 
+double \mbox{\hyperlink{namespacestats_a8ed273480a5329168e14ca51ea017568}{stats\+::\+Variance}} (\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}} \&Values)
+\item 
+double \mbox{\hyperlink{namespacestats_a533e1040dd630fabc97ebc9afe205cfe}{stats\+::\+Std\+Dev}} (\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}} \&Values)
+\begin{DoxyCompactList}\small\item\em Calculates the Standard Deviation. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespacestats_a766815f80a82132177e1501ef2fe89eb}{stats\+::\+Mode}} (\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}} Values, int n\+Classes)
+\item 
+void \mbox{\hyperlink{namespacestats_ae881114a8dd7c26ac7eb15f73660a5d3}{stats\+::\+Sort}} (\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}} \&Values, bool b\+Ascending)
+\item 
+double \mbox{\hyperlink{namespacestats_ac40c26c20f7b0913d239db3426b0b579}{stats\+::\+Sum}} (\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}} \&Values)
+\item 
+void \mbox{\hyperlink{namespacestats_a5325808896074ce1cfc45dece07b1b37}{stats\+::\+Outliers}} (\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVec\+Doubles}} Values, double \&Out\+Min, double \&Out\+Max)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Statistics routines. 
+

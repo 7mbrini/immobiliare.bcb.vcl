@@ -1,0 +1,60 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{313A1CC3-CE96-413A-83AE-430A1C67918E}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="immobiliare.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\dbgen\dbgen.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\testunit\testunit.cbproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="immobiliare">
+			<MSBuild Projects="immobiliare.cbproj"/>
+		</Target>
+		<Target Name="immobiliare:Clean">
+			<MSBuild Projects="immobiliare.cbproj" Targets="Clean"/>
+		</Target>
+		<Target Name="immobiliare:Make">
+			<MSBuild Projects="immobiliare.cbproj" Targets="Make"/>
+		</Target>
+		<Target Name="dbgen">
+			<MSBuild Projects="..\dbgen\dbgen.cbproj"/>
+		</Target>
+		<Target Name="dbgen:Clean">
+			<MSBuild Projects="..\dbgen\dbgen.cbproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dbgen:Make">
+			<MSBuild Projects="..\dbgen\dbgen.cbproj" Targets="Make"/>
+		</Target>
+		<Target Name="testunit">
+			<MSBuild Projects="..\testunit\testunit.cbproj"/>
+		</Target>
+		<Target Name="testunit:Clean">
+			<MSBuild Projects="..\testunit\testunit.cbproj" Targets="Clean"/>
+		</Target>
+		<Target Name="testunit:Make">
+			<MSBuild Projects="..\testunit\testunit.cbproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="immobiliare;dbgen;testunit"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="immobiliare:Clean;dbgen:Clean;testunit:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="immobiliare:Make;dbgen:Make;testunit:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "sorting.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+
+void Sort(TVecT &Vec)
+{
+	if( Vec[i] > Vec[i+1] )
+    {
+	    std::vector::swap(Vec[i], Vec[i+1]);
+    }
+}

@@ -1,0 +1,52 @@
+\hypertarget{_t_form_queries_8h_source}{}\doxysection{TForm\+Queries.\+h}
+\label{_t_form_queries_8h_source}\index{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/TFormQueries.h@{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/TFormQueries.h}}
+\mbox{\hyperlink{_t_form_queries_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#ifndef TFormQueriesH}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#define TFormQueriesH}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <System.Classes.hpp>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <Vcl.Controls.hpp>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <Vcl.StdCtrls.hpp>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <Vcl.Forms.hpp>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{databanker_8h}{databanker.h}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <Vcl.ExtCtrls.hpp>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_form_queries}{TFormQueries}} : \textcolor{keyword}{public} TForm}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20 \_\_published:    \textcolor{comment}{// IDE-\/managed Components}}
+\DoxyCodeLine{21     TPanel *\mbox{\hyperlink{class_t_form_queries_ab212795873eadcfd3ce9c1b7cca63f8b}{PanelBottom}};}
+\DoxyCodeLine{22     TPanel *\mbox{\hyperlink{class_t_form_queries_a992dae34fedc22837d2d0b32d5e9f64f}{PanelTop}};}
+\DoxyCodeLine{23     TButton *\mbox{\hyperlink{class_t_form_queries_a661343a8bb5d726ed9c4f1cdf52587a7}{ButtonClose}};}
+\DoxyCodeLine{24     TListBox *\mbox{\hyperlink{class_t_form_queries_a6b55febe6a92cfbd7fdb5df63d5254cb}{ListBox}};}
+\DoxyCodeLine{25     TLabel *\mbox{\hyperlink{class_t_form_queries_ad1660fabd9a20479c877a9804d3648dd}{LabelInfo}};}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_queries_a07a69f62fb8bce293aeeb6314f299fdc}{FormCreate}}(TObject *Sender);}
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_queries_af66c6b20b94d77aaa436420ce4ae236f}{ButtonCloseClick}}(TObject *Sender);}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_queries_ae2eb35a2aaf8dc7bbc8416a55b93c704}{FormCanResize}}(TObject *Sender, \textcolor{keywordtype}{int} \&NewWidth, \textcolor{keywordtype}{int} \&NewHeight, \textcolor{keywordtype}{bool} \&Resize);}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_queries_ade65f2a97dedfdef19b42e2f116933d0}{ListBoxDblClick}}(TObject *Sender);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keyword}{private}:    \textcolor{comment}{// User declarations}}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keyword}{public}:     \textcolor{comment}{// User declarations}}
+\DoxyCodeLine{35     \_\_fastcall \mbox{\hyperlink{class_t_form_queries_a754901b9b8cdcc403c4008c91a098dc7}{TFormQueries}}(TComponent* Owner, \mbox{\hyperlink{class_t_data_banker}{TDataBanker}}* pDB);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{38     \mbox{\hyperlink{class_t_data_banker}{TDataBanker}} *\mbox{\hyperlink{class_t_form_queries_aa7c8e1369971ff22bf827fdabf0c75bc}{m\_pDB}};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_queries_afa62da1bf5f098be41a011252ed52009}{Setup}}();}
+\DoxyCodeLine{41 \};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 }
+
+\end{DoxyCode}

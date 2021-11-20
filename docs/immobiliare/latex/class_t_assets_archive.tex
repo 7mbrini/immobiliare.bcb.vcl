@@ -1,0 +1,156 @@
+\hypertarget{class_t_assets_archive}{}\doxysection{TAssets\+Archive Class Reference}
+\label{class_t_assets_archive}\index{TAssetsArchive@{TAssetsArchive}}
+
+
+{\ttfamily \#include $<$assets.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_t_assets_archive_1_1_t_file_header}{TFile\+Header}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_assets_archive_af851427f1c98cef09a17fe83eb53d95c}{TAssets\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_assets_archive_a37f8a45b4e5b63076370654e4819768b}{$\sim$\+TAssets\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_assets_archive_a55eda0b5e3229f0005f8ba4e2f8e1eab}{Clear}} ()
+\item 
+void \mbox{\hyperlink{class_t_assets_archive_af232b79abcb267f7608a4b7cded8445d}{Add}} (\mbox{\hyperlink{class_t_asset}{TAsset}} $\ast$p\+Asset)
+\item 
+void \mbox{\hyperlink{class_t_assets_archive_a263a857ceb972ccc4f65b97d7ea65478}{Delete}} (int n\+Index)
+\item 
+void \mbox{\hyperlink{class_t_assets_archive_a0f2afb76debd4784cffaccc6d4e2f57b}{Update}} (int n\+Index, \mbox{\hyperlink{class_t_asset}{TAsset}} const \&Asset)
+\item 
+bool \mbox{\hyperlink{class_t_assets_archive_a3ac44e08b88f9e9b94832ebedbfb1ca4}{Load\+From\+File}} (Ansi\+String str\+File\+Name)
+\item 
+bool \mbox{\hyperlink{class_t_assets_archive_a78af08a0c77f6d5fa69658b0c5758cfd}{Save\+To\+File}} (Ansi\+String str\+File\+Name)
+\item 
+unsigned \mbox{\hyperlink{class_t_assets_archive_a255787e2eb6797318817d6e9a6f3f5ee}{Get\+Count}} ()
+\item 
+\mbox{\hyperlink{class_t_asset}{TAsset}} $\ast$const \mbox{\hyperlink{class_t_assets_archive_a8fc06a355d0ab91c372bf39454eb514a}{Get\+Record}} (int n\+Id)
+\item 
+bool \mbox{\hyperlink{class_t_assets_archive_a463ffd19495bda69e9a2c70c03b4da5d}{Get\+Record\+Id}} (\mbox{\hyperlink{class_t_asset}{TAsset}} $\ast$p\+Asset, unsigned \&n\+Id)
+\item 
+\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \mbox{\hyperlink{class_t_assets_archive_a61c34939d9cd9fe19ec188993dbbced1}{Get\+Assets}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \mbox{\hyperlink{class_t_assets_archive_aaffad7e32fa7626cdc5ebd7532edf195}{m\+\_\+\+Ptr\+Assets}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_assets_archive_af851427f1c98cef09a17fe83eb53d95c}\label{class_t_assets_archive_af851427f1c98cef09a17fe83eb53d95c}} 
+\index{TAssetsArchive@{TAssetsArchive}!TAssetsArchive@{TAssetsArchive}}
+\index{TAssetsArchive@{TAssetsArchive}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{TAssetsArchive()}{TAssetsArchive()}}
+{\footnotesize\ttfamily TAssets\+Archive\+::\+TAssets\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_assets_archive_a37f8a45b4e5b63076370654e4819768b}\label{class_t_assets_archive_a37f8a45b4e5b63076370654e4819768b}} 
+\index{TAssetsArchive@{TAssetsArchive}!````~TAssetsArchive@{$\sim$TAssetsArchive}}
+\index{````~TAssetsArchive@{$\sim$TAssetsArchive}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{$\sim$TAssetsArchive()}{~TAssetsArchive()}}
+{\footnotesize\ttfamily TAssets\+Archive\+::$\sim$\+TAssets\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\DoxyHorRuler{0}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_assets_archive_af232b79abcb267f7608a4b7cded8445d}\label{class_t_assets_archive_af232b79abcb267f7608a4b7cded8445d}} 
+\index{TAssetsArchive@{TAssetsArchive}!Add@{Add}}
+\index{Add@{Add}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void TAssets\+Archive\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_asset}{TAsset}} $\ast$}]{p\+Asset }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_assets_archive_a55eda0b5e3229f0005f8ba4e2f8e1eab}\label{class_t_assets_archive_a55eda0b5e3229f0005f8ba4e2f8e1eab}} 
+\index{TAssetsArchive@{TAssetsArchive}!Clear@{Clear}}
+\index{Clear@{Clear}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void TAssets\+Archive\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_assets_archive_a263a857ceb972ccc4f65b97d7ea65478}\label{class_t_assets_archive_a263a857ceb972ccc4f65b97d7ea65478}} 
+\index{TAssetsArchive@{TAssetsArchive}!Delete@{Delete}}
+\index{Delete@{Delete}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void TAssets\+Archive\+::\+Delete (\begin{DoxyParamCaption}\item[{int}]{n\+Index }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_assets_archive_a61c34939d9cd9fe19ec188993dbbced1}\label{class_t_assets_archive_a61c34939d9cd9fe19ec188993dbbced1}} 
+\index{TAssetsArchive@{TAssetsArchive}!GetAssets@{GetAssets}}
+\index{GetAssets@{GetAssets}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{GetAssets()}{GetAssets()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} TAssets\+Archive\+::\+Get\+Assets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_assets_archive_a255787e2eb6797318817d6e9a6f3f5ee}\label{class_t_assets_archive_a255787e2eb6797318817d6e9a6f3f5ee}} 
+\index{TAssetsArchive@{TAssetsArchive}!GetCount@{GetCount}}
+\index{GetCount@{GetCount}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{GetCount()}{GetCount()}}
+{\footnotesize\ttfamily unsigned TAssets\+Archive\+::\+Get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_assets_archive_a8fc06a355d0ab91c372bf39454eb514a}\label{class_t_assets_archive_a8fc06a355d0ab91c372bf39454eb514a}} 
+\index{TAssetsArchive@{TAssetsArchive}!GetRecord@{GetRecord}}
+\index{GetRecord@{GetRecord}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{GetRecord()}{GetRecord()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_asset}{TAsset}} $\ast$const TAssets\+Archive\+::\+Get\+Record (\begin{DoxyParamCaption}\item[{int}]{n\+Id }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_assets_archive_a463ffd19495bda69e9a2c70c03b4da5d}\label{class_t_assets_archive_a463ffd19495bda69e9a2c70c03b4da5d}} 
+\index{TAssetsArchive@{TAssetsArchive}!GetRecordId@{GetRecordId}}
+\index{GetRecordId@{GetRecordId}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{GetRecordId()}{GetRecordId()}}
+{\footnotesize\ttfamily bool TAssets\+Archive\+::\+Get\+Record\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_asset}{TAsset}} $\ast$}]{p\+Asset,  }\item[{unsigned \&}]{n\+Id }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_assets_archive_a3ac44e08b88f9e9b94832ebedbfb1ca4}\label{class_t_assets_archive_a3ac44e08b88f9e9b94832ebedbfb1ca4}} 
+\index{TAssetsArchive@{TAssetsArchive}!LoadFromFile@{LoadFromFile}}
+\index{LoadFromFile@{LoadFromFile}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{LoadFromFile()}{LoadFromFile()}}
+{\footnotesize\ttfamily bool TAssets\+Archive\+::\+Load\+From\+File (\begin{DoxyParamCaption}\item[{Ansi\+String}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_assets_archive_a78af08a0c77f6d5fa69658b0c5758cfd}\label{class_t_assets_archive_a78af08a0c77f6d5fa69658b0c5758cfd}} 
+\index{TAssetsArchive@{TAssetsArchive}!SaveToFile@{SaveToFile}}
+\index{SaveToFile@{SaveToFile}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{SaveToFile()}{SaveToFile()}}
+{\footnotesize\ttfamily bool TAssets\+Archive\+::\+Save\+To\+File (\begin{DoxyParamCaption}\item[{Ansi\+String}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_assets_archive_a0f2afb76debd4784cffaccc6d4e2f57b}\label{class_t_assets_archive_a0f2afb76debd4784cffaccc6d4e2f57b}} 
+\index{TAssetsArchive@{TAssetsArchive}!Update@{Update}}
+\index{Update@{Update}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void TAssets\+Archive\+::\+Update (\begin{DoxyParamCaption}\item[{int}]{n\+Index,  }\item[{\mbox{\hyperlink{class_t_asset}{TAsset}} const \&}]{Asset }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_assets_archive_aaffad7e32fa7626cdc5ebd7532edf195}\label{class_t_assets_archive_aaffad7e32fa7626cdc5ebd7532edf195}} 
+\index{TAssetsArchive@{TAssetsArchive}!m\_PtrAssets@{m\_PtrAssets}}
+\index{m\_PtrAssets@{m\_PtrAssets}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{m\_PtrAssets}{m\_PtrAssets}}
+{\footnotesize\ttfamily \mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} TAssets\+Archive\+::m\+\_\+\+Ptr\+Assets\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+bcb.\+vcl/immobiliare/\mbox{\hyperlink{assets_8h}{assets.\+h}}\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+bcb.\+vcl/immobiliare/\mbox{\hyperlink{assets_8cpp}{assets.\+cpp}}\end{DoxyCompactItemize}

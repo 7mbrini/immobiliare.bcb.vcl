@@ -1,0 +1,157 @@
+\hypertarget{class_t_customer}{}\doxysection{TCustomer Class Reference}
+\label{class_t_customer}\index{TCustomer@{TCustomer}}
+
+
+{\ttfamily \#include $<$customers.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_customer_aeda886ad242706f0acd89fb71c6d3409}{TCustomer}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_customer_ab15218164f7ab87ef6d7dba5bcb1a63c}{Read}} (FILE $\ast$fp)
+\begin{DoxyCompactList}\small\item\em Read the record from file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_customer_aff7fb8b6967989b8044edcdaff746c5d}{Write}} (FILE $\ast$fp)
+\begin{DoxyCompactList}\small\item\em Write the record to file. \end{DoxyCompactList}\item 
+Ansi\+String \mbox{\hyperlink{class_t_customer_af7d3b508c9cd72e6e8f832f264288bcc}{As\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{class_t_customer_a0b5efc9698f06b26df19e7deb735fa51}{m\+\_\+n\+Budget}}
+\item 
+unsigned \mbox{\hyperlink{class_t_customer_a127ea180478007703b6a4e83bc188fb7}{m\+\_\+n\+Cap}}
+\item 
+enum \mbox{\hyperlink{customers_8h_ab1fe9b95e1a0cde5bc234cb24d0d3e1e}{en\+Customer\+Ownership\+Type}} \mbox{\hyperlink{class_t_customer_a147059761ded06894e29db6b73f6b2e2}{m\+\_\+n\+Ownership}}
+\item 
+char \mbox{\hyperlink{class_t_customer_a925e6d971401bf6bc908260c6d824cb1}{m\+\_\+str\+First\+Name}} \mbox{[}\mbox{\hyperlink{customers_8h_a0be1b005b4d77c30fa6074cf64943c0a}{CUSTOMER\+\_\+\+NAMESMAXLEN}}\mbox{]}
+\item 
+char \mbox{\hyperlink{class_t_customer_a3613f76dffd8ef2b4637f096587bacc9}{m\+\_\+str\+Last\+Name}} \mbox{[}\mbox{\hyperlink{customers_8h_a0be1b005b4d77c30fa6074cf64943c0a}{CUSTOMER\+\_\+\+NAMESMAXLEN}}\mbox{]}
+\item 
+char \mbox{\hyperlink{class_t_customer_a87fd1b18236d734ddc05d33fc1239005}{m\+\_\+str\+Address}} \mbox{[}\mbox{\hyperlink{customers_8h_a0be1b005b4d77c30fa6074cf64943c0a}{CUSTOMER\+\_\+\+NAMESMAXLEN}}\mbox{]}
+\item 
+char \mbox{\hyperlink{class_t_customer_a8b3f4e800e54aabdf9191956c43893ac}{m\+\_\+str\+City}} \mbox{[}\mbox{\hyperlink{customers_8h_a0be1b005b4d77c30fa6074cf64943c0a}{CUSTOMER\+\_\+\+NAMESMAXLEN}}\mbox{]}
+\item 
+char \mbox{\hyperlink{class_t_customer_a81552e2f85fbe393fc0c5209b293b660}{m\+\_\+str\+Email}} \mbox{[}\mbox{\hyperlink{customers_8h_a0be1b005b4d77c30fa6074cf64943c0a}{CUSTOMER\+\_\+\+NAMESMAXLEN}}\mbox{]}
+\item 
+char \mbox{\hyperlink{class_t_customer_a0c44d20fdda8131dbb96cbc92799f8b7}{m\+\_\+str\+Phone}} \mbox{[}\mbox{\hyperlink{customers_8h_a0be1b005b4d77c30fa6074cf64943c0a}{CUSTOMER\+\_\+\+NAMESMAXLEN}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_customer_aeda886ad242706f0acd89fb71c6d3409}\label{class_t_customer_aeda886ad242706f0acd89fb71c6d3409}} 
+\index{TCustomer@{TCustomer}!TCustomer@{TCustomer}}
+\index{TCustomer@{TCustomer}!TCustomer@{TCustomer}}
+\doxysubsubsection{\texorpdfstring{TCustomer()}{TCustomer()}}
+{\footnotesize\ttfamily TCustomer\+::\+TCustomer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\DoxyHorRuler{0}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_customer_af7d3b508c9cd72e6e8f832f264288bcc}\label{class_t_customer_af7d3b508c9cd72e6e8f832f264288bcc}} 
+\index{TCustomer@{TCustomer}!AsString@{AsString}}
+\index{AsString@{AsString}!TCustomer@{TCustomer}}
+\doxysubsubsection{\texorpdfstring{AsString()}{AsString()}}
+{\footnotesize\ttfamily Ansi\+String TCustomer\+::\+As\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_customer_ab15218164f7ab87ef6d7dba5bcb1a63c}\label{class_t_customer_ab15218164f7ab87ef6d7dba5bcb1a63c}} 
+\index{TCustomer@{TCustomer}!Read@{Read}}
+\index{Read@{Read}!TCustomer@{TCustomer}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily bool TCustomer\+::\+Read (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp }\end{DoxyParamCaption})}
+
+
+
+Read the record from file. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em fp} & Pointer to FILE struct \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_customer_aff7fb8b6967989b8044edcdaff746c5d}\label{class_t_customer_aff7fb8b6967989b8044edcdaff746c5d}} 
+\index{TCustomer@{TCustomer}!Write@{Write}}
+\index{Write@{Write}!TCustomer@{TCustomer}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily bool TCustomer\+::\+Write (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp }\end{DoxyParamCaption})}
+
+
+
+Write the record to file. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em fp} & Pointer to FILE struct \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_customer_a0b5efc9698f06b26df19e7deb735fa51}\label{class_t_customer_a0b5efc9698f06b26df19e7deb735fa51}} 
+\index{TCustomer@{TCustomer}!m\_nBudget@{m\_nBudget}}
+\index{m\_nBudget@{m\_nBudget}!TCustomer@{TCustomer}}
+\doxysubsubsection{\texorpdfstring{m\_nBudget}{m\_nBudget}}
+{\footnotesize\ttfamily unsigned TCustomer\+::m\+\_\+n\+Budget}
+
+\mbox{\Hypertarget{class_t_customer_a127ea180478007703b6a4e83bc188fb7}\label{class_t_customer_a127ea180478007703b6a4e83bc188fb7}} 
+\index{TCustomer@{TCustomer}!m\_nCap@{m\_nCap}}
+\index{m\_nCap@{m\_nCap}!TCustomer@{TCustomer}}
+\doxysubsubsection{\texorpdfstring{m\_nCap}{m\_nCap}}
+{\footnotesize\ttfamily unsigned TCustomer\+::m\+\_\+n\+Cap}
+
+\mbox{\Hypertarget{class_t_customer_a147059761ded06894e29db6b73f6b2e2}\label{class_t_customer_a147059761ded06894e29db6b73f6b2e2}} 
+\index{TCustomer@{TCustomer}!m\_nOwnership@{m\_nOwnership}}
+\index{m\_nOwnership@{m\_nOwnership}!TCustomer@{TCustomer}}
+\doxysubsubsection{\texorpdfstring{m\_nOwnership}{m\_nOwnership}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{customers_8h_ab1fe9b95e1a0cde5bc234cb24d0d3e1e}{en\+Customer\+Ownership\+Type}} TCustomer\+::m\+\_\+n\+Ownership}
+
+\mbox{\Hypertarget{class_t_customer_a87fd1b18236d734ddc05d33fc1239005}\label{class_t_customer_a87fd1b18236d734ddc05d33fc1239005}} 
+\index{TCustomer@{TCustomer}!m\_strAddress@{m\_strAddress}}
+\index{m\_strAddress@{m\_strAddress}!TCustomer@{TCustomer}}
+\doxysubsubsection{\texorpdfstring{m\_strAddress}{m\_strAddress}}
+{\footnotesize\ttfamily char TCustomer\+::m\+\_\+str\+Address\mbox{[}\mbox{\hyperlink{customers_8h_a0be1b005b4d77c30fa6074cf64943c0a}{CUSTOMER\+\_\+\+NAMESMAXLEN}}\mbox{]}}
+
+\mbox{\Hypertarget{class_t_customer_a8b3f4e800e54aabdf9191956c43893ac}\label{class_t_customer_a8b3f4e800e54aabdf9191956c43893ac}} 
+\index{TCustomer@{TCustomer}!m\_strCity@{m\_strCity}}
+\index{m\_strCity@{m\_strCity}!TCustomer@{TCustomer}}
+\doxysubsubsection{\texorpdfstring{m\_strCity}{m\_strCity}}
+{\footnotesize\ttfamily char TCustomer\+::m\+\_\+str\+City\mbox{[}\mbox{\hyperlink{customers_8h_a0be1b005b4d77c30fa6074cf64943c0a}{CUSTOMER\+\_\+\+NAMESMAXLEN}}\mbox{]}}
+
+\mbox{\Hypertarget{class_t_customer_a81552e2f85fbe393fc0c5209b293b660}\label{class_t_customer_a81552e2f85fbe393fc0c5209b293b660}} 
+\index{TCustomer@{TCustomer}!m\_strEmail@{m\_strEmail}}
+\index{m\_strEmail@{m\_strEmail}!TCustomer@{TCustomer}}
+\doxysubsubsection{\texorpdfstring{m\_strEmail}{m\_strEmail}}
+{\footnotesize\ttfamily char TCustomer\+::m\+\_\+str\+Email\mbox{[}\mbox{\hyperlink{customers_8h_a0be1b005b4d77c30fa6074cf64943c0a}{CUSTOMER\+\_\+\+NAMESMAXLEN}}\mbox{]}}
+
+\mbox{\Hypertarget{class_t_customer_a925e6d971401bf6bc908260c6d824cb1}\label{class_t_customer_a925e6d971401bf6bc908260c6d824cb1}} 
+\index{TCustomer@{TCustomer}!m\_strFirstName@{m\_strFirstName}}
+\index{m\_strFirstName@{m\_strFirstName}!TCustomer@{TCustomer}}
+\doxysubsubsection{\texorpdfstring{m\_strFirstName}{m\_strFirstName}}
+{\footnotesize\ttfamily char TCustomer\+::m\+\_\+str\+First\+Name\mbox{[}\mbox{\hyperlink{customers_8h_a0be1b005b4d77c30fa6074cf64943c0a}{CUSTOMER\+\_\+\+NAMESMAXLEN}}\mbox{]}}
+
+\mbox{\Hypertarget{class_t_customer_a3613f76dffd8ef2b4637f096587bacc9}\label{class_t_customer_a3613f76dffd8ef2b4637f096587bacc9}} 
+\index{TCustomer@{TCustomer}!m\_strLastName@{m\_strLastName}}
+\index{m\_strLastName@{m\_strLastName}!TCustomer@{TCustomer}}
+\doxysubsubsection{\texorpdfstring{m\_strLastName}{m\_strLastName}}
+{\footnotesize\ttfamily char TCustomer\+::m\+\_\+str\+Last\+Name\mbox{[}\mbox{\hyperlink{customers_8h_a0be1b005b4d77c30fa6074cf64943c0a}{CUSTOMER\+\_\+\+NAMESMAXLEN}}\mbox{]}}
+
+\mbox{\Hypertarget{class_t_customer_a0c44d20fdda8131dbb96cbc92799f8b7}\label{class_t_customer_a0c44d20fdda8131dbb96cbc92799f8b7}} 
+\index{TCustomer@{TCustomer}!m\_strPhone@{m\_strPhone}}
+\index{m\_strPhone@{m\_strPhone}!TCustomer@{TCustomer}}
+\doxysubsubsection{\texorpdfstring{m\_strPhone}{m\_strPhone}}
+{\footnotesize\ttfamily char TCustomer\+::m\+\_\+str\+Phone\mbox{[}\mbox{\hyperlink{customers_8h_a0be1b005b4d77c30fa6074cf64943c0a}{CUSTOMER\+\_\+\+NAMESMAXLEN}}\mbox{]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+bcb.\+vcl/immobiliare/\mbox{\hyperlink{customers_8h}{customers.\+h}}\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+bcb.\+vcl/immobiliare/\mbox{\hyperlink{customers_8cpp}{customers.\+cpp}}\end{DoxyCompactItemize}

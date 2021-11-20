@@ -1,0 +1,78 @@
+\hypertarget{_t_form_query_sales_hist_8h_source}{}\doxysection{TForm\+Query\+Sales\+Hist.\+h}
+\label{_t_form_query_sales_hist_8h_source}\index{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/TFormQuerySalesHist.h@{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/TFormQuerySalesHist.h}}
+\mbox{\hyperlink{_t_form_query_sales_hist_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#ifndef TFormQuerySalesHistH}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#define TFormQuerySalesHistH}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <System.Classes.hpp>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <Vcl.Controls.hpp>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <Vcl.StdCtrls.hpp>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <Vcl.Forms.hpp>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <Vcl.ExtCtrls.hpp>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <Vcl.Buttons.hpp>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <VCLTee.Chart.hpp>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <VCLTee.TeEngine.hpp>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <VCLTee.TeeProcs.hpp>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <VCLTee.Series.hpp>}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{databanker_8h}{databanker.h}}"{}}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{24 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_form_query_sales_hist}{TFormQuerySalesHist}} : \textcolor{keyword}{public} TForm}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26 \_\_published:    \textcolor{comment}{// IDE-\/managed Components}}
+\DoxyCodeLine{27     TPanel *\mbox{\hyperlink{class_t_form_query_sales_hist_a0cc15ec08eb7d86e05519576bfc6ad31}{PanelBottom}};}
+\DoxyCodeLine{28     TPanel *\mbox{\hyperlink{class_t_form_query_sales_hist_a2fe3970d5be4cc5b6778f07d4b513b23}{PanelLeft}};}
+\DoxyCodeLine{29     TChart *\mbox{\hyperlink{class_t_form_query_sales_hist_a454837f2ef75b9e9f9c2d5a329bf5e0b}{Chart}};}
+\DoxyCodeLine{30     TButton *\mbox{\hyperlink{class_t_form_query_sales_hist_afcf600c8e3791a88862a720543f1a07a}{ButtonClose}};}
+\DoxyCodeLine{31     TButton *\mbox{\hyperlink{class_t_form_query_sales_hist_af220566ae54398fd3f4600973b4646b2}{ButtonUpdate}};}
+\DoxyCodeLine{32     TComboBox *\mbox{\hyperlink{class_t_form_query_sales_hist_ae899edac16a4b530051b2ca61354199a}{ComboBoxTypology}};}
+\DoxyCodeLine{33     TLabel *\mbox{\hyperlink{class_t_form_query_sales_hist_a0f6ea88f17daa80a18026d83cc2c7fbe}{Label2}};}
+\DoxyCodeLine{34     TComboBox *\mbox{\hyperlink{class_t_form_query_sales_hist_ac5617b6aa4528818e021a97b31698945}{ComboBoxStartDate}};}
+\DoxyCodeLine{35     TLabel *\mbox{\hyperlink{class_t_form_query_sales_hist_a4d98ff1a618f3d6de0d2578b26eeaeae}{Label1}};}
+\DoxyCodeLine{36     TComboBox *\mbox{\hyperlink{class_t_form_query_sales_hist_a7c983dc7faab92642b93d2dce310051b}{ComboBoxEndDate}};}
+\DoxyCodeLine{37     TLabel *\mbox{\hyperlink{class_t_form_query_sales_hist_a69ca7fd239d155677ec461d37c15d9c0}{Label3}};}
+\DoxyCodeLine{38     TComboBox *\mbox{\hyperlink{class_t_form_query_sales_hist_abb6275552265f607b3105efe0dee23e6}{ComboBoxRegion}};}
+\DoxyCodeLine{39     TLabel *\mbox{\hyperlink{class_t_form_query_sales_hist_a023d0b4ee848b73ece4e29cc82a78155}{Label4}};}
+\DoxyCodeLine{40     TSpeedButton *\mbox{\hyperlink{class_t_form_query_sales_hist_a1736f688d4b820354facb69f58079889}{SpeedButtonClear}};}
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_query_sales_hist_a2fb008bca5db9506aa5fb52e9aa0cbd0}{FormCreate}}(TObject *Sender);}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_query_sales_hist_a1084ac809f92b66fcb0d095d328854af}{ButtonCloseClick}}(TObject *Sender);}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_query_sales_hist_abad6682f6d9122ccbf255f13538e72ee}{FormCanResize}}(TObject *Sender, \textcolor{keywordtype}{int} \&NewWidth, \textcolor{keywordtype}{int} \&NewHeight, \textcolor{keywordtype}{bool} \&Resize);}
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_query_sales_hist_ac1b93d3469ba06934f7ad8d4c6e7fd29}{ButtonUpdateClick}}(TObject *Sender);}
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_query_sales_hist_a4ee299ca74e0df1c905ffd226757d622}{SpeedButtonClearClick}}(TObject *Sender);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{keyword}{private}:    \textcolor{comment}{// User declarations}}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{keyword}{public}:     \textcolor{comment}{// User declarations}}
+\DoxyCodeLine{51     \_\_fastcall \mbox{\hyperlink{class_t_form_query_sales_hist_ad59b2522f40c1be46e9af5fee6bf6ea8}{TFormQuerySalesHist}}(TComponent* Owner, \mbox{\hyperlink{class_t_data_banker}{TDataBanker}}* pDB);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{54     \mbox{\hyperlink{class_t_data_banker}{TDataBanker}}* \mbox{\hyperlink{class_t_form_query_sales_hist_a02776a7d199e33fbbe29dfa4fc8a19c7}{m\_pDB}};}
+\DoxyCodeLine{55     TBarSeries *\mbox{\hyperlink{class_t_form_query_sales_hist_acf3435f0799de0fdefa6708b3472162e}{m\_pBarSeries}};}
+\DoxyCodeLine{56     std::map<AnsiString, AnsiString> \mbox{\hyperlink{class_t_form_query_sales_hist_af05364279a15159b8cc4ef9971a50360}{m\_MapCapRegions}};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_query_sales_hist_a49fd0f077cb0630474347fcd0f125b88}{Clear}}();}
+\DoxyCodeLine{59     \textcolor{keywordtype}{bool} \_\_fastcall \mbox{\hyperlink{class_t_form_query_sales_hist_a31b1b86de21e2f10eceb26ec0a27b63f}{ValidateInput}}();}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_query_sales_hist_ab05d5c80fd2dcd837aac867122e50390}{Setup}}();}
+\DoxyCodeLine{62     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_query_sales_hist_a3d1e3f9df3075325a6b0834b8d8afa52}{SettingUpTheChart}}();}
+\DoxyCodeLine{63     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_query_sales_hist_ad6dcc5c9a1b52695e8408aa351d103e3}{ClearTheChart}}();}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_query_sales_hist_aa3c69566c24b0c7dc614d0dc4a2572f9}{Update}}();}
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_query_sales_hist_aaa6347dabb923d0a814d6a31f462b5f9}{UpdateTheChart}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets);}
+\DoxyCodeLine{67 \};}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{70 \textcolor{comment}{//extern PACKAGE TFormQuerySalesHist *FormQuerySalesHist;}}
+\DoxyCodeLine{71 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{72 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

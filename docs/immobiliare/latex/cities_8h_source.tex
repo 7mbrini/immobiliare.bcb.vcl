@@ -1,0 +1,69 @@
+\hypertarget{cities_8h_source}{}\doxysection{cities.\+h}
+\label{cities_8h_source}\index{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/cities.h@{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/cities.h}}
+\mbox{\hyperlink{cities_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#ifndef citiesH}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define citiesH}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vcl.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#pragma hdrstop}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{typedef} std::vector<std::string> \mbox{\hyperlink{cities_8h_a6a541cc02e8079aa7cfd07fd0587f9f6}{TVecStrings}};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_t_city}{TCity}};}
+\DoxyCodeLine{15 \textcolor{keyword}{typedef} std::vector<TCity> \mbox{\hyperlink{cities_8h_a4075b5f77f5b5ea671ccbfe28e3390d7}{TVecCities}};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_t_city}{TCity}}}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     AnsiString \mbox{\hyperlink{struct_t_city_a229c2fcb7e53670375c17352bfe74ed5}{AsString}}()}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{21         AnsiString strTemp;}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23         strTemp.sprintf(}
+\DoxyCodeLine{24             \textcolor{stringliteral}{"{}\(\backslash\)ncomune: \%s"{}}}
+\DoxyCodeLine{25             \textcolor{stringliteral}{"{}\(\backslash\)nprovincia: \%s"{}}}
+\DoxyCodeLine{26             \textcolor{stringliteral}{"{}\(\backslash\)ncap: \%s"{}}}
+\DoxyCodeLine{27             \textcolor{stringliteral}{"{}\(\backslash\)nregione: \%s"{}},}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29             \mbox{\hyperlink{struct_t_city_a8cad3db2e189efe4dc44e90d974dd2ec}{m\_strName}}.c\_str(),}
+\DoxyCodeLine{30             \mbox{\hyperlink{struct_t_city_a86d3ffabdde596ed5d9a9db1c3860904}{m\_strProv}}.c\_str(),}
+\DoxyCodeLine{31             \mbox{\hyperlink{struct_t_city_ac4915d32074c3cd1469c1b6a64a36d2d}{m\_strCap}}.c\_str(),}
+\DoxyCodeLine{32             \mbox{\hyperlink{struct_t_city_ac99e69b4b5f90c87f5abfa54570ddcbd}{m\_strRegion}}.c\_str()}
+\DoxyCodeLine{33         );}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35         \textcolor{keywordflow}{return} strTemp;}
+\DoxyCodeLine{36     \}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     AnsiString \mbox{\hyperlink{struct_t_city_a8cad3db2e189efe4dc44e90d974dd2ec}{m\_strName}}, \mbox{\hyperlink{struct_t_city_a86d3ffabdde596ed5d9a9db1c3860904}{m\_strProv}}, \mbox{\hyperlink{struct_t_city_ac4915d32074c3cd1469c1b6a64a36d2d}{m\_strCap}}, \mbox{\hyperlink{struct_t_city_ac99e69b4b5f90c87f5abfa54570ddcbd}{m\_strRegion}};}
+\DoxyCodeLine{39 \};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_cities_archive}{TCitiesArchive}}}
+\DoxyCodeLine{42 \{}
+\DoxyCodeLine{43 \textcolor{keyword}{public}:}
+\DoxyCodeLine{44     \mbox{\hyperlink{class_t_cities_archive_a585b1c1505bdbf3e9e8c1c02100d09d9}{TCitiesArchive}}();}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_t_cities_archive_a42f728582eec54a49f910912e0cb4e93}{Clear}}();}
+\DoxyCodeLine{47     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_t_cities_archive_aaa63f2987309c5b8a985c32463bf13f1}{GetCount}}();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_t_cities_archive_a66e52365bfd09e0ab1c5398933e3f9bf}{GetCities}}(\mbox{\hyperlink{cities_8h_a4075b5f77f5b5ea671ccbfe28e3390d7}{TVecCities}}\& Cities);}
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_t_cities_archive_a79ba035687fa1ccab437a6eb7969e497}{GetRegions}}(\mbox{\hyperlink{cities_8h_a6a541cc02e8079aa7cfd07fd0587f9f6}{TVecStrings}}\& Regions);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_t_cities_archive_af2a950bfeba88cadde7249279e0e6385}{LoadFromFile}}(AnsiString strFileName);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{55     \mbox{\hyperlink{cities_8h_a4075b5f77f5b5ea671ccbfe28e3390d7}{TVecCities}} \mbox{\hyperlink{class_t_cities_archive_a60e64eca2ff84836bb0149b6b62c8dbf}{m\_Cities}};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_t_cities_archive_a2d53f9c2470c25b6e9500386df6826cb}{Parse}}(AnsiString strTuple, \mbox{\hyperlink{struct_t_city}{TCity}}\& City);}
+\DoxyCodeLine{58     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_t_cities_archive_a4f14c540c31e66355afe5877e58fba7c}{IsUnique}}(\mbox{\hyperlink{cities_8h_a6a541cc02e8079aa7cfd07fd0587f9f6}{TVecStrings}}\& Strings, std::string strVal);}
+\DoxyCodeLine{59 \};}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{63 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

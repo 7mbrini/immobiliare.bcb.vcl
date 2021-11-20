@@ -1,0 +1,79 @@
+\hypertarget{statistics_8h_source}{}\doxysection{statistics.\+h}
+\label{statistics_8h_source}\index{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/statistics.h@{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/statistics.h}}
+\mbox{\hyperlink{statistics_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#pragma hdrstop}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{typedef} vector<double> \mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVecDoubles}};}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacestats}{stats}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacestats_ac40c26c20f7b0913d239db3426b0b579}{Sum}}(\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVecDoubles}}\& Values);}
+\DoxyCodeLine{14     \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacestats_ae881114a8dd7c26ac7eb15f73660a5d3}{Sort}}(\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVecDoubles}}\& Values, \textcolor{keywordtype}{bool} bAscending = \textcolor{keyword}{true});}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacestats_a3c94ccf4c8534dd6494a958bb8ffb276}{Min}}(\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVecDoubles}}\& Values);}
+\DoxyCodeLine{17     \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacestats_ae209786dd64fec6af7e4a7fcc5a87504}{Max}}(\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVecDoubles}}\& Values);}
+\DoxyCodeLine{18     \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacestats_a3c94ccf4c8534dd6494a958bb8ffb276}{Min}}(\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVecDoubles}}\& Values, \textcolor{keywordtype}{int}\& nIndex);}
+\DoxyCodeLine{19     \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacestats_ae209786dd64fec6af7e4a7fcc5a87504}{Max}}(\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVecDoubles}}\& Values, \textcolor{keywordtype}{int}\& nIndex);}
+\DoxyCodeLine{20     \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacestats_a094221df0ed723bbb28f467b496526fa}{RMS}}(\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVecDoubles}}\& Values);}
+\DoxyCodeLine{21     \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacestats_a5381c077e8b021f85838cbd040e47aec}{Mean}}(\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVecDoubles}}\& Values);}
+\DoxyCodeLine{22     \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacestats_a766815f80a82132177e1501ef2fe89eb}{Mode}}(\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVecDoubles}} Values, \textcolor{keywordtype}{int} nClasses);}
+\DoxyCodeLine{23     \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacestats_a4961c21b4ee0d150883074522c91eef3}{Median}}(\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVecDoubles}} Values);}
+\DoxyCodeLine{24     \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacestats_a8ed273480a5329168e14ca51ea017568}{Variance}}(\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVecDoubles}}\& Values);}
+\DoxyCodeLine{25     \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacestats_a533e1040dd630fabc97ebc9afe205cfe}{StdDev}}(\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVecDoubles}}\& Values);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacestats_a5325808896074ce1cfc45dece07b1b37}{Outliers}}(\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVecDoubles}} Values, \textcolor{keywordtype}{double} \&OutMin, \textcolor{keywordtype}{double} \&OutMax);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{class }\mbox{\hyperlink{classstats_1_1_t_histogram}{THistogram}}}
+\DoxyCodeLine{31 \{}
+\DoxyCodeLine{32 \textcolor{keyword}{public}:}
+\DoxyCodeLine{33     \textcolor{keyword}{struct }\mbox{\hyperlink{structstats_1_1_t_histogram_1_1_t_hist_pair}{THistPair}}}
+\DoxyCodeLine{34     \{}
+\DoxyCodeLine{35         \mbox{\hyperlink{structstats_1_1_t_histogram_1_1_t_hist_pair_a188242bfb173285c9ce085ad0d4237ce}{THistPair}} ()}
+\DoxyCodeLine{36         \{}
+\DoxyCodeLine{37             \mbox{\hyperlink{structstats_1_1_t_histogram_1_1_t_hist_pair_a555a306191694fae60b8fe3cc9d1175c}{Value}} = 0;}
+\DoxyCodeLine{38             \mbox{\hyperlink{structstats_1_1_t_histogram_1_1_t_hist_pair_ad93d83c3a9e3aec8602314d12a068137}{nFreqs}} = 0;}
+\DoxyCodeLine{39         \}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41         \textcolor{keywordtype}{int} \mbox{\hyperlink{structstats_1_1_t_histogram_1_1_t_hist_pair_ad93d83c3a9e3aec8602314d12a068137}{nFreqs}};}
+\DoxyCodeLine{42         \textcolor{keywordtype}{double} \mbox{\hyperlink{structstats_1_1_t_histogram_1_1_t_hist_pair_a555a306191694fae60b8fe3cc9d1175c}{Value}};}
+\DoxyCodeLine{43     \};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     \textcolor{keyword}{typedef} vector<THistPair> \mbox{\hyperlink{classstats_1_1_t_histogram_abcf8e2c7b18d8b44f05289d92ed40013}{TVecHistPairs}};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{keyword}{public}:}
+\DoxyCodeLine{49     \mbox{\hyperlink{classstats_1_1_t_histogram_a405602c307da8e12e64f537dfbbeda65}{THistogram}}(\textcolor{keywordtype}{double} \mbox{\hyperlink{namespacestats_a3c94ccf4c8534dd6494a958bb8ffb276}{Min}}, \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacestats_ae209786dd64fec6af7e4a7fcc5a87504}{Max}}, \textcolor{keywordtype}{int} nClasses);}
+\DoxyCodeLine{50     \mbox{\hyperlink{classstats_1_1_t_histogram_a405602c307da8e12e64f537dfbbeda65}{THistogram}}(\mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVecDoubles}} Vals, \textcolor{keywordtype}{int} nClasses);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52     \textcolor{keyword}{inline} \textcolor{keywordtype}{double} \mbox{\hyperlink{classstats_1_1_t_histogram_a5d0a03c81decec3b6cf9a1238481a94f}{GetMin}}();}
+\DoxyCodeLine{53     \textcolor{keyword}{inline} \textcolor{keywordtype}{double} \mbox{\hyperlink{classstats_1_1_t_histogram_a3f771023bbbb3f4423dd71c1e05fa503}{GetMax}}();}
+\DoxyCodeLine{54     \textcolor{keyword}{inline} \textcolor{keywordtype}{int} \mbox{\hyperlink{classstats_1_1_t_histogram_a52306652d4b3c9911e51833247a9a9d0}{GetClasses}}();}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{classstats_1_1_t_histogram_af3dc9fdec0df7553c80e533cc0c8f074}{Add}}(\textcolor{keywordtype}{double} Value);}
+\DoxyCodeLine{57     \mbox{\hyperlink{classstats_1_1_t_histogram_abcf8e2c7b18d8b44f05289d92ed40013}{TVecHistPairs}} \mbox{\hyperlink{classstats_1_1_t_histogram_af7868541ff1e0c46ee80c52d96d5d58f}{GetValues}}();}
+\DoxyCodeLine{58     \textcolor{keyword}{inline} \mbox{\hyperlink{statistics_8h_a3f93472e4842ac71fb3a8a540cb403db}{TVecDoubles}} \mbox{\hyperlink{classstats_1_1_t_histogram_a2dc3aa09995d34ab61d2a6d769cdabbe}{GetNormalizedFreqs}}();}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60     \textcolor{keyword}{inline} AnsiString \mbox{\hyperlink{classstats_1_1_t_histogram_af804dcae19a6dcaba84faf141db5165c}{Print}}();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{63     \textcolor{keywordtype}{double} \mbox{\hyperlink{classstats_1_1_t_histogram_abc3057ff23fa42c2630b74dd0fc37ed7}{m\_Min}}, \mbox{\hyperlink{classstats_1_1_t_histogram_aa60ea3a68727e744edb9e9b7356e02e6}{m\_Max}};}
+\DoxyCodeLine{64     \mbox{\hyperlink{classstats_1_1_t_histogram_abcf8e2c7b18d8b44f05289d92ed40013}{TVecHistPairs}} \mbox{\hyperlink{classstats_1_1_t_histogram_a13e6071ad736b297ba096f9674bcad0c}{m\_Values}};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} \mbox{\hyperlink{classstats_1_1_t_histogram_a8057e31233779cca2dc7a7c30f7a7660}{Setup}}(\textcolor{keywordtype}{double} \mbox{\hyperlink{namespacestats_a3c94ccf4c8534dd6494a958bb8ffb276}{Min}}, \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacestats_ae209786dd64fec6af7e4a7fcc5a87504}{Max}}, \textcolor{keywordtype}{int} nClasses);}
+\DoxyCodeLine{67 \};}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 \};}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 }
+
+\end{DoxyCode}

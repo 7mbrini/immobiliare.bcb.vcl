@@ -1,0 +1,120 @@
+object FormQuerySalesHist: TFormQuerySalesHist
+  Left = 0
+  Top = 0
+  Caption = 'FormQuerySalesHist'
+  ClientHeight = 409
+  ClientWidth = 639
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCanResize = FormCanResize
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PanelLeft: TPanel
+    Left = 0
+    Top = 0
+    Width = 240
+    Height = 367
+    Align = alLeft
+    TabOrder = 1
+    ExplicitLeft = 4
+    object Label2: TLabel
+      Left = 14
+      Top = 51
+      Width = 80
+      Height = 13
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Typology :'
+    end
+    object Label1: TLabel
+      Left = 14
+      Top = 93
+      Width = 80
+      Height = 13
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Start Date :'
+    end
+    object Label3: TLabel
+      Left = 14
+      Top = 129
+      Width = 80
+      Height = 13
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'End Date :'
+    end
+    object ButtonUpdate: TButton
+      Left = 118
+      Top = 300
+      Width = 75
+      Height = 25
+      Caption = '&Update'
+      TabOrder = 0
+      OnClick = ButtonUpdateClick
+    end
+    object ComboBoxTypology: TComboBox
+      Left = 104
+      Top = 48
+      Width = 99
+      Height = 21
+      Style = csDropDownList
+      TabOrder = 1
+    end
+    object ComboBoxStartDate: TComboBox
+      Left = 104
+      Top = 90
+      Width = 99
+      Height = 21
+      Style = csDropDownList
+      TabOrder = 2
+    end
+  end
+  object PanelBottom: TPanel
+    Left = 0
+    Top = 367
+    Width = 639
+    Height = 42
+    Align = alBottom
+    TabOrder = 0
+    ExplicitTop = 368
+    object ButtonClose: TButton
+      Left = 284
+      Top = 10
+      Width = 75
+      Height = 25
+      Caption = '&Close'
+      TabOrder = 0
+      OnClick = ButtonCloseClick
+    end
+  end
+  object Chart: TChart
+    Left = 240
+    Top = 0
+    Width = 399
+    Height = 367
+    Title.Text.Strings = (
+      'TChart')
+    Align = alClient
+    TabOrder = 2
+    ExplicitLeft = 256
+    ExplicitTop = 46
+    ExplicitWidth = 312
+    ExplicitHeight = 264
+    ColorPaletteIndex = 13
+  end
+  object ComboBoxEndDate: TComboBox
+    Left = 104
+    Top = 126
+    Width = 99
+    Height = 21
+    Style = csDropDownList
+    TabOrder = 3
+  end
+end

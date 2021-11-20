@@ -1,0 +1,291 @@
+\hypertarget{_t_form_query_supply_and_demand_8cpp}{}\doxysection{Z\+:/\+F/dev/jobs/immobiliare.bcb.\+vcl/immobiliare/\+TForm\+Query\+Supply\+And\+Demand.cpp File Reference}
+\label{_t_form_query_supply_and_demand_8cpp}\index{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/TFormQuerySupplyAndDemand.cpp@{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/TFormQuerySupplyAndDemand.cpp}}
+{\ttfamily \#include $<$vcl.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}TForm\+Main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}TForm\+Debug.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}TForm\+Assets.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}TForm\+Customers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}TForm\+Query\+Supply\+And\+Demand.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}commdefs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}errormsgs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}statistics.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_t_ownership_choice}{TOwnership\+Choice}}
+\item 
+struct \mbox{\hyperlink{struct_t_customer_sorting_choice}{TCustomer\+Sorting\+Choice}}
+\item 
+struct \mbox{\hyperlink{struct_t_asset_type_choice}{TAsset\+Type\+Choice}}
+\item 
+struct \mbox{\hyperlink{struct_t_asset_sorting_choice}{TAsset\+Sorting\+Choice}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a241aeeb764887ae5e3de58b98f04b16d}{WIDTH}}~940
+\item 
+\#define \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_aed89bd71aee8be823e8a20ec4e093c1e}{HEIGHT}}~540
+\item 
+\#define \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a890bf4cc740b04d13117670f75dd4bf6}{MINWIDTH}}~820
+\item 
+\#define \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_ab0a627a1493c578c4d00413c158145c1}{MINHEIGHT}}~480
+\item 
+\#define \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a55da43d929d172c91c4b1435302a708b}{ASSETS\+\_\+\+DEFCOLS}}~13
+\item 
+\#define \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_aff54992c06d3eabc0a7f001ac8233b74}{ASSETS\+\_\+\+DEFROWS}}~2
+\item 
+\#define \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_aa371bc3565b160ac71f50fea6c1469bb}{ASSETS\+\_\+\+DEFCOLW}}~48
+\item 
+\#define \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a83662ec3f7e1939ce20df28841cdc52c}{ASSETS\+\_\+\+DEFCOLH}}~16
+\item 
+\#define \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_affb062ad6363abab1f80ba402979a330}{CUSTOMERS\+\_\+\+DEFCOLS}}~9
+\item 
+\#define \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a0e246c6d0fc2c041507c6b403eea044b}{CUSTOMERS\+\_\+\+DEFROWS}}~2
+\item 
+\#define \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a4a0f0af134b5d857f190f92bda8efaca}{CUSTOMERS\+\_\+\+DEFCOLW}}~48
+\item 
+\#define \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a1eed0e32974ef03c9fa1609f9b98a8de}{CUSTOMERS\+\_\+\+DEFCOLH}}~16
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562}{en\+Customer\+Sorting\+Mode}} \{ \newline
+\mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a17f185e169be5234bf881021d5ef0180}{csm\+None}} = 0
+, \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a4ecd465a5dc5e1fd0a0f08bb81ec98e0}{csm\+City\+Asc}}
+, \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a660e27a961cd99edc33345028e9bfb3f}{csm\+City\+Desc}}
+, \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a44a14df6a2fca04900521d6249d335c1}{csm\+Budget\+Asc}}
+, \newline
+\mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a4aed150bbdec393a2cfbf94bf4631f50}{csm\+Budget\+Desc}}
+ \}
+\item 
+enum \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112}{en\+Asset\+Sorting\+Mode}} \{ \newline
+\mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112a55a883915b73361422c87b71a6ae5268}{asm\+None}} = 0
+, \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112a268fb0a2c92614ab40a97b04b364275e}{asm\+City\+Asc}}
+, \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112a9d91c877f134e677853bfc790971508f}{asm\+City\+Desc}}
+, \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112ae2a0eaa8277281e8b3c578089b27c8a1}{asm\+Price\+Asc}}
+, \newline
+\mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112aefef536876aa496b603a0900490a2956}{asm\+Price\+Desc}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_t_ownership_choice}{TOwnership\+Choice}} \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a0a0e1abcf6b032e3f047c3ddab8a6fe5}{g\+\_\+\+Ownership\+Choices}} \mbox{[}$\,$\mbox{]}
+\item 
+struct \mbox{\hyperlink{struct_t_customer_sorting_choice}{TCustomer\+Sorting\+Choice}} \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_aa4eb27f63953a34e734e49eca2fa67a0}{g\+\_\+\+Customer\+Sorting\+Choices}} \mbox{[}$\,$\mbox{]}
+\item 
+struct \mbox{\hyperlink{struct_t_asset_type_choice}{TAsset\+Type\+Choice}} \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a20775045b7b8cf9cfb7793c51b42eabe}{g\+\_\+\+Asset\+Typology\+Choices}} \mbox{[}$\,$\mbox{]}
+\item 
+struct \mbox{\hyperlink{struct_t_asset_sorting_choice}{TAsset\+Sorting\+Choice}} \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a010ee0840b8aa20901ab1ae503e5eb3f}{g\+\_\+\+Assets\+Sorting\+Choices}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_a83662ec3f7e1939ce20df28841cdc52c}\label{_t_form_query_supply_and_demand_8cpp_a83662ec3f7e1939ce20df28841cdc52c}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!ASSETS\_DEFCOLH@{ASSETS\_DEFCOLH}}
+\index{ASSETS\_DEFCOLH@{ASSETS\_DEFCOLH}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{ASSETS\_DEFCOLH}{ASSETS\_DEFCOLH}}
+{\footnotesize\ttfamily \#define ASSETS\+\_\+\+DEFCOLH~16}
+
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_a55da43d929d172c91c4b1435302a708b}\label{_t_form_query_supply_and_demand_8cpp_a55da43d929d172c91c4b1435302a708b}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!ASSETS\_DEFCOLS@{ASSETS\_DEFCOLS}}
+\index{ASSETS\_DEFCOLS@{ASSETS\_DEFCOLS}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{ASSETS\_DEFCOLS}{ASSETS\_DEFCOLS}}
+{\footnotesize\ttfamily \#define ASSETS\+\_\+\+DEFCOLS~13}
+
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_aa371bc3565b160ac71f50fea6c1469bb}\label{_t_form_query_supply_and_demand_8cpp_aa371bc3565b160ac71f50fea6c1469bb}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!ASSETS\_DEFCOLW@{ASSETS\_DEFCOLW}}
+\index{ASSETS\_DEFCOLW@{ASSETS\_DEFCOLW}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{ASSETS\_DEFCOLW}{ASSETS\_DEFCOLW}}
+{\footnotesize\ttfamily \#define ASSETS\+\_\+\+DEFCOLW~48}
+
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_aff54992c06d3eabc0a7f001ac8233b74}\label{_t_form_query_supply_and_demand_8cpp_aff54992c06d3eabc0a7f001ac8233b74}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!ASSETS\_DEFROWS@{ASSETS\_DEFROWS}}
+\index{ASSETS\_DEFROWS@{ASSETS\_DEFROWS}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{ASSETS\_DEFROWS}{ASSETS\_DEFROWS}}
+{\footnotesize\ttfamily \#define ASSETS\+\_\+\+DEFROWS~2}
+
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_a1eed0e32974ef03c9fa1609f9b98a8de}\label{_t_form_query_supply_and_demand_8cpp_a1eed0e32974ef03c9fa1609f9b98a8de}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!CUSTOMERS\_DEFCOLH@{CUSTOMERS\_DEFCOLH}}
+\index{CUSTOMERS\_DEFCOLH@{CUSTOMERS\_DEFCOLH}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{CUSTOMERS\_DEFCOLH}{CUSTOMERS\_DEFCOLH}}
+{\footnotesize\ttfamily \#define CUSTOMERS\+\_\+\+DEFCOLH~16}
+
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_affb062ad6363abab1f80ba402979a330}\label{_t_form_query_supply_and_demand_8cpp_affb062ad6363abab1f80ba402979a330}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!CUSTOMERS\_DEFCOLS@{CUSTOMERS\_DEFCOLS}}
+\index{CUSTOMERS\_DEFCOLS@{CUSTOMERS\_DEFCOLS}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{CUSTOMERS\_DEFCOLS}{CUSTOMERS\_DEFCOLS}}
+{\footnotesize\ttfamily \#define CUSTOMERS\+\_\+\+DEFCOLS~9}
+
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_a4a0f0af134b5d857f190f92bda8efaca}\label{_t_form_query_supply_and_demand_8cpp_a4a0f0af134b5d857f190f92bda8efaca}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!CUSTOMERS\_DEFCOLW@{CUSTOMERS\_DEFCOLW}}
+\index{CUSTOMERS\_DEFCOLW@{CUSTOMERS\_DEFCOLW}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{CUSTOMERS\_DEFCOLW}{CUSTOMERS\_DEFCOLW}}
+{\footnotesize\ttfamily \#define CUSTOMERS\+\_\+\+DEFCOLW~48}
+
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_a0e246c6d0fc2c041507c6b403eea044b}\label{_t_form_query_supply_and_demand_8cpp_a0e246c6d0fc2c041507c6b403eea044b}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!CUSTOMERS\_DEFROWS@{CUSTOMERS\_DEFROWS}}
+\index{CUSTOMERS\_DEFROWS@{CUSTOMERS\_DEFROWS}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{CUSTOMERS\_DEFROWS}{CUSTOMERS\_DEFROWS}}
+{\footnotesize\ttfamily \#define CUSTOMERS\+\_\+\+DEFROWS~2}
+
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_aed89bd71aee8be823e8a20ec4e093c1e}\label{_t_form_query_supply_and_demand_8cpp_aed89bd71aee8be823e8a20ec4e093c1e}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!HEIGHT@{HEIGHT}}
+\index{HEIGHT@{HEIGHT}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{HEIGHT}{HEIGHT}}
+{\footnotesize\ttfamily \#define HEIGHT~540}
+
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_ab0a627a1493c578c4d00413c158145c1}\label{_t_form_query_supply_and_demand_8cpp_ab0a627a1493c578c4d00413c158145c1}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!MINHEIGHT@{MINHEIGHT}}
+\index{MINHEIGHT@{MINHEIGHT}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{MINHEIGHT}{MINHEIGHT}}
+{\footnotesize\ttfamily \#define MINHEIGHT~480}
+
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_a890bf4cc740b04d13117670f75dd4bf6}\label{_t_form_query_supply_and_demand_8cpp_a890bf4cc740b04d13117670f75dd4bf6}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!MINWIDTH@{MINWIDTH}}
+\index{MINWIDTH@{MINWIDTH}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{MINWIDTH}{MINWIDTH}}
+{\footnotesize\ttfamily \#define MINWIDTH~820}
+
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_a241aeeb764887ae5e3de58b98f04b16d}\label{_t_form_query_supply_and_demand_8cpp_a241aeeb764887ae5e3de58b98f04b16d}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!WIDTH@{WIDTH}}
+\index{WIDTH@{WIDTH}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{WIDTH}{WIDTH}}
+{\footnotesize\ttfamily \#define WIDTH~940}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112}\label{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!enAssetSortingMode@{enAssetSortingMode}}
+\index{enAssetSortingMode@{enAssetSortingMode}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{enAssetSortingMode}{enAssetSortingMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112}{en\+Asset\+Sorting\+Mode}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{asmNone@{asmNone}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!asmNone@{asmNone}}}\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112a55a883915b73361422c87b71a6ae5268}\label{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112a55a883915b73361422c87b71a6ae5268}} 
+asm\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{asmCityAsc@{asmCityAsc}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!asmCityAsc@{asmCityAsc}}}\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112a268fb0a2c92614ab40a97b04b364275e}\label{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112a268fb0a2c92614ab40a97b04b364275e}} 
+asm\+City\+Asc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{asmCityDesc@{asmCityDesc}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!asmCityDesc@{asmCityDesc}}}\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112a9d91c877f134e677853bfc790971508f}\label{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112a9d91c877f134e677853bfc790971508f}} 
+asm\+City\+Desc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{asmPriceAsc@{asmPriceAsc}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!asmPriceAsc@{asmPriceAsc}}}\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112ae2a0eaa8277281e8b3c578089b27c8a1}\label{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112ae2a0eaa8277281e8b3c578089b27c8a1}} 
+asm\+Price\+Asc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{asmPriceDesc@{asmPriceDesc}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!asmPriceDesc@{asmPriceDesc}}}\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112aefef536876aa496b603a0900490a2956}\label{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112aefef536876aa496b603a0900490a2956}} 
+asm\+Price\+Desc&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562}\label{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!enCustomerSortingMode@{enCustomerSortingMode}}
+\index{enCustomerSortingMode@{enCustomerSortingMode}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{enCustomerSortingMode}{enCustomerSortingMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562}{en\+Customer\+Sorting\+Mode}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{csmNone@{csmNone}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!csmNone@{csmNone}}}\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a17f185e169be5234bf881021d5ef0180}\label{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a17f185e169be5234bf881021d5ef0180}} 
+csm\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{csmCityAsc@{csmCityAsc}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!csmCityAsc@{csmCityAsc}}}\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a4ecd465a5dc5e1fd0a0f08bb81ec98e0}\label{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a4ecd465a5dc5e1fd0a0f08bb81ec98e0}} 
+csm\+City\+Asc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{csmCityDesc@{csmCityDesc}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!csmCityDesc@{csmCityDesc}}}\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a660e27a961cd99edc33345028e9bfb3f}\label{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a660e27a961cd99edc33345028e9bfb3f}} 
+csm\+City\+Desc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{csmBudgetAsc@{csmBudgetAsc}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!csmBudgetAsc@{csmBudgetAsc}}}\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a44a14df6a2fca04900521d6249d335c1}\label{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a44a14df6a2fca04900521d6249d335c1}} 
+csm\+Budget\+Asc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{csmBudgetDesc@{csmBudgetDesc}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!csmBudgetDesc@{csmBudgetDesc}}}\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a4aed150bbdec393a2cfbf94bf4631f50}\label{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a4aed150bbdec393a2cfbf94bf4631f50}} 
+csm\+Budget\+Desc&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_a010ee0840b8aa20901ab1ae503e5eb3f}\label{_t_form_query_supply_and_demand_8cpp_a010ee0840b8aa20901ab1ae503e5eb3f}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!g\_AssetsSortingChoices@{g\_AssetsSortingChoices}}
+\index{g\_AssetsSortingChoices@{g\_AssetsSortingChoices}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_AssetsSortingChoices}{g\_AssetsSortingChoices}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_t_asset_sorting_choice}{TAsset\+Sorting\+Choice}} g\+\_\+\+Assets\+Sorting\+Choices\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}"{}}, \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112a55a883915b73361422c87b71a6ae5268}{asmNone}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} city, ascending"{}}, \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112a268fb0a2c92614ab40a97b04b364275e}{asmCityAsc}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} city, decending"{}}, \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112a9d91c877f134e677853bfc790971508f}{asmCityDesc}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} price, ascending"{}}, \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112ae2a0eaa8277281e8b3c578089b27c8a1}{asmPriceAsc}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} price, descending"{}}, \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_adc0df4e330217d3d1c2cb108fbac4112aefef536876aa496b603a0900490a2956}{asmPriceDesc}}\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_a20775045b7b8cf9cfb7793c51b42eabe}\label{_t_form_query_supply_and_demand_8cpp_a20775045b7b8cf9cfb7793c51b42eabe}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!g\_AssetTypologyChoices@{g\_AssetTypologyChoices}}
+\index{g\_AssetTypologyChoices@{g\_AssetTypologyChoices}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_AssetTypologyChoices}{g\_AssetTypologyChoices}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_t_asset_type_choice}{TAsset\+Type\+Choice}} g\+\_\+\+Asset\+Typology\+Choices\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}"{}}, \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5dfa82fb51718e2c00981a2d37bc6fe92593}{atNone}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}terreno"{}}, \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5dfae3cd1185b3639c3ae446f5527b2bb791}{atTerrain}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}garage"{}}, \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5dfaf169bd1ece362f3e8b2ce372bde98735}{atGarage}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}villa"{}}, \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5dfa3856776b49eee9fccb05e184beddf390}{atVilla}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}appartamento"{}}, \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5dfababe3cd99d937976367a287be4b871ce}{atApartment}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}ufficio"{}}, \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5dfa843adff48063cf45e6fd09bea0ad0ecb}{atOffice}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}negozio"{}}, \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5dfa74213f1dbae102593cf135d31438325a}{atCommercial}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}capannone"{}}, \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5dfa937ceac5712062f2a3649836459510a6}{atIndustrial}}\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_aa4eb27f63953a34e734e49eca2fa67a0}\label{_t_form_query_supply_and_demand_8cpp_aa4eb27f63953a34e734e49eca2fa67a0}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!g\_CustomerSortingChoices@{g\_CustomerSortingChoices}}
+\index{g\_CustomerSortingChoices@{g\_CustomerSortingChoices}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_CustomerSortingChoices}{g\_CustomerSortingChoices}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_t_customer_sorting_choice}{TCustomer\+Sorting\+Choice}} g\+\_\+\+Customer\+Sorting\+Choices\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}"{}}, \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a17f185e169be5234bf881021d5ef0180}{csmNone}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} city, ascending"{}}, \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a4ecd465a5dc5e1fd0a0f08bb81ec98e0}{csmCityAsc}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} city, decending"{}}, \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a660e27a961cd99edc33345028e9bfb3f}{csmCityDesc}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} budget, ascending"{}}, \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a44a14df6a2fca04900521d6249d335c1}{csmBudgetAsc}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} budget, descending"{}}, \mbox{\hyperlink{_t_form_query_supply_and_demand_8cpp_a5400c0cebc1a110217610c8d90f7e562a4aed150bbdec393a2cfbf94bf4631f50}{csmBudgetDesc}}\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_t_form_query_supply_and_demand_8cpp_a0a0e1abcf6b032e3f047c3ddab8a6fe5}\label{_t_form_query_supply_and_demand_8cpp_a0a0e1abcf6b032e3f047c3ddab8a6fe5}} 
+\index{TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}!g\_OwnershipChoices@{g\_OwnershipChoices}}
+\index{g\_OwnershipChoices@{g\_OwnershipChoices}!TFormQuerySupplyAndDemand.cpp@{TFormQuerySupplyAndDemand.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_OwnershipChoices}{g\_OwnershipChoices}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_t_ownership_choice}{TOwnership\+Choice}} g\+\_\+\+Ownership\+Choices\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}"{}}, \mbox{\hyperlink{customers_8h_ab1fe9b95e1a0cde5bc234cb24d0d3e1eaf6e5aff475adb6224b5f59781c327521}{cotNone}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} for rent"{}}, \mbox{\hyperlink{customers_8h_ab1fe9b95e1a0cde5bc234cb24d0d3e1ea1f38d7bb7f9bebdcc74f480d4156cab4}{cotForRent}}\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{} for purchase"{}}, \mbox{\hyperlink{customers_8h_ab1fe9b95e1a0cde5bc234cb24d0d3e1eaa76949801fbe50890dafb2e633f03ffb}{cotForPurchase}}\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

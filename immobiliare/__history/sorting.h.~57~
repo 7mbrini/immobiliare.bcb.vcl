@@ -1,0 +1,97 @@
+//---------------------------------------------------------------------------
+
+#ifndef sortingH
+#define sortingH
+
+#include <vector>
+#include <algorithm>
+
+
+
+/*!****************************************************************************
+* @brief	Reorders a vector of integer values
+* @param	VecInts A reference to a vector of integers
+* @note		Uses the Bubble Sort algorithm
+******************************************************************************/
+/*
+void Sort(TVecIntegers& VecInts)
+{
+	for(int i=0; i<VecInts.size(); i++)
+	{
+		for(int j = i+1; j<VecInts.size(); j++)
+		{
+			if( VecInts[i] > VecInts[j] )
+			{
+				std::swap(VecInts[i], VecInts[j]);
+			}
+		}
+	}
+
+*/
+
+
+
+namespace sort
+{
+
+class T;
+//typedef std::vector<T> TVecT;
+
+template <class T>
+//void Sort(TVecT &VecT)
+void Sort(T *pT, int nSize)
+{
+/*
+	for(int i=0; i<VecT.size(); i++)
+	{
+		for(int j = i+1; j<VecT.size(); j++)
+		{
+			//if( VecT[i] > VecT[j] )
+            if( VecT[j] < VecT[i] )
+			{
+				//std::swap(VecT[i], VecT[j]);
+                std::vector::swap(VecT[i], VecT[j]));
+			}
+		}
+	}
+*/
+	assert(pT);
+
+	for(int i=0; i<nSize; i++)
+	{
+		for(int j = i+1; j<nSize; j++)
+		{
+            if( pT[j] < pT[i] )
+			{
+                std::swap(pT[i], pT[j]);
+			}
+		}
+	}
+}
+
+
+typedef std::vector<int> TVecIntegers;
+
+/*!****************************************************************************
+* @brief	Reorders a vector of integer values
+* @param	VecInts A reference to a vector of integers
+* @note		Uses the Bubble Sort algorithm
+******************************************************************************/
+void Sort(TVecIntegers& VecInts)
+{
+	for(int i=0; i<VecInts.size(); i++)
+	{
+		for(int j = i+1; j<VecInts.size(); j++)
+		{
+			if( VecInts[i] > VecInts[j] )
+			{
+				std::swap(VecInts[i], VecInts[j]);
+			}
+		}
+	}
+}
+
+};
+
+//---------------------------------------------------------------------------
+#endif

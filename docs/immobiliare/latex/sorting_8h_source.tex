@@ -1,0 +1,128 @@
+\hypertarget{sorting_8h_source}{}\doxysection{sorting.\+h}
+\label{sorting_8h_source}\index{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/sorting.h@{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/sorting.h}}
+\mbox{\hyperlink{sorting_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*!****************************************************************************}}
+\DoxyCodeLine{2 \textcolor{comment}{}}
+\DoxyCodeLine{3 \textcolor{comment}{    @file   sorting.h}}
+\DoxyCodeLine{4 \textcolor{comment}{}}
+\DoxyCodeLine{5 \textcolor{comment}{    @brief  Sorting routines}}
+\DoxyCodeLine{6 \textcolor{comment}{}}
+\DoxyCodeLine{7 \textcolor{comment}{    @noop   author: Francesco Settembrini}}
+\DoxyCodeLine{8 \textcolor{comment}{    @noop   last update: 23/6/2021}}
+\DoxyCodeLine{9 \textcolor{comment}{    @noop   e-\/mail: mailto:francesco.settembrini@poliba.it}}
+\DoxyCodeLine{10 \textcolor{comment}{}}
+\DoxyCodeLine{11 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#ifndef sortingH}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define sortingH}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacesort}{sort}}}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }T;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{comment}{/*!****************************************************************************}}
+\DoxyCodeLine{26 \textcolor{comment}{* @brief    Reorders a vector of T}}
+\DoxyCodeLine{27 \textcolor{comment}{* @param    VecInts A reference to a vector of T}}
+\DoxyCodeLine{28 \textcolor{comment}{* @note     Uses the Bubble Sort algorithm}}
+\DoxyCodeLine{29 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{30 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{31 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacesort_a41e8bfbb3f0530e7f819e7e925d5dec6}{Sort}}(T *pT, \textcolor{keywordtype}{int} nSize)}
+\DoxyCodeLine{32 \{}
+\DoxyCodeLine{33     assert(pT);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<nSize; i++)}
+\DoxyCodeLine{36     \{}
+\DoxyCodeLine{37         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = i+1; j<nSize; j++)}
+\DoxyCodeLine{38         \{}
+\DoxyCodeLine{39             \textcolor{keywordflow}{if}( pT[j] < pT[i] )}
+\DoxyCodeLine{40             \{}
+\DoxyCodeLine{41                 std::swap(pT[i], pT[j]);}
+\DoxyCodeLine{42             \}}
+\DoxyCodeLine{43         \}}
+\DoxyCodeLine{44     \}}
+\DoxyCodeLine{45 \}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{keyword}{typedef} std::vector<int> \mbox{\hyperlink{namespacesort_a2ebd0f74cf1e4a4ed09f5d1c62b65a57}{TVecIntegers}};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{comment}{/*!****************************************************************************}}
+\DoxyCodeLine{51 \textcolor{comment}{* @brief    Reorders a vector of integer values}}
+\DoxyCodeLine{52 \textcolor{comment}{* @param    VecInts A reference to a vector of integers}}
+\DoxyCodeLine{53 \textcolor{comment}{* @note     Uses the Bubble Sort algorithm}}
+\DoxyCodeLine{54 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{55 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacesort_a41e8bfbb3f0530e7f819e7e925d5dec6}{Sort}}(\mbox{\hyperlink{namespacesort_a2ebd0f74cf1e4a4ed09f5d1c62b65a57}{TVecIntegers}}\& VecInts)}
+\DoxyCodeLine{56 \{}
+\DoxyCodeLine{57     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<VecInts.size(); i++)}
+\DoxyCodeLine{58     \{}
+\DoxyCodeLine{59         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = i+1; j<VecInts.size(); j++)}
+\DoxyCodeLine{60         \{}
+\DoxyCodeLine{61             \textcolor{keywordflow}{if}( VecInts[i] > VecInts[j] )}
+\DoxyCodeLine{62             \{}
+\DoxyCodeLine{63                 std::swap(VecInts[i], VecInts[j]);}
+\DoxyCodeLine{64             \}}
+\DoxyCodeLine{65         \}}
+\DoxyCodeLine{66     \}}
+\DoxyCodeLine{67 \}}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 \textcolor{keyword}{class }\mbox{\hyperlink{classsort_1_1_t_string_sort}{TStringSort}}}
+\DoxyCodeLine{70 \{}
+\DoxyCodeLine{71 \textcolor{keyword}{public}:}
+\DoxyCodeLine{72     \mbox{\hyperlink{classsort_1_1_t_string_sort_a9a781a4d162d71a084f0c79252c5d375}{TStringSort}}()}
+\DoxyCodeLine{73     \{}
+\DoxyCodeLine{74         \mbox{\hyperlink{classsort_1_1_t_string_sort_a2234657662908949bb255a6ff41008b9}{m\_pPtr}} = NULL;}
+\DoxyCodeLine{75         \mbox{\hyperlink{classsort_1_1_t_string_sort_a5e070f819518817a0a72606029687d4f}{m\_strName}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{76     \}}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     \mbox{\hyperlink{classsort_1_1_t_string_sort_ae7867dab4dc921b54a6ac1dd8708b639}{TStringSort}}(AnsiString strName, \textcolor{keywordtype}{void}* pPtr)}
+\DoxyCodeLine{79     \{}
+\DoxyCodeLine{80         \mbox{\hyperlink{classsort_1_1_t_string_sort_a5e070f819518817a0a72606029687d4f}{m\_strName}} = strName;}
+\DoxyCodeLine{81         \mbox{\hyperlink{classsort_1_1_t_string_sort_a2234657662908949bb255a6ff41008b9}{m\_pPtr}} = pPtr;}
+\DoxyCodeLine{82     \}}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classsort_1_1_t_string_sort_a3b213f750ec986f11d3a7e85a14a6532}{operator < }}(\mbox{\hyperlink{classsort_1_1_t_string_sort}{TStringSort}}\& Other)}
+\DoxyCodeLine{85     \{}
+\DoxyCodeLine{86         \textcolor{keywordflow}{return} bool(\mbox{\hyperlink{classsort_1_1_t_string_sort_a5e070f819518817a0a72606029687d4f}{m\_strName}} < Other.\mbox{\hyperlink{classsort_1_1_t_string_sort_a5e070f819518817a0a72606029687d4f}{m\_strName}});}
+\DoxyCodeLine{87     \}}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89 \textcolor{keyword}{public}:}
+\DoxyCodeLine{90     \textcolor{keywordtype}{void}* \mbox{\hyperlink{classsort_1_1_t_string_sort_a2234657662908949bb255a6ff41008b9}{m\_pPtr}};}
+\DoxyCodeLine{91     AnsiString \mbox{\hyperlink{classsort_1_1_t_string_sort_a5e070f819518817a0a72606029687d4f}{m\_strName}};}
+\DoxyCodeLine{92 \};}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94 \textcolor{keyword}{class }\mbox{\hyperlink{classsort_1_1_t_integer_sort}{TIntegerSort}}}
+\DoxyCodeLine{95 \{}
+\DoxyCodeLine{96 \textcolor{keyword}{public}:}
+\DoxyCodeLine{97     \mbox{\hyperlink{classsort_1_1_t_integer_sort_a2999a8c3431dcffa9c12bf20d84b37ae}{TIntegerSort}}()}
+\DoxyCodeLine{98     \{}
+\DoxyCodeLine{99         \mbox{\hyperlink{classsort_1_1_t_integer_sort_abae7bd9848f7caf826c636fc03744721}{m\_nVal}} = 0;}
+\DoxyCodeLine{100         \mbox{\hyperlink{classsort_1_1_t_integer_sort_a1ca5e714b01da31ac9c29a04b46bda11}{m\_pPtr}} = NULL;}
+\DoxyCodeLine{101     \}}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103     \mbox{\hyperlink{classsort_1_1_t_integer_sort_a48852c590b5d32c54ab4918a7ba41eb1}{TIntegerSort}}(\textcolor{keywordtype}{int} nVal, \textcolor{keywordtype}{void}* pPtr)}
+\DoxyCodeLine{104     \{}
+\DoxyCodeLine{105         \mbox{\hyperlink{classsort_1_1_t_integer_sort_abae7bd9848f7caf826c636fc03744721}{m\_nVal}} = nVal;}
+\DoxyCodeLine{106         \mbox{\hyperlink{classsort_1_1_t_integer_sort_a1ca5e714b01da31ac9c29a04b46bda11}{m\_pPtr}} = pPtr;}
+\DoxyCodeLine{107     \}}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classsort_1_1_t_integer_sort_a1b7c9612eb25a5b899f93ce60f2c61a4}{operator < }}(\mbox{\hyperlink{classsort_1_1_t_integer_sort}{TIntegerSort}}\& Other)}
+\DoxyCodeLine{110     \{}
+\DoxyCodeLine{111         \textcolor{keywordflow}{return} bool(\mbox{\hyperlink{classsort_1_1_t_integer_sort_abae7bd9848f7caf826c636fc03744721}{m\_nVal}} < Other.\mbox{\hyperlink{classsort_1_1_t_integer_sort_abae7bd9848f7caf826c636fc03744721}{m\_nVal}});}
+\DoxyCodeLine{112     \}}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114 \textcolor{keyword}{public}:}
+\DoxyCodeLine{115     \textcolor{keywordtype}{int} \mbox{\hyperlink{classsort_1_1_t_integer_sort_abae7bd9848f7caf826c636fc03744721}{m\_nVal}};}
+\DoxyCodeLine{116     \textcolor{keywordtype}{void}* \mbox{\hyperlink{classsort_1_1_t_integer_sort_a1ca5e714b01da31ac9c29a04b46bda11}{m\_pPtr}};}
+\DoxyCodeLine{117 \};}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119 \};}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{122 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

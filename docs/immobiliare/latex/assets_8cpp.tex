@@ -1,0 +1,189 @@
+\hypertarget{assets_8cpp}{}\doxysection{Z\+:/\+F/dev/jobs/immobiliare.bcb.\+vcl/immobiliare/assets.cpp File Reference}
+\label{assets_8cpp}\index{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/assets.cpp@{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/assets.cpp}}
+
+
+Assets modelling.  
+
+
+{\ttfamily \#include $<$vcl.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}assets.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sorting.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{assets_8cpp_adb6ecf6fca80fff3514ebb22f9f5a9f1}{\+\_\+\+USECUSTOMSORT}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{assets_8cpp_a496baf0fd2a0170ce3aae91b21e1b30f}{Sort\+By\+City}} (\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&Ptr\+Assets, bool b\+Asc)
+\item 
+void \mbox{\hyperlink{assets_8cpp_ab2b72517d62e427453db84cf12fab154}{Sort\+By\+Value}} (\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&Ptr\+Assets, bool b\+Asc)
+\item 
+void \mbox{\hyperlink{assets_8cpp_a9798ab56595beb8d0477ad0ccfe9d7bf}{Sort\+By\+Price}} (\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&Ptr\+Assets, bool b\+Asc)
+\item 
+void \mbox{\hyperlink{assets_8cpp_ad1d7673d0b5f79fdea69b71b849880c4}{Sort\+By\+Area}} (\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&Ptr\+Assets, bool b\+Asc)
+\item 
+void \mbox{\hyperlink{assets_8cpp_a7397a33aaf8571d427cc9565d9933643}{Filter\+By\+Status}} (\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&Assets, \mbox{\hyperlink{assets_8h_a2f6366c4d3d0e44a757c76ba26eed7ae}{en\+Asset\+Status}} n\+Status)
+\item 
+void \mbox{\hyperlink{assets_8cpp_aebf27843bfa26934eed57802340e4a0d}{Filter\+By\+Typology}} (\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&Assets, \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5df}{en\+Asset\+Typology}} n\+Typology)
+\item 
+void \mbox{\hyperlink{assets_8cpp_a0adc8a2287c569e02755da67d4adba86}{Filter\+By\+City}} (\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&Assets, Ansi\+String str\+City\+Name, bool b\+Full\+Match)
+\item 
+void \mbox{\hyperlink{assets_8cpp_a9fb1bbfa73ca28439dc3f16bc2497c30}{Filter\+By\+Address}} (\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&Assets, Ansi\+String str\+Address, bool b\+Full\+Match)
+\item 
+void \mbox{\hyperlink{assets_8cpp_ad1761b645f1ff1454439f20020137925}{Filter\+By\+Build\+Date}} (\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&Assets, double Date, Ansi\+String str\+Ineq)
+\item 
+void \mbox{\hyperlink{assets_8cpp_a8e7227eafa969f0c150df17f833ca596}{Filter\+By\+Epgl}} (\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&Assets, \mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056}{en\+Asset\+Epgl}} n\+Epgl, Ansi\+String str\+Ineq)
+\item 
+void \mbox{\hyperlink{assets_8cpp_a1ce82ea188493c65e478caf6dd2fe363}{Filter\+By\+Value}} (\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&Assets, unsigned n\+Value, Ansi\+String str\+Ineq)
+\item 
+void \mbox{\hyperlink{assets_8cpp_a833181d9ee857e02e4d23e0e3100121c}{Filter\+By\+Price}} (\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&Assets, unsigned n\+Price, Ansi\+String str\+Ineq)
+\item 
+void \mbox{\hyperlink{assets_8cpp_a6c1c3b165298a7755184180e7c1d5fd3}{Filter\+By\+Rooms}} (\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&Assets, unsigned n\+Rooms, Ansi\+String str\+Ineq)
+\item 
+void \mbox{\hyperlink{assets_8cpp_a705de0634cc12bf37d28ca8d310dc160}{Filter\+By\+Bathrooms}} (\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&Assets, unsigned n\+Bathrooms, Ansi\+String str\+Ineq)
+\item 
+void \mbox{\hyperlink{assets_8cpp_a61b6b80ffd8c45f1f33f5a63b1f7f508}{Filter\+By\+Area}} (\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&Assets, unsigned n\+Area, Ansi\+String str\+Ineq)
+\item 
+Ansi\+String \mbox{\hyperlink{assets_8cpp_ab4c06b604099b4542d565151ee7e0654}{As\+String}} (\mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056}{en\+Asset\+Epgl}} n\+Epgl)
+\item 
+Ansi\+String \mbox{\hyperlink{assets_8cpp_a96ad3b20574c904c3d42c5a381a0db88}{As\+String}} (\mbox{\hyperlink{assets_8h_a2f6366c4d3d0e44a757c76ba26eed7ae}{en\+Asset\+Status}} n\+Status)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Assets modelling. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{assets_8cpp_adb6ecf6fca80fff3514ebb22f9f5a9f1}\label{assets_8cpp_adb6ecf6fca80fff3514ebb22f9f5a9f1}} 
+\index{assets.cpp@{assets.cpp}!\_USECUSTOMSORT@{\_USECUSTOMSORT}}
+\index{\_USECUSTOMSORT@{\_USECUSTOMSORT}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{\_USECUSTOMSORT}{\_USECUSTOMSORT}}
+{\footnotesize\ttfamily \#define \+\_\+\+USECUSTOMSORT}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{assets_8cpp_ab4c06b604099b4542d565151ee7e0654}\label{assets_8cpp_ab4c06b604099b4542d565151ee7e0654}} 
+\index{assets.cpp@{assets.cpp}!AsString@{AsString}}
+\index{AsString@{AsString}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{AsString()}{AsString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ansi\+String As\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056}{en\+Asset\+Epgl}}}]{n\+Epgl }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{assets_8cpp_a96ad3b20574c904c3d42c5a381a0db88}\label{assets_8cpp_a96ad3b20574c904c3d42c5a381a0db88}} 
+\index{assets.cpp@{assets.cpp}!AsString@{AsString}}
+\index{AsString@{AsString}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{AsString()}{AsString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ansi\+String As\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_a2f6366c4d3d0e44a757c76ba26eed7ae}{en\+Asset\+Status}}}]{n\+Status }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{assets_8cpp_a9fb1bbfa73ca28439dc3f16bc2497c30}\label{assets_8cpp_a9fb1bbfa73ca28439dc3f16bc2497c30}} 
+\index{assets.cpp@{assets.cpp}!FilterByAddress@{FilterByAddress}}
+\index{FilterByAddress@{FilterByAddress}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByAddress()}{FilterByAddress()}}
+{\footnotesize\ttfamily void Filter\+By\+Address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&}]{Assets,  }\item[{Ansi\+String}]{str\+Address,  }\item[{bool}]{b\+Full\+Match }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{assets_8cpp_a61b6b80ffd8c45f1f33f5a63b1f7f508}\label{assets_8cpp_a61b6b80ffd8c45f1f33f5a63b1f7f508}} 
+\index{assets.cpp@{assets.cpp}!FilterByArea@{FilterByArea}}
+\index{FilterByArea@{FilterByArea}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByArea()}{FilterByArea()}}
+{\footnotesize\ttfamily void Filter\+By\+Area (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&}]{Assets,  }\item[{unsigned}]{n\+Area,  }\item[{Ansi\+String}]{str\+Ineq }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{assets_8cpp_a705de0634cc12bf37d28ca8d310dc160}\label{assets_8cpp_a705de0634cc12bf37d28ca8d310dc160}} 
+\index{assets.cpp@{assets.cpp}!FilterByBathrooms@{FilterByBathrooms}}
+\index{FilterByBathrooms@{FilterByBathrooms}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByBathrooms()}{FilterByBathrooms()}}
+{\footnotesize\ttfamily void Filter\+By\+Bathrooms (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&}]{Assets,  }\item[{unsigned}]{n\+Bathrooms,  }\item[{Ansi\+String}]{str\+Ineq }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{assets_8cpp_ad1761b645f1ff1454439f20020137925}\label{assets_8cpp_ad1761b645f1ff1454439f20020137925}} 
+\index{assets.cpp@{assets.cpp}!FilterByBuildDate@{FilterByBuildDate}}
+\index{FilterByBuildDate@{FilterByBuildDate}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByBuildDate()}{FilterByBuildDate()}}
+{\footnotesize\ttfamily void Filter\+By\+Build\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&}]{Assets,  }\item[{double}]{Date,  }\item[{Ansi\+String}]{str\+Ineq }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{assets_8cpp_a0adc8a2287c569e02755da67d4adba86}\label{assets_8cpp_a0adc8a2287c569e02755da67d4adba86}} 
+\index{assets.cpp@{assets.cpp}!FilterByCity@{FilterByCity}}
+\index{FilterByCity@{FilterByCity}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByCity()}{FilterByCity()}}
+{\footnotesize\ttfamily void Filter\+By\+City (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&}]{Assets,  }\item[{Ansi\+String}]{str\+City\+Name,  }\item[{bool}]{b\+Full\+Match }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{assets_8cpp_a8e7227eafa969f0c150df17f833ca596}\label{assets_8cpp_a8e7227eafa969f0c150df17f833ca596}} 
+\index{assets.cpp@{assets.cpp}!FilterByEpgl@{FilterByEpgl}}
+\index{FilterByEpgl@{FilterByEpgl}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByEpgl()}{FilterByEpgl()}}
+{\footnotesize\ttfamily void Filter\+By\+Epgl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&}]{Assets,  }\item[{\mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056}{en\+Asset\+Epgl}}}]{n\+Epgl,  }\item[{Ansi\+String}]{str\+Ineq }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{assets_8cpp_a833181d9ee857e02e4d23e0e3100121c}\label{assets_8cpp_a833181d9ee857e02e4d23e0e3100121c}} 
+\index{assets.cpp@{assets.cpp}!FilterByPrice@{FilterByPrice}}
+\index{FilterByPrice@{FilterByPrice}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByPrice()}{FilterByPrice()}}
+{\footnotesize\ttfamily void Filter\+By\+Price (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&}]{Assets,  }\item[{unsigned}]{n\+Price,  }\item[{Ansi\+String}]{str\+Ineq }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{assets_8cpp_a6c1c3b165298a7755184180e7c1d5fd3}\label{assets_8cpp_a6c1c3b165298a7755184180e7c1d5fd3}} 
+\index{assets.cpp@{assets.cpp}!FilterByRooms@{FilterByRooms}}
+\index{FilterByRooms@{FilterByRooms}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByRooms()}{FilterByRooms()}}
+{\footnotesize\ttfamily void Filter\+By\+Rooms (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&}]{Assets,  }\item[{unsigned}]{n\+Rooms,  }\item[{Ansi\+String}]{str\+Ineq }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{assets_8cpp_a7397a33aaf8571d427cc9565d9933643}\label{assets_8cpp_a7397a33aaf8571d427cc9565d9933643}} 
+\index{assets.cpp@{assets.cpp}!FilterByStatus@{FilterByStatus}}
+\index{FilterByStatus@{FilterByStatus}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByStatus()}{FilterByStatus()}}
+{\footnotesize\ttfamily void Filter\+By\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&}]{Assets,  }\item[{\mbox{\hyperlink{assets_8h_a2f6366c4d3d0e44a757c76ba26eed7ae}{en\+Asset\+Status}}}]{n\+Status }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{assets_8cpp_aebf27843bfa26934eed57802340e4a0d}\label{assets_8cpp_aebf27843bfa26934eed57802340e4a0d}} 
+\index{assets.cpp@{assets.cpp}!FilterByTypology@{FilterByTypology}}
+\index{FilterByTypology@{FilterByTypology}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByTypology()}{FilterByTypology()}}
+{\footnotesize\ttfamily void Filter\+By\+Typology (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&}]{Assets,  }\item[{\mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5df}{en\+Asset\+Typology}}}]{n\+Typology }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{assets_8cpp_a1ce82ea188493c65e478caf6dd2fe363}\label{assets_8cpp_a1ce82ea188493c65e478caf6dd2fe363}} 
+\index{assets.cpp@{assets.cpp}!FilterByValue@{FilterByValue}}
+\index{FilterByValue@{FilterByValue}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByValue()}{FilterByValue()}}
+{\footnotesize\ttfamily void Filter\+By\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&}]{Assets,  }\item[{unsigned}]{n\+Value,  }\item[{Ansi\+String}]{str\+Ineq }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{assets_8cpp_ad1d7673d0b5f79fdea69b71b849880c4}\label{assets_8cpp_ad1d7673d0b5f79fdea69b71b849880c4}} 
+\index{assets.cpp@{assets.cpp}!SortByArea@{SortByArea}}
+\index{SortByArea@{SortByArea}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{SortByArea()}{SortByArea()}}
+{\footnotesize\ttfamily void Sort\+By\+Area (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&}]{Ptr\+Assets,  }\item[{bool}]{b\+Asc }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{assets_8cpp_a496baf0fd2a0170ce3aae91b21e1b30f}\label{assets_8cpp_a496baf0fd2a0170ce3aae91b21e1b30f}} 
+\index{assets.cpp@{assets.cpp}!SortByCity@{SortByCity}}
+\index{SortByCity@{SortByCity}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{SortByCity()}{SortByCity()}}
+{\footnotesize\ttfamily void Sort\+By\+City (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&}]{Ptr\+Assets,  }\item[{bool}]{b\+Asc }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{assets_8cpp_a9798ab56595beb8d0477ad0ccfe9d7bf}\label{assets_8cpp_a9798ab56595beb8d0477ad0ccfe9d7bf}} 
+\index{assets.cpp@{assets.cpp}!SortByPrice@{SortByPrice}}
+\index{SortByPrice@{SortByPrice}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{SortByPrice()}{SortByPrice()}}
+{\footnotesize\ttfamily void Sort\+By\+Price (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&}]{Ptr\+Assets,  }\item[{bool}]{b\+Asc }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{assets_8cpp_ab2b72517d62e427453db84cf12fab154}\label{assets_8cpp_ab2b72517d62e427453db84cf12fab154}} 
+\index{assets.cpp@{assets.cpp}!SortByValue@{SortByValue}}
+\index{SortByValue@{SortByValue}!assets.cpp@{assets.cpp}}
+\doxysubsubsection{\texorpdfstring{SortByValue()}{SortByValue()}}
+{\footnotesize\ttfamily void Sort\+By\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \&}]{Ptr\+Assets,  }\item[{bool}]{b\+Asc }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ 

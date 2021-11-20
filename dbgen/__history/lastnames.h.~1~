@@ -1,0 +1,39 @@
+//---------------------------------------------------------------------------
+#ifndef lastnamesH
+#define lastnamesH
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include <vector>>
+
+using namespace std;
+
+struct TLastName;
+typedef vector<TLastName> TVecLastNames;
+
+struct TLastName
+{
+	AnsiString m_strName, m_strProv, m_strCap, m_strRegion;
+};
+
+class TLastNamesArchive
+{
+public:
+	TLastNamesArchive();
+
+	void __fastcall Clear();
+    int __fastcall GetCount();
+    void __fastcall GetLastNames(TVecLastNames& LastNames);
+
+	bool __fastcall LoadFromFile(AnsiString strFileName);
+
+protected:
+	TVecLastNames m_LastNames;
+
+    bool __fastcall Parse(AnsiString strTuple, TLastName& LastName);
+};
+
+
+//---------------------------------------------------------------------------
+#endif

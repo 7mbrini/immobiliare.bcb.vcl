@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/10 12:02:54.000.555,=C:\Users\settembrini\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/11/10 12:03:14.000.077,F:\dev\jobs\immobiliare.bcb.vcl\dbgen\TFormMain.cpp=C:\Users\settembrini\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/11/10 12:03:14.000.077,F:\dev\jobs\immobiliare.bcb.vcl\dbgen\TFormMain.dfm=C:\Users\settembrini\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/11/10 12:03:14.000.077,F:\dev\jobs\immobiliare.bcb.vcl\dbgen\TFormMain.h=C:\Users\settembrini\Documents\RAD Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2021/11/10 12:03:18.000.355,F:\dev\jobs\immobiliare.bcb.vcl\dbgen\dbgen.cbproj=C:\Users\settembrini\Documents\RAD Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2021/11/12 11:13:31.000.961,=F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\cities.cpp</Transaction>
+    <Transaction>2021/11/12 11:13:31.000.963,=F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\customers.cpp</Transaction>
+    <Transaction>2021/11/12 11:13:31.000.964,=F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\databanker.cpp</Transaction>
+    <Transaction>2021/11/12 11:13:31.000.970,=F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\utils.cpp</Transaction>
+    <Transaction>2021/11/12 11:13:31.000.968,=F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\statistics.cpp</Transaction>
+    <Transaction>2021/11/12 11:13:31.000.959,=F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\assets.cpp</Transaction>
+    <Transaction>2021/11/12 11:13:31.000.966,=F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\maths.cpp</Transaction>
+    <Transaction>2021/11/12 11:14:36.000.751,=F:\dev\jobs\immobiliare.bcb.vcl\dbgen\Unit1.cpp</Transaction>
+    <Transaction>2021/11/12 11:14:57.000.268,=F:\dev\jobs\immobiliare.bcb.vcl\dbgen\File1.h</Transaction>
+    <Transaction>2021/11/12 11:15:03.000.942,F:\dev\jobs\immobiliare.bcb.vcl\dbgen\commdefs.h=F:\dev\jobs\immobiliare.bcb.vcl\dbgen\File1.h</Transaction>
+    <Transaction>2021/11/12 11:18:41.000.013,F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\utils.cpp=</Transaction>
+    <Transaction>2021/11/12 11:19:07.000.182,=F:\dev\jobs\immobiliare.bcb.vcl\dbgen\utils.cpp</Transaction>
+    <Transaction>2021/11/12 11:20:30.000.889,=F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\TFormDebug.cpp</Transaction>
+    <Transaction>2021/11/12 11:46:44.000.031,F:\dev\jobs\immobiliare.bcb.vcl\dbgen\utils.cpp=</Transaction>
+    <Transaction>2021/11/12 11:56:14.000.065,F:\dev\jobs\immobiliare.bcb.vcl\dbgen\commdefs.h=</Transaction>
+    <Transaction>2021/11/12 12:20:17.000.578,F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\cities.cpp=</Transaction>
+    <Transaction>2021/11/12 12:20:46.000.999,=F:\dev\jobs\immobiliare.bcb.vcl\dbgen\cities.cpp</Transaction>
+    <Transaction>2021/11/12 12:27:00.000.988,F:\dev\jobs\immobiliare.bcb.vcl\dbgen\cognomi.cpp=F:\dev\jobs\immobiliare.bcb.vcl\dbgen\cities.cpp</Transaction>
+    <Transaction>2021/11/12 12:27:00.000.988,F:\dev\jobs\immobiliare.bcb.vcl\dbgen\cognomi.h=F:\dev\jobs\immobiliare.bcb.vcl\dbgen\cities.h</Transaction>
+    <Transaction>2021/11/12 12:28:57.000.928,=F:\dev\jobs\immobiliare.bcb.vcl\dbgen\cities.cpp</Transaction>
+    <Transaction>2021/11/12 12:29:45.000.683,F:\dev\jobs\immobiliare.bcb.vcl\dbgen\lastnames.h=F:\dev\jobs\immobiliare.bcb.vcl\dbgen\cognomi.h</Transaction>
+    <Transaction>2021/11/12 12:29:45.000.683,F:\dev\jobs\immobiliare.bcb.vcl\dbgen\lastnames.cpp=F:\dev\jobs\immobiliare.bcb.vcl\dbgen\cognomi.cpp</Transaction>
+    <Transaction>2021/11/12 12:49:34.000.350,F:\dev\jobs\immobiliare.bcb.vcl\dbgen\firstnames.cpp=F:\dev\jobs\immobiliare.bcb.vcl\dbgen\lastnames.cpp</Transaction>
+    <Transaction>2021/11/12 12:49:34.000.350,F:\dev\jobs\immobiliare.bcb.vcl\dbgen\firstnames.h=F:\dev\jobs\immobiliare.bcb.vcl\dbgen\lastnames.h</Transaction>
+    <Transaction>2021/11/12 12:49:58.000.235,=F:\dev\jobs\immobiliare.bcb.vcl\dbgen\lastnames.cpp</Transaction>
+    <Transaction>2021/11/12 13:12:35.000.375,F:\dev\jobs\immobiliare.bcb.vcl\dbgen\roads.h=F:\dev\jobs\immobiliare.bcb.vcl\dbgen\firstnames.h</Transaction>
+    <Transaction>2021/11/12 13:12:35.000.375,F:\dev\jobs\immobiliare.bcb.vcl\dbgen\roads.cpp=F:\dev\jobs\immobiliare.bcb.vcl\dbgen\firstnames.cpp</Transaction>
+    <Transaction>2021/11/12 13:12:56.000.610,=F:\dev\jobs\immobiliare.bcb.vcl\dbgen\firstnames.cpp</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <VirtualFolder ID="{13412B6A-D068-4F08-8423-A47F3454BDEF}"/>
+    <File Path="..\immobiliare\TFormDebug.cpp"/>
+    <File Path="..\immobiliare\TFormDebug.cpp"/>
+    <File Path="..\immobiliare\TFormDebug.dfm"/>
+    <File Path="..\immobiliare\TFormDebug.h"/>
+    <File Path="TFormMain.cpp"/>
+    <File Path="TFormMain.cpp"/>
+    <File Path="TFormMain.dfm"/>
+    <File Path="TFormMain.h"/>
+    <VirtualFolder ID="{FCDE5F49-2F37-46F0-B8C6-E19D80BE6A67}"/>
+    <File Path="..\immobiliare\assets.cpp"/>
+    <File Path="..\immobiliare\assets.cpp"/>
+    <File Path="..\immobiliare\assets.h"/>
+    <File Path="cities.cpp"/>
+    <File Path="cities.cpp"/>
+    <File Path="cities.h"/>
+    <File Path="..\immobiliare\customers.cpp"/>
+    <File Path="..\immobiliare\customers.cpp"/>
+    <File Path="..\immobiliare\customers.h"/>
+    <File Path="..\immobiliare\databanker.cpp"/>
+    <File Path="..\immobiliare\databanker.cpp"/>
+    <File Path="..\immobiliare\databanker.h"/>
+    <File Path="firstnames.cpp"/>
+    <File Path="firstnames.cpp"/>
+    <File Path="firstnames.h"/>
+    <File Path="lastnames.cpp"/>
+    <File Path="lastnames.cpp"/>
+    <File Path="lastnames.h"/>
+    <File Path="..\immobiliare\maths.cpp"/>
+    <File Path="roads.cpp"/>
+    <File Path="roads.cpp"/>
+    <File Path="roads.h"/>
+    <File Path="..\immobiliare\statistics.cpp"/>
+    <File Path="dbgen.cpp"/>
+  </ProjectSortOrder>
+</BorlandProject>

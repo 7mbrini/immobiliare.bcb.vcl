@@ -1,0 +1,72 @@
+object FormQueries: TFormQueries
+  Left = 0
+  Top = 0
+  Caption = 'FormQueries'
+  ClientHeight = 422
+  ClientWidth = 430
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCanResize = FormCanResize
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PanelBottom: TPanel
+    Left = 0
+    Top = 381
+    Width = 430
+    Height = 41
+    Align = alBottom
+    TabOrder = 0
+    object ButtonClose: TButton
+      Left = 184
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = '&Close'
+      TabOrder = 0
+      OnClick = ButtonCloseClick
+    end
+  end
+  object PanelTop: TPanel
+    Left = 0
+    Top = 0
+    Width = 430
+    Height = 41
+    Align = alTop
+    TabOrder = 1
+    object LabelInfo: TLabel
+      Left = 10
+      Top = 9
+      Width = 29
+      Height = 19
+      Caption = 'Info'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+  end
+  object ListBox: TListBox
+    Left = 0
+    Top = 41
+    Width = 430
+    Height = 340
+    Align = alClient
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ItemHeight = 19
+    ParentFont = False
+    TabOrder = 2
+    OnDblClick = ListBoxDblClick
+  end
+end

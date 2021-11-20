@@ -1,0 +1,15 @@
+//---------------------------------------------------------------------------
+#ifndef utilsH
+#define utilsH
+
+#include <vcl.h>
+
+namespace utils
+{
+    AnsiString GetDataPath();
+
+	void BuildCustomers(AnsiString strFileName);
+};
+
+//---------------------------------------------------------------------------
+#endif

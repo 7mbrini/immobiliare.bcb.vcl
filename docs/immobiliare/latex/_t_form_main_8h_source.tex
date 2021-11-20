@@ -1,0 +1,162 @@
+\hypertarget{_t_form_main_8h_source}{}\doxysection{TForm\+Main.\+h}
+\label{_t_form_main_8h_source}\index{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/TFormMain.h@{Z:/F/dev/jobs/immobiliare.bcb.vcl/immobiliare/TFormMain.h}}
+\mbox{\hyperlink{_t_form_main_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#ifndef TFormMainH}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#define TFormMainH}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <System.Classes.hpp>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <Vcl.Controls.hpp>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <Vcl.StdCtrls.hpp>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <Vcl.Forms.hpp>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <Vcl.ExtCtrls.hpp>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <Vcl.Graphics.hpp>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <Vcl.Menus.hpp>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <Vcl.Dialogs.hpp>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <Vcl.Buttons.hpp>}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{commdefs_8h}{commdefs.h}}"{}}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{databanker_8h}{databanker.h}}"{}}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_form_assets}{TFormAssets}};}
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_form_customers}{TFormCustomers}};}
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_form_find_assets}{TFormFindAssets}};}
+\DoxyCodeLine{24 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_form_find_customers}{TFormFindCustomers}};}
+\DoxyCodeLine{25 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_form_queries}{TFormQueries}};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{28 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_form_main}{TFormMain}} : \textcolor{keyword}{public} TForm}
+\DoxyCodeLine{29 \{}
+\DoxyCodeLine{30 \_\_published:    \textcolor{comment}{// IDE-\/managed Components}}
+\DoxyCodeLine{31     TMainMenu *\mbox{\hyperlink{class_t_form_main_a9537269e8c6214a94dbf4660373e153a}{MainMenu}};}
+\DoxyCodeLine{32     TPanel *\mbox{\hyperlink{class_t_form_main_a41f9db3f8dc4736dac29cc17a1f342d8}{PanelTop}};}
+\DoxyCodeLine{33     TMenuItem *\mbox{\hyperlink{class_t_form_main_ad6d364d553ab4ed2487f74f0579a14a0}{File1}};}
+\DoxyCodeLine{34     TPanel *\mbox{\hyperlink{class_t_form_main_aa78d66c0d34b5cdee2013c3a4dc06cec}{PanelStatus}};}
+\DoxyCodeLine{35     TImage *\mbox{\hyperlink{class_t_form_main_a9b865463999513c5e39d1f9d2157b572}{Image}};}
+\DoxyCodeLine{36     TMenuItem *\mbox{\hyperlink{class_t_form_main_a8bf844622174ec2b01d3f4cf5a6c7bf4}{FileOpen}};}
+\DoxyCodeLine{37     TMenuItem *\mbox{\hyperlink{class_t_form_main_a63c63ee53bd211822c583ef83d84bac1}{FileOpenCustomersArchive}};}
+\DoxyCodeLine{38     TMenuItem *\mbox{\hyperlink{class_t_form_main_a07911783a5f714c50b58857793475e5b}{FileOpenAssetsArchive}};}
+\DoxyCodeLine{39     TMenuItem *\mbox{\hyperlink{class_t_form_main_af0b5cc68df0da4363c7ffa4373e4621b}{FileSave}};}
+\DoxyCodeLine{40     TMenuItem *\mbox{\hyperlink{class_t_form_main_a5b401370fa23e5cebb52f291cfc835d5}{FileSaveAssetsArchive}};}
+\DoxyCodeLine{41     TMenuItem *\mbox{\hyperlink{class_t_form_main_ae46821051bfa86d6aeb0cf0ca9214766}{FileSaveCustomersArchive}};}
+\DoxyCodeLine{42     TMenuItem *\mbox{\hyperlink{class_t_form_main_a2b17fbdfc28fcbf0372f7c9e63e63f6c}{Forms1}};}
+\DoxyCodeLine{43     TMenuItem *\mbox{\hyperlink{class_t_form_main_a4a503ba4b2005c77729660c6d79d3fee}{FormsAssets}};}
+\DoxyCodeLine{44     TMenuItem *\mbox{\hyperlink{class_t_form_main_a357ede6ea1c4ce5af7a7b44a3fc2009f}{FormCustomers}};}
+\DoxyCodeLine{45     TMenuItem *\mbox{\hyperlink{class_t_form_main_a3b706006fa2f408382d976caa13afc79}{Help}};}
+\DoxyCodeLine{46     TMenuItem *\mbox{\hyperlink{class_t_form_main_a192891a38e07880f4a627e173d9527ab}{HelpAbout}};}
+\DoxyCodeLine{47     TMenuItem *\mbox{\hyperlink{class_t_form_main_a7dcc43af72b7bee81496445cc4b36358}{N1}};}
+\DoxyCodeLine{48     TMenuItem *\mbox{\hyperlink{class_t_form_main_ae481e20875365dbb340ba62ba1d26fd1}{FileQuit}};}
+\DoxyCodeLine{49     TOpenDialog *\mbox{\hyperlink{class_t_form_main_aaddc0783b7ef53ee38474399afcaf205}{OpenDialog}};}
+\DoxyCodeLine{50     TSaveDialog *\mbox{\hyperlink{class_t_form_main_afcaecc1cb7b39e00b0604ff1d9a27eff}{SaveDialog}};}
+\DoxyCodeLine{51     TMenuItem *\mbox{\hyperlink{class_t_form_main_acfd960251e1272311485c65624f158a4}{Queries}};}
+\DoxyCodeLine{52     TSpeedButton *\mbox{\hyperlink{class_t_form_main_aa18c3234b6ca6656bf532f9afa72e239}{SpeedButtonQueries}};}
+\DoxyCodeLine{53     TSpeedButton *\mbox{\hyperlink{class_t_form_main_ac24c014669798a4dd0577f50a17b3a4a}{SpeedButtonAssets}};}
+\DoxyCodeLine{54     TSpeedButton *\mbox{\hyperlink{class_t_form_main_a513c4d82a07c0bf1bf9ba41be8476c8f}{SpeedButtonCustomers}};}
+\DoxyCodeLine{55     TMenuItem *\mbox{\hyperlink{class_t_form_main_adf22092ffc04d38fced5a843c8085fe1}{QueriesFindAssets}};}
+\DoxyCodeLine{56     TMenuItem *\mbox{\hyperlink{class_t_form_main_ab380bf955366e5509e06247a8123a196}{QueriesFindCustomers}};}
+\DoxyCodeLine{57     TMenuItem *\mbox{\hyperlink{class_t_form_main_a43a0f053afcf1f86676f1dab382eb801}{QueriesMore}};}
+\DoxyCodeLine{58     TSpeedButton *\mbox{\hyperlink{class_t_form_main_a38bc5fc328eb7c96f4056921e4d4222d}{SpeedButtonFindCustomers}};}
+\DoxyCodeLine{59     TSpeedButton *\mbox{\hyperlink{class_t_form_main_a648b53951a303c66ecbddd386a349267}{SpeedButtonFindAssets}};}
+\DoxyCodeLine{60     TMenuItem *\mbox{\hyperlink{class_t_form_main_afdc351664e59f8e501ff2ec6f28ed1ff}{New1}};}
+\DoxyCodeLine{61     TMenuItem *\mbox{\hyperlink{class_t_form_main_ad3b73ad6dff57a540567fa56782062a2}{AssetsArchive1}};}
+\DoxyCodeLine{62     TMenuItem *\mbox{\hyperlink{class_t_form_main_aa0cb378b307e4bc117847635963b22e8}{CustomersArchive1}};}
+\DoxyCodeLine{63     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_af27d7ef8f92214e6209341e437fba66b}{FormCreate}}(TObject *Sender);}
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_ab82808fb6a50786c940d6de4d7300834}{FormDestroy}}(TObject *Sender);}
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a8d5f522ac7703b595c3885cedf909f41}{FormCustomersClick}}(TObject *Sender);}
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a60b9156b3ee1b48f6bc7962cbc22334f}{FileQuitClick}}(TObject *Sender);}
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a9d653660acb00fc5a42de222eb96ec12}{FileOpenCustomersArchiveClick}}(TObject *Sender);}
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_ad7c35b103ce050f55f99f921c7b9a0ab}{HelpAboutClick}}(TObject *Sender);}
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a727cd50134e42fb272473984cf79a2e2}{FileOpenAssetsArchiveClick}}(TObject *Sender);}
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a246098b03585b068ad202ad09a8f5135}{FileSaveAssetsArchiveClick}}(TObject *Sender);}
+\DoxyCodeLine{71     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a0a0239f5e077ee35213d681ecff3ea5a}{FileSaveCustomersArchiveClick}}(TObject *Sender);}
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a6a727c025a9242c06d631a60091bb7ce}{SpeedButtonAssetsClick}}(TObject *Sender);}
+\DoxyCodeLine{73     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a1fccaff0239a73ef36149cf63edbd44d}{SpeedButtonCustomersClick}}(TObject *Sender);}
+\DoxyCodeLine{74     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a610763dc3942ba7fd9f88a8d5076f79f}{FormsAssetsClick}}(TObject *Sender);}
+\DoxyCodeLine{75     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_ad35e7996bb41cca2d027a3c88260210d}{FormClose}}(TObject *Sender, TCloseAction \&Action);}
+\DoxyCodeLine{76     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a232126f4193e1142dacd636f506e9529}{QueriesFindAssetsClick}}(TObject *Sender);}
+\DoxyCodeLine{77     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a90755e08527e7566114a0a84a9726a69}{QueriesFindCustomersClick}}(TObject *Sender);}
+\DoxyCodeLine{78     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a43eff1e64bb5a8d8e79fa33025f81b69}{QueriesMoreClick}}(TObject *Sender);}
+\DoxyCodeLine{79     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a9539e6a3ba7f7784332e793030e73e06}{FormShow}}(TObject *Sender);}
+\DoxyCodeLine{80     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_ada9f5bdc1442d3eadb73b4be02e252f0}{SpeedButtonQueriesClick}}(TObject *Sender);}
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_afe6015d257b07bbfbdfde87a5b316391}{SpeedButtonFindAssetsClick}}(TObject *Sender);}
+\DoxyCodeLine{82     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_aa4a111205358c4e0f7d9789a8ccaea46}{SpeedButtonFindCustomersClick}}(TObject *Sender);}
+\DoxyCodeLine{83     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a84c115b1f402942e37c3f076d7e0c20d}{AssetsArchive1Click}}(TObject *Sender);}
+\DoxyCodeLine{84     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a64b097373a14e2aef7525597be13cfa1}{CustomersArchive1Click}}(TObject *Sender);}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86 \textcolor{keyword}{private}:    \textcolor{comment}{// User declarations}}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88 \textcolor{keyword}{public}:     \textcolor{comment}{// User declarations}}
+\DoxyCodeLine{89     \_\_fastcall \mbox{\hyperlink{class_t_form_main_a64172ce125adcaeec4546e50ed37fae1}{TFormMain}}(TComponent* Owner);}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91 \textcolor{keyword}{public}:}
+\DoxyCodeLine{92     \mbox{\hyperlink{class_t_form_assets}{TFormAssets}}* \textcolor{keyword}{const} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a1c9e6e79b7356024657d977d0846bff7}{GetFormAssets}}();}
+\DoxyCodeLine{93     \mbox{\hyperlink{class_t_form_customers}{TFormCustomers}}* \textcolor{keyword}{const} \_\_fastcall \mbox{\hyperlink{class_t_form_main_ab8b21dcdf82ab859d6d89e110916283c}{GetFormCustomers}}();}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{96     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a545202d18969c29b9167658f5fd40fba}{Setup}}();}
+\DoxyCodeLine{97     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a6a0dae41c269c3fa456dcace6b1776e6}{Cleanup}}();}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{100     \mbox{\hyperlink{class_t_data_banker}{TDataBanker}}* \mbox{\hyperlink{class_t_form_main_abb0c1181755afca5bf0a85fd08386834}{m\_pDB}};}
+\DoxyCodeLine{101     \mbox{\hyperlink{class_t_form_assets}{TFormAssets}}* \mbox{\hyperlink{class_t_form_main_aaa2cca2904965db5636d5b2579596382}{m\_pFormAssets}};}
+\DoxyCodeLine{102     \mbox{\hyperlink{class_t_form_customers}{TFormCustomers}}* \mbox{\hyperlink{class_t_form_main_a5bf9d8e865a41f33eabe0da6e00b1cc0}{m\_pFormCustomers}};}
+\DoxyCodeLine{103     \mbox{\hyperlink{class_t_form_find_assets}{TFormFindAssets}}* \mbox{\hyperlink{class_t_form_main_a0b2c1289d5812d7c1234849c89df0d73}{m\_pFormFindAssets}};}
+\DoxyCodeLine{104     \mbox{\hyperlink{class_t_form_find_customers}{TFormFindCustomers}}* \mbox{\hyperlink{class_t_form_main_a530d092be10ea1998de53ae5df83c2f7}{m\_pFormFindCustomers}};}
+\DoxyCodeLine{105     \mbox{\hyperlink{class_t_form_queries}{TFormQueries}}* \mbox{\hyperlink{class_t_form_main_a253cb46dd8c878f4abc1206fe8249d00}{m\_pFormQueries}};}
+\DoxyCodeLine{106     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_t_form_main_a401dc82df95c535ad67d151c2530c720}{m\_bAssetsDBModify}}, \mbox{\hyperlink{class_t_form_main_a1c17b3663f9a31d0aa4cb937ef55419e}{m\_bCustomersDBModify}};}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108     \textcolor{keywordtype}{bool} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a6ba09ce7b2669615637a8aa36a265a74}{IsDirty}}();}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_ab7e50f79c08a704d99d2b80c5f5f681f}{NewAssetsArchive}}();}
+\DoxyCodeLine{111     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a5dadca50b6a83bd8528b392c1957de0c}{NewCustomersArchive}}();}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a5b95f8fa8bf1d3c719137805ac645127}{LoadAssetsArchive}}();}
+\DoxyCodeLine{114     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_aa17d0f6478994d5835157970944d0a13}{LoadCustomersArchive}}();}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a665b7c00d0e119aab973ab5ec73ad750}{SaveAssets}}();}
+\DoxyCodeLine{117     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_ada0ea73716253973d2398f901f471357}{SaveCustomers}}();}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a11ede63fd5301fa82a2e31d83faaa547}{ShowFormAssets}}();}
+\DoxyCodeLine{120     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a13320a088460a28c0645a65559f24f2e}{ShowFormCustomers}}();}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_ac9ef5ca88154f53d5db06416c0878a58}{ShowFormQueries}}();}
+\DoxyCodeLine{123     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a617fc62e7077abcbd012a0a758234d8d}{ShowFormFindAssets}}();}
+\DoxyCodeLine{124     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a0b3dfd2fe7eb70ad122f7822db746779}{ShowFormFindCustomers}}();}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126 \textcolor{preprocessor}{\#ifdef \_DEBUG}}
+\DoxyCodeLine{127     \textcolor{keywordtype}{void} \_\_fastcall dev\_LoadAssets();}
+\DoxyCodeLine{128     \textcolor{keywordtype}{void} \_\_fastcall dev\_LoadCustomers();}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130     \textcolor{keywordtype}{void} \_\_fastcall dev\_Assets();}
+\DoxyCodeLine{131     \textcolor{keywordtype}{void} \_\_fastcall dev\_Customers();}
+\DoxyCodeLine{132     \textcolor{keywordtype}{void} \_\_fastcall dev\_FindAssets();}
+\DoxyCodeLine{133     \textcolor{keywordtype}{void} \_\_fastcall dev\_FindCustomers();}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135     \textcolor{keywordtype}{void} \_\_fastcall dev\_Queries();}
+\DoxyCodeLine{136     \textcolor{keywordtype}{void} \_\_fastcall dev\_QuerySales();}
+\DoxyCodeLine{137     \textcolor{keywordtype}{void} \_\_fastcall dev\_QuerySalesHist();}
+\DoxyCodeLine{138     \textcolor{keywordtype}{void} \_\_fastcall dev\_QuerySupplyAndDemand();}
+\DoxyCodeLine{139 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{140 }
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a90c80f1849f9490dbfba5dfe663617e5}{OnAssetsDBModify}}(TMessage\& Message);}
+\DoxyCodeLine{143     \textcolor{keywordtype}{void} \_\_fastcall \mbox{\hyperlink{class_t_form_main_a0b9eb39df6b9606765d7a3769bf9044f}{OnCustomersDBModify}}(TMessage\& Message);}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145     BEGIN\_MESSAGE\_MAP}
+\DoxyCodeLine{146         \mbox{\hyperlink{class_t_form_main_a108185c75b1a30059159956337817fa8}{MESSAGE\_HANDLER}}(\mbox{\hyperlink{commdefs_8h_a3d35537542b069747b227e36ee232ec9}{UM\_ASSETSDBMODIFY}}, TMessage, \mbox{\hyperlink{class_t_form_main_a90c80f1849f9490dbfba5dfe663617e5}{OnAssetsDBModify}});}
+\DoxyCodeLine{147         \mbox{\hyperlink{class_t_form_main_ad68f6e4d3efe2103f7ca7a5f99c3b7ec}{MESSAGE\_HANDLER}}(\mbox{\hyperlink{commdefs_8h_a63295443a85168481bce53b8f180477b}{UM\_CUSTOMERSDBMODIFY}}, TMessage, \mbox{\hyperlink{class_t_form_main_a0b9eb39df6b9606765d7a3769bf9044f}{OnCustomersDBModify}});}
+\DoxyCodeLine{148     END\_MESSAGE\_MAP(TForm)}
+\DoxyCodeLine{149 \};}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{152 \textcolor{keyword}{extern} PACKAGE \mbox{\hyperlink{class_t_form_main}{TFormMain}} *\mbox{\hyperlink{_t_form_main_8h_a24f2c47a20cd5e2a71cb1209116b88e6}{FormMain}};}
+\DoxyCodeLine{153 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{154 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{155 }
+\DoxyCodeLine{156 }
+
+\end{DoxyCode}

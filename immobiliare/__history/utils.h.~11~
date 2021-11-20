@@ -1,0 +1,15 @@
+//---------------------------------------------------------------------------
+#ifndef utilsH
+#define utilsH
+
+#include <vcl.h>
+
+namespace utils
+{
+    AnsiString __fastcall GetDataPath();
+	void __fastcall ParseDate(AnsiString strDate,
+    	unsigned short& nYear, unsigned short& nMonth, unsigned short& nDay);
+};
+
+//---------------------------------------------------------------------------
+#endif
