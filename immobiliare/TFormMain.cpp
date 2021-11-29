@@ -235,7 +235,7 @@ void __fastcall TFormMain::HelpAboutClick(TObject *Sender)
     strCaption.printf("%s"
         "\n\n(C) 2021 Francesco Settembrini"
         "\n\nfrancesco.settembrini@poliba.it"
-        "\nfrancesco.settembrini1@studenti.uniba.it",
+        "\nf.settembrini1@studenti.uniba.it",
         APPNAME);
 
 	::MessageBox(0, strCaption.c_str(), strTitle.c_str(),

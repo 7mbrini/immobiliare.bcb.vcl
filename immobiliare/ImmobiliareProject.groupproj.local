@@ -4,6 +4,6 @@
     <Transaction>2021/11/10 12:03:42.000.985,F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\ImmobiliareRossano.groupproj=C:\Users\settembrini\Documents\RAD Studio\Projects\ProjectGroup1.groupproj</Transaction>
   </Transactions>
 	<Default.Personality>
-		<Projects ActiveProject="F:\dev\jobs\immobiliare.bcb.vcl\dbgen\dbgen.cbproj"/>
+		<Projects ActiveProject="F:\dev\jobs\immobiliare.bcb.vcl\immobiliare\immobiliare.cbproj"/>
 	</Default.Personality>
 </BorlandProject>
